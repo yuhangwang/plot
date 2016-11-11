@@ -12,6 +12,14 @@ from mpa import plot
 import mpa.mpa_toolkit as MpaTK
 
 def parse(user_config_file):
+    # type: str -> Dict
+    """Read an input configuration file
+
+    Args:
+        user_config_file (str): user configuration file
+    Returns:
+        a dictionary
+    """
     if re.match(".*\.json", user_config_file):
         import json
         parser = json.loads
