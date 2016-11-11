@@ -22,10 +22,10 @@ def merge(dict1, dict2):
     """
     ooo = copy.deepcopy(dict1)
     for k in dict2:
-        if (k in dict1 and
+        if (k in dict1 and  # resolve conflicts
                 isinstance(dict1[k], dict) and
                 isinstance(dict2[k], dict)):
             ooo[k] = merge(dict1[k], dict2[k])
         else:
-            ooo[k] = dict2[k] # non-conflicting items
+            ooo[k] = dict2[k]  # non-conflicting items
     return ooo
