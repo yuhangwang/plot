@@ -2,7 +2,6 @@
 Merge two dictionaries into one.
 """
 from typing import Dict
-import collections
 import copy
 
 
