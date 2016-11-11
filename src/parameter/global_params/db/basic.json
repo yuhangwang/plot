@@ -1,0 +1,74 @@
+{
+  "figure axis label on": [
+    "figure_axis_label",
+    [
+      false
+    ]
+  ],
+  "figure dpi": [
+    "figure_dpi",
+    [
+      150
+    ]
+  ],
+  "figure height": [
+    "figure_height",
+    [
+      8
+    ]
+  ],
+  "figure number of columns": [
+    "figure_number_of_columns",
+    [
+      1
+    ]
+  ],
+  "figure number of rows": [
+    "figure_number_of_rows",
+    [
+      1
+    ]
+  ],
+  "figure output file": [
+    "figure_output_file",
+    [
+      "out.png"
+    ]
+  ],
+  "figure padding": [
+    "figure_padding",
+    [
+      0.2
+    ]
+  ],
+  "figure panel array dimension": [
+    "figure_panel_array_dimension",
+    [
+      4
+    ]
+  ],
+  "figure subplot horizontal spacing": [
+    "figure_subplot_horizontal_spacing",
+    [
+      null
+    ]
+  ],
+  "figure subplot vertical spacing": [
+    "figure_subplot_vertical_spacing",
+    [
+      null
+    ]
+  ],
+  "figure transparent": [
+    "figure_transparent",
+    [
+      false
+    ]
+  ],
+  "figure width": [
+    "figure_width",
+    [
+      12
+    ]
+  ]
+}

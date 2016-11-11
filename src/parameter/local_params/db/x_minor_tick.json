@@ -1,0 +1,46 @@
+{
+  "x minor tick": {
+    "color": [
+      [
+        "k"
+      ]
+    ],
+    "direction": [
+      [
+        "in",
+        "out",
+        "inout"
+      ]
+    ],
+    "layer order": [
+      [
+        0
+      ]
+    ],
+    "length": [
+      [
+        5
+      ]
+    ],
+    "set": [
+      [
+        null
+      ]
+    ],
+    "show bottom": [
+      [
+        true
+      ]
+    ],
+    "show top": [
+      [
+        true
+      ]
+    ],
+    "width": [
+      [
+        2
+      ]
+    ]
+  }
+}

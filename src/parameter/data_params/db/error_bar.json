@@ -1,0 +1,44 @@
+{
+  "data error bar cap size": [
+    "data_error_bar_cap_size",
+    [
+      4
+    ]
+  ],
+  "data error bar cap thickness": [
+    "data_error_bar_cap_thickness",
+    [
+      2
+    ]
+  ],
+  "data error bar edge color": [
+    "data_error_bar_edge_color",
+    [
+      null
+    ]
+  ],
+  "data error bar line width": [
+    "data_error_bar_line_width",
+    [
+      null
+    ]
+  ],
+  "data error bar resample block size": [
+    "data_error_bar_resample_block_size",
+    [
+      1
+    ]
+  ],
+  "data error bar x column id": [
+    "data_error_bar_x_column_id",
+    [
+      null
+    ]
+  ],
+  "data error bar y column id": [
+    "data_error_bar_y_column_id",
+    [
+      null
+    ]
+  ]
+}

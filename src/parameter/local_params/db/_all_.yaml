@@ -1,0 +1,14 @@
+- grid
+- legend
+- panel
+- axis
+- x_axis
+- x_major_tick
+- x_minor_tick
+- x_major_tick_label
+- x_minor_tick_label
+- y_axis
+- y_major_tick
+- y_minor_tick
+- y_major_tick_label
+- y_minor_tick_label

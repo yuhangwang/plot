@@ -1,0 +1,53 @@
+{
+  "x axis": {
+    "label": {
+      "font size": [
+        [
+          null
+        ]
+      ],
+      "name": [
+        [
+          null
+        ]
+      ],
+      "padding": [
+        [
+          null
+        ]
+      ]
+    },
+    "range": {
+      "inverted": [
+        [
+          false
+        ]
+      ],
+      "max": [
+        [
+          null
+        ]
+      ],
+      "min": [
+        [
+          null
+        ]
+      ],
+      "tight": [
+        [
+          false
+        ]
+      ]
+    },
+    "scale": [
+      [
+        "linear"
+      ]
+    ],
+    "twin panels": [
+      [
+        null
+      ]
+    ]
+  }
+}

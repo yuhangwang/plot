@@ -1,0 +1,82 @@
+{
+  "x major tick label": {
+    "color": [
+      [
+        "k"
+      ]
+    ],
+    "decimal places": [
+      [
+        null
+      ]
+    ],
+    "font family": [
+      [
+        "serif"
+      ]
+    ],
+    "font size": [
+      [
+        30
+      ]
+    ],
+    "font stretch": [
+      [
+        0
+      ]
+    ],
+    "font style": [
+      [
+        "normal",
+        "roman",
+        "italic",
+        "oblique"
+      ]
+    ],
+    "font weight": [
+      [
+        0
+      ]
+    ],
+    "hide first": [
+      [
+        false
+      ]
+    ],
+    "hide last": [
+      [
+        false
+      ]
+    ],
+    "hide overlap": [
+      [
+        false
+      ]
+    ],
+    "padding": [
+      [
+        10
+      ]
+    ],
+    "rotation": [
+      [
+        null
+      ]
+    ],
+    "set": [
+      [
+        null
+      ]
+    ],
+    "show bottom": [
+      [
+        true
+      ]
+    ],
+    "show top": [
+      [
+        false
+      ]
+    ]
+  }
+}

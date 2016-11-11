@@ -1,0 +1,14 @@
+data file:
+  - data_file
+  - [~]
+data value:
+  - data_value
+  - [~]
+data plot type:
+  - data_plot_type
+  - ["line","bar","matrix"]
+data panel indices:
+  - data_panel_indices
+  - [[0,0]]
+
+

@@ -1,0 +1,38 @@
+{
+  "data block average block size": [
+    "data_block_average_block_size",
+    [
+      null
+    ]
+  ],
+  "data block average legend": [
+    "data_block_average_legend",
+    [
+      null
+    ]
+  ],
+  "data block average legend panel indices": [
+    "data_block_average_legend_panel_indices",
+    [
+      null
+    ]
+  ],
+  "data block average line style": [
+    "data_block_average_line_style",
+    [
+      "-"
+    ]
+  ],
+  "data block average line width": [
+    "data_block_average_line_width",
+    [
+      2
+    ]
+  ],
+  "data blockaverage line opacity": [
+    "data_block_average_line_opacity",
+    [
+      1.0
+    ]
+  ]
+}

@@ -1,0 +1,17 @@
+x minor tick:
+  direction:
+    - [in, out, inout]
+  length:
+    - [5]
+  width:
+    - [2]
+  color:
+    - [k]
+  layer order:
+    - [0]
+  show top:
+    - [true]
+  show bottom:
+    - [true]
+  set:
+    - [null]

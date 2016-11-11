@@ -1,0 +1,46 @@
+{
+  "y major tick": {
+    "color": [
+      [
+        "k"
+      ]
+    ],
+    "direction": [
+      [
+        "in",
+        "out",
+        "inout"
+      ]
+    ],
+    "layer order": [
+      [
+        0
+      ]
+    ],
+    "length": [
+      [
+        5
+      ]
+    ],
+    "set": [
+      [
+        null
+      ]
+    ],
+    "show left": [
+      [
+        true
+      ]
+    ],
+    "show right": [
+      [
+        true
+      ]
+    ],
+    "width": [
+      [
+        2
+      ]
+    ]
+  }
+}

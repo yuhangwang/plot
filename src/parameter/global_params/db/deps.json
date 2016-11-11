@@ -1,0 +1,14 @@
+{
+  "use latex": [
+    "use_latex",
+    [
+      false
+    ]
+  ],
+  "use scipy": [
+    "use_scipy",
+    [
+      false
+    ]
+  ]
+}

@@ -1,0 +1,37 @@
+figure share x:
+  - figure_share_x
+  - ['none']
+figure x limits tight:
+  - figure_x_limits_tight
+  - [yes]
+figure x limits user defined:
+  - figure_x_limits_user_defined
+  - [no]
+figure x label:
+  - figure_x_label
+  - ['']
+figure x label font size:
+  - figure_x_label_font_size
+  - [40]
+figure x label padding:
+  - figure_x_label_padding
+  - [60]
+
+figure share y:
+  - figure_share_y
+  - ['none']
+figure y limits tight:
+  - figure_y_limits_tight
+  - [yes]
+figure y limits user defined:
+  - figure_y_limits_user_defined
+  - [no]
+figure y label:
+  - figure_y_label
+  - ['']
+figure y label font size:
+  - figure_y_label_font_size
+  - [40]
+figure y label padding:
+  - figure_y_label_padding
+  - [60]

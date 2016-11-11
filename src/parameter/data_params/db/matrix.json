@@ -1,0 +1,62 @@
+{
+  "data matrix color bar panel indices": [
+    "data_matrix_color_bar_panel_indices",
+    [
+      null
+    ]
+  ],
+  "data matrix transpose": [
+    "data_matrix_transpose",
+    [
+      false
+    ]
+  ],
+  "data matrix vertical max": [
+    "data_matrix_vertical_max",
+    [
+      null
+    ]
+  ],
+  "data matrix vertical min": [
+    "data_matrix_vertical_min",
+    [
+      null
+    ]
+  ],
+  "data matrix x extent max": [
+    "data_matrix_x_extent_max",
+    [
+      null
+    ]
+  ],
+  "data matrix x extent min": [
+    "data_matrix_x_extent_min",
+    [
+      null
+    ]
+  ],
+  "data matrix x extent offset": [
+    "data_matrix_x_extent_offset",
+    [
+      -0.5
+    ]
+  ],
+  "data matrix y extent max": [
+    "data_matrix_y_extent_max",
+    [
+      null
+    ]
+  ],
+  "data matrix y extent min": [
+    "data_matrix_y_extent_min",
+    [
+      null
+    ]
+  ],
+  "data matrix y extent offset": [
+    "data_matrix_y_extent_offset",
+    [
+      -0.5
+    ]
+  ]
+}

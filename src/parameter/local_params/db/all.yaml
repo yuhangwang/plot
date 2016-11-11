@@ -1,0 +1,417 @@
+axis:
+  hide:
+  - [false]
+  spine:
+    bottom:
+      color:
+      - [null]
+      line width:
+      - [null]
+    left:
+      color:
+      - [null]
+      line width:
+      - [null]
+    right:
+      color:
+      - [null]
+      line width:
+      - [null]
+    top:
+      color:
+      - [null]
+      line width:
+      - [null]
+grid axis:
+- grid_axis
+- [both]
+grid line color:
+- grid_line_color
+- [k]
+grid line opacity:
+- grid_line_opacity
+- [0.2]
+grid line style:
+- grid_line_style
+- [--, '-']
+grid line width:
+- grid_line_width
+- [1]
+grid on:
+- grid_on
+- [false]
+grid ticks:
+- grid_ticks
+- [major]
+grid z order:
+- grid_z_order
+- [-1]
+legend anchor coordinate:
+- legend_anchor_coordinate
+- - [0.9, 0.9]
+legend anchor corner:
+- legend_anchor_corner
+- [upper right]
+legend border padding:
+- legend_border_padding
+- [0.5]
+legend column spacing:
+- legend_column_spacing
+- [0.8]
+legend edge color:
+- legend_edge_color
+- [k]
+legend face color:
+- legend_face_color
+- [w]
+legend face opacity:
+- legend_face_opacity
+- [1.0]
+legend font size:
+- legend_font_size
+- [26]
+legend font weight:
+- legend_font_weight
+- [500]
+legend frame opacity:
+- legend_frame_opacity
+- [0.5]
+legend handle length:
+- legend_handle_length
+- [2]
+legend line width:
+- legend_line_width
+- [14]
+legend marker scale:
+- legend_marker_scale
+- [1]
+legend number of columns:
+- legend_number_of_columns
+- [1]
+legend number of marker points:
+- legend_number_of_marker_points
+- [null]
+legend number of scatter marker points:
+- legend_number_of_scatter_marker_points
+- [null]
+legend padding between border and axes:
+- legend_padding_between_border_and_axes
+- [0]
+legend padding between handle and text:
+- legend_padding_between_handle_and_text
+- [0.5]
+legend vertial spacing:
+- legend_vertical_spacing
+- [0.5]
+panel color bar location:
+- panel_color_bar_location
+- [right]
+panel color bar on:
+- panel_color_bar_on
+- [false]
+panel color bar padding:
+- panel_color_bar_padding
+- [0.3]
+panel color bar size:
+- panel_color_bar_size
+- [1.0]
+panel indices:
+- panel_indices
+- - [0, 0]
+panel label:
+- panel_label
+- [null]
+panel label box anchor coordinate:
+- panel_label_box_anchor_coordinate
+- - [0.01, 0.9]
+panel label box edge color:
+- panel_label_box_edge_color
+- [w]
+panel label box face color:
+- panel_label_box_face_color
+- [w]
+panel label box line style:
+- panel_label_box_line_style
+- [solid]
+panel label box line width:
+- panel_label_box_line_width
+- [1]
+panel label box opacity:
+- panel_label_box_opacity
+- [0.8]
+panel label box padding:
+- panel_label_box_padding
+- [0.2]
+panel label box shape:
+- panel_label_box_shape
+- [square]
+panel label font size:
+- panel_label_font_size
+- [25]
+panel label font weight:
+- panel_label_font_weight
+- [500]
+panel label horizontal alignment:
+- panel_label_horizontal_alignmen
+- [left]
+panel label rotation degree:
+- panel_label_rotation_degree
+- [0]
+panel label vertical alignment:
+- panel_label_vertical_alignment
+- [center]
+panel subdivision new panel index list:
+- panel_subdivision_new_panel_index_list
+- [null]
+panel subdivision padding list:
+- panel_subdivision_padding_list
+- - [0.3]
+panel subdivision position list:
+- panel_subdivision_position_list
+- - [right]
+panel subdivision size list:
+- panel_subdivision_size_list
+- - [1.0]
+show legend frame:
+- show_legend_frame
+- [true]
+use global legend:
+- use_global_legend
+- [true]
+use round legend box:
+- use_round_legend_box
+- [true]
+x axis:
+  label:
+    font size:
+    - [null]
+    name:
+    - [null]
+    padding:
+    - [null]
+  range:
+    inverted:
+    - [false]
+    max:
+    - [null]
+    min:
+    - [null]
+    tight:
+    - [false]
+  scale:
+  - [linear]
+  twin panels:
+  - [null]
+x major tick:
+  color:
+  - [k]
+  direction:
+  - [in, out, inout]
+  layer order:
+  - [0]
+  length:
+  - [5]
+  set:
+  - [null]
+  show bottom:
+  - [true]
+  show top:
+  - [true]
+  width:
+  - [2]
+x major tick label:
+  color:
+  - [k]
+  decimal places:
+  - [null]
+  font family:
+  - [serif]
+  font size:
+  - [30]
+  font stretch:
+  - [0]
+  font style:
+  - [normal, roman, italic, oblique]
+  font weight:
+  - [0]
+  hide first:
+  - [false]
+  hide last:
+  - [false]
+  hide overlap:
+  - [false]
+  padding:
+  - [10]
+  rotation:
+  - [null]
+  set:
+  - [null]
+  show bottom:
+  - [true]
+  show top:
+  - [false]
+x minor tick:
+  color:
+  - [k]
+  direction:
+  - [in, out, inout]
+  layer order:
+  - [0]
+  length:
+  - [5]
+  set:
+  - [null]
+  show bottom:
+  - [true]
+  show top:
+  - [true]
+  width:
+  - [2]
+x minor tick label:
+  color:
+  - [k]
+  decimal places:
+  - [null]
+  font family:
+  - [serif]
+  font size:
+  - [30]
+  font stretch:
+  - [0]
+  font style:
+  - [normal, roman, italic, oblique]
+  font weight:
+  - [0]
+  hide first:
+  - [false]
+  hide last:
+  - [false]
+  hide overlap:
+  - [false]
+  padding:
+  - [10]
+  rotation:
+  - [null]
+  set:
+  - [null]
+  show bottom:
+  - [true]
+  show top:
+  - [false]
+y axis:
+  label:
+    font size:
+    - [null]
+    name:
+    - [null]
+    padding:
+    - [null]
+  range:
+    inverted:
+    - [false]
+    max:
+    - [null]
+    min:
+    - [null]
+    tight:
+    - [false]
+  scale:
+  - [linear]
+  twin panels:
+  - [null]
+y major tick:
+  color:
+  - [k]
+  direction:
+  - [in, out, inout]
+  layer order:
+  - [0]
+  length:
+  - [5]
+  set:
+  - [null]
+  show left:
+  - [true]
+  show right:
+  - [true]
+  width:
+  - [2]
+y major tick label:
+  color:
+  - [k]
+  decimal places:
+  - [null]
+  font family:
+  - [serif]
+  font size:
+  - [30]
+  font stretch:
+  - [0]
+  font style:
+  - [normal, roman, italic, oblique]
+  font weight:
+  - [0]
+  hide first:
+  - [false]
+  hide last:
+  - [false]
+  hide overlap:
+  - [false]
+  padding:
+  - [10]
+  rotation:
+  - [null]
+  set:
+  - [null]
+  show left:
+  - [false]
+  show right:
+  - [true]
+y minor tick:
+  color:
+  - [k]
+  direction:
+  - [in, out, inout]
+  layer order:
+  - [0]
+  length:
+  - [5]
+  set:
+  - [null]
+  show left:
+  - [true]
+  show right:
+  - [true]
+  width:
+  - [2]
+y minor tick label:
+  color:
+  - [k]
+  decimal places:
+  - [null]
+  font family:
+  - [serif]
+  font size:
+  - [30]
+  font stretch:
+  - [0]
+  font style:
+  - [normal, roman, italic, oblique]
+  font weight:
+  - [0]
+  hide first:
+  - [false]
+  hide last:
+  - [false]
+  hide overlap:
+  - [false]
+  padding:
+  - [10]
+  rotation:
+  - [null]
+  set:
+  - [null]
+  show left:
+  - [false]
+  show right:
+  - [true]

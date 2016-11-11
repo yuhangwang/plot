@@ -1,0 +1,32 @@
+data matrix transpose:
+  - data_matrix_transpose
+  - [no]
+data matrix color bar panel indices:
+  - data_matrix_color_bar_panel_indices
+  - [~]
+data matrix vertical min:
+  - data_matrix_vertical_min
+  - [~]
+data matrix vertical max:
+  - data_matrix_vertical_max
+  - [~]
+  
+data matrix x extent min:
+  - data_matrix_x_extent_min
+  - [~]
+data matrix x extent max:
+  - data_matrix_x_extent_max
+  - [~]
+data matrix x extent offset:
+  - data_matrix_x_extent_offset
+  - [-0.5]
+
+data matrix y extent min:
+  - data_matrix_y_extent_min
+  - [~]
+data matrix y extent max:
+  - data_matrix_y_extent_max
+  - [~]
+data matrix y extent offset:
+  - data_matrix_y_extent_offset
+  - [-0.5]
