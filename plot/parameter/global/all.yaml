@@ -1,129 +1,179 @@
-color order:
-- color_order
-- - [k, r, g, b, m, y, c]
-figure axis label on:
-- figure_axis_label
-- [false]
-figure dpi:
-- figure_dpi
-- [150]
-figure height:
-- figure_height
-- [8]
-figure label:
-- figure_label
-- [null]
-figure label box anchor coordinate:
-- figure_label_box_ancor_coordinate
-- - [0.01, 0.9]
-figure label box edge color:
-- figure_label_box_edge_color
-- [w]
-figure label box face color:
-- figure_label_box_face_color
-- [w]
-figure label box line style:
-- figure_label_box_line_style
-- [solid]
-figure label box opacity:
-- figure_label_box_opacity
-- [0.8]
-figure label box padding:
-- figure_label_box_padding
-- [0.2]
-figure label box shape:
-- figure_label_box_shape
-- [square]
-figure label font size:
-- figure_label_font_size
-- [40]
-figure label font weight:
-- figure_label_font_weight
-- [500]
-figure label horizontal alignment:
-- figure_label_horizontal_alignment
-- [left]
-figure label rotation degree:
-- figure_label_rotation_degree
-- [0]
-figure label vertical alignment:
-- figure_label_vertical_alignment
-- [center]
-figure lable box line width:
-- figure_label_box_line_width
-- [1]
-figure number of columns:
-- figure_number_of_columns
-- [1]
-figure number of rows:
-- figure_number_of_rows
-- [1]
-figure output file:
-- figure_output_file
-- [out.png]
-figure padding:
-- figure_padding
-- [0.2]
-figure panel array dimension:
-- figure_panel_array_dimension
-- [4]
-figure share x:
-- figure_share_x
-- [none]
-figure share y:
-- figure_share_y
-- [none]
-figure subplot horizontal spacing:
-- figure_subplot_horizontal_spacing
-- [null]
-figure subplot vertical spacing:
-- figure_subplot_vertical_spacing
-- [null]
-figure title:
-- figure_title
-- [null]
-figure title font size:
-- figure_title_font_size
-- [40]
-figure transparent:
-- figure_transparent
-- [false]
-figure width:
-- figure_width
-- [12]
-figure x label:
-- figure_x_label
-- ['']
-figure x label font size:
-- figure_x_label_font_size
-- [40]
-figure x label padding:
-- figure_x_label_padding
-- [60]
-figure x limits tight:
-- figure_x_limits_tight
-- [true]
-figure x limits user defined:
-- figure_x_limits_user_defined
-- [false]
-figure y label:
-- figure_y_label
-- ['']
-figure y label font size:
-- figure_y_label_font_size
-- [40]
-figure y label padding:
-- figure_y_label_padding
-- [60]
-figure y limits tight:
-- figure_y_limits_tight
-- [true]
-figure y limits user defined:
-- figure_y_limits_user_defined
-- [false]
-use latex:
-- use_latex
-- [false]
-use scipy:
-- use_scipy
-- [false]
+figure:
+  __: figure
+  label:
+    __: label
+    alignment:
+      __: alignment
+      horizontal:
+        __: horizontal
+        v: [left]
+      vertical:
+        __: vertical
+        v: [center]
+    box:
+      __: box
+      anchor:
+        __: anchor
+        v:
+        - [0.01, 0.9]
+      edge color:
+        __: edge_color
+        v: [w]
+      face color:
+        __: face_color
+        v: [w]
+      line:
+        __: line
+        style:
+          __: style
+          v: [solid]
+        width:
+          __: width
+          v: [1]
+      opacity:
+        __: opacity
+        v: [0.8]
+      padding:
+        __: padding
+        v: [0.2]
+      shape:
+        __: shape
+        v: [square]
+    content:
+      __: content
+      v: [null]
+    font:
+      __: font
+      size:
+        __: size
+        v: [40]
+      weight:
+        __: weight
+        v: [500]
+    rotation:
+      __: rotation
+      v: [0]
+global:
+  __: global
+  color:
+    __: color
+    order:
+      __: order
+      v:
+      - [k, r, g, b, m, y, c]
+  deps:
+    __: deps
+    latex:
+      __: latex
+      v: [false]
+    scipy:
+      __: scipy
+      v: [false]
+  figure:
+    __: figure
+    axis:
+      __: axis
+      label:
+        __: label
+        content:
+          __: content
+          x:
+            __: x
+            v: ['']
+          y:
+            __: y
+            v: ['']
+        font size:
+          __: font_size
+          x:
+            __: x
+            v: [40]
+          y:
+            __: y
+            v: [40]
+        padding:
+          __: padding
+          x:
+            __: x
+            v: [60]
+          y:
+            __: y
+            v: [60]
+      limits:
+        __: limits
+        set:
+          __: set
+          x:
+            __: x
+            v:
+            - []
+          y:
+            __: y
+            v:
+            - []
+        tight:
+          __: tight
+          x:
+            __: x
+            v: [true]
+          y:
+            __: y
+            v: [true]
+      share:
+        __: share
+        x:
+          __: x
+          v: [none]
+        y:
+          __: y
+          v: [none]
+    columns:
+      __: columns
+      v: [1]
+    dpi:
+      __: dpi
+      v: [150]
+    font:
+      __: font
+      size:
+        __: size
+        v: [40]
+    height:
+      __: height
+      v: [8]
+    output:
+      __: output
+      v: [out.png]
+    padding:
+      __: padding
+      v: [0.2]
+    panel:
+      __: panel
+      dimension:
+        __: dimension
+        v: [4]
+    rows:
+      __: rows
+      v: [1]
+    show axis label:
+      __: show_axis_label
+      v: [false]
+    subplot:
+      __: subplot
+      spacing:
+        __: spacing
+        horizontal:
+          __: horizontal
+          v: [null]
+        vertical:
+          __: vertical
+          v: [null]
+    title:
+      __: title
+      v: [null]
+    transparent:
+      __: transparent
+      v: [false]
+    width:
+      __: width
+      v: [12]

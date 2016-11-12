@@ -1,0 +1,7 @@
+global: 
+  figure:
+    title:
+      v: [~]
+    font:
+      size:
+        v: [40]

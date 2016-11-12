@@ -1,6 +1,6 @@
-- basic
-- title
-- axes
-- label
+- figure_basic
+- figure_title
+- figure_axis
+- figure_label
 - deps
 - color

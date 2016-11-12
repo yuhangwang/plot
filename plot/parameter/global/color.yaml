@@ -1,3 +1,4 @@
-color order:
-  - color_order
-  - [['k','r','g','b','m','y','c']]
+global: 
+  color:
+    order:
+      v: [['k','r','g','b','m','y','c']]

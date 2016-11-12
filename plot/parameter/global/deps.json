@@ -1,14 +1,20 @@
 {
-  "use latex": [
-    "use_latex",
-    [
-      false
-    ]
-  ],
-  "use scipy": [
-    "use_scipy",
-    [
-      false
-    ]
-  ]
+  "global": {
+    "__": "global",
+    "deps": {
+      "__": "deps",
+      "latex": {
+        "__": "latex",
+        "v": [
+          false
+        ]
+      },
+      "scipy": {
+        "__": "scipy",
+        "v": [
+          false
+        ]
+      }
+    }
+  }
 }

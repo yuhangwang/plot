@@ -1,16 +1,22 @@
 {
-  "color order": [
-    "color_order",
-    [
-      [
-        "k",
-        "r",
-        "g",
-        "b",
-        "m",
-        "y",
-        "c"
-      ]
-    ]
-  ]
+  "global": {
+    "__": "global",
+    "color": {
+      "__": "color",
+      "order": {
+        "__": "order",
+        "v": [
+          [
+            "k",
+            "r",
+            "g",
+            "b",
+            "m",
+            "y",
+            "c"
+          ]
+        ]
+      }
+    }
+  }
 }

@@ -1,0 +1,23 @@
+{
+  "global": {
+    "__": "global",
+    "figure": {
+      "__": "figure",
+      "font": {
+        "__": "font",
+        "size": {
+          "__": "size",
+          "v": [
+            40
+          ]
+        }
+      },
+      "title": {
+        "__": "title",
+        "v": [
+          null
+        ]
+      }
+    }
+  }
+}

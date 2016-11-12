@@ -1,6 +1,6 @@
-use latex:
-  - use_latex
-  - [no]
-use scipy:
-  - use_scipy
-  - [no]
+global:
+  deps:
+    latex:
+      v: [false]
+    scipy:
+      v: [false]
