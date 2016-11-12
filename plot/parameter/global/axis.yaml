@@ -1,0 +1,37 @@
+global:
+  figure:
+    axis:
+      share:
+        "x":
+          v: [none]
+        "y":
+          v: [none]
+
+      limits:
+        tight:
+          "x":
+            v: [true]
+          "y":
+            v: [true]
+        set:
+          "x":
+            v: [[]]
+          "y":
+            v: [[]]
+      label:
+        content:
+          "x":
+            v: ['']
+          "y":
+            v: ['']
+        font size:
+            "x":
+              v: [40]
+            "y":
+              v: [40]
+        padding:
+          "x":
+            v: [60]
+          "y":
+            v: [60]
+  
