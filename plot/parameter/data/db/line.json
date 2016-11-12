@@ -1,0 +1,53 @@
+{
+  "data": {
+    "__": "data",
+    "line": {
+      "__": "line",
+      "color": {
+        "__": "color",
+        "v": [
+          null
+        ]
+      },
+      "data column": {
+        "__": "data_column",
+        "x": {
+          "__": "x",
+          "v": [
+            0
+          ]
+        },
+        "y": {
+          "__": "y",
+          "v": [
+            1
+          ]
+        }
+      },
+      "first row": {
+        "__": "first_row",
+        "v": [
+          0
+        ]
+      },
+      "opacity": {
+        "__": "opacity",
+        "v": [
+          1.0
+        ]
+      },
+      "style": {
+        "__": "style",
+        "v": [
+          "-"
+        ]
+      },
+      "width": {
+        "__": "width",
+        "v": [
+          2.0
+        ]
+      }
+    }
+  }
+}

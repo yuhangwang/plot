@@ -1,0 +1,50 @@
+{
+  "data": {
+    "__": "data",
+    "block average": {
+      "__": "block_average",
+      "legend": {
+        "__": "legend",
+        "content": {
+          "__": "content",
+          "v": [
+            null
+          ]
+        },
+        "panel": {
+          "__": "panel",
+          "v": [
+            null
+          ]
+        }
+      },
+      "line": {
+        "__": "line",
+        "opacity": {
+          "__": "opacity",
+          "v": [
+            1.0
+          ]
+        },
+        "style": {
+          "__": "style",
+          "v": [
+            "-"
+          ]
+        },
+        "width": {
+          "__": "width",
+          "v": [
+            2
+          ]
+        }
+      },
+      "window size": {
+        "__": "window_size",
+        "v": [
+          null
+        ]
+      }
+    }
+  }
+}

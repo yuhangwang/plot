@@ -1,0 +1,86 @@
+{
+  "data": {
+    "__": "data",
+    "matrix": {
+      "__": "matrix",
+      "color bar": {
+        "__": "color_bar",
+        "panel": {
+          "__": "panel",
+          "v": [
+            null
+          ]
+        }
+      },
+      "extent": {
+        "__": "extent",
+        "max": {
+          "__": "max",
+          "x": {
+            "__": "x",
+            "v": [
+              null
+            ]
+          },
+          "y": {
+            "__": "y",
+            "v": [
+              null
+            ]
+          }
+        },
+        "min": {
+          "__": "min",
+          "x": {
+            "__": "x",
+            "v": [
+              null
+            ]
+          },
+          "y": {
+            "__": "y",
+            "v": [
+              null
+            ]
+          }
+        },
+        "offset": {
+          "__": "offset",
+          "x": {
+            "__": "x",
+            "v": [
+              -0.5
+            ]
+          },
+          "y": {
+            "__": "y",
+            "v": [
+              -0.5
+            ]
+          }
+        }
+      },
+      "transpose": {
+        "__": "transpose",
+        "v": [
+          false
+        ]
+      },
+      "vertical": {
+        "__": "vertical",
+        "max": {
+          "__": "max",
+          "v": [
+            null
+          ]
+        },
+        "min": {
+          "__": "min",
+          "v": [
+            null
+          ]
+        }
+      }
+    }
+  }
+}

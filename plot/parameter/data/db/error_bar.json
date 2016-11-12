@@ -1,0 +1,56 @@
+{
+  "data": {
+    "__": "data",
+    "error bar": {
+      "__": "error_bar",
+      "cap": {
+        "__": "cap",
+        "resample window size": {
+          "__": "resample_window_size",
+          "v": [
+            1
+          ]
+        },
+        "size": {
+          "__": "size",
+          "v": [
+            4
+          ]
+        },
+        "thickness": {
+          "__": "thickness",
+          "v": [
+            2
+          ]
+        }
+      },
+      "data column": {
+        "__": "data_column",
+        "x": {
+          "__": "x",
+          "v": [
+            null
+          ]
+        },
+        "y": {
+          "__": "y",
+          "v": [
+            null
+          ]
+        }
+      },
+      "edge color": {
+        "__": "edge_color",
+        "v": [
+          null
+        ]
+      },
+      "line width": {
+        "__": "line_width",
+        "v": [
+          null
+        ]
+      }
+    }
+  }
+}

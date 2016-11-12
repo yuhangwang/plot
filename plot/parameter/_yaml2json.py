@@ -2,15 +2,17 @@
 Combine all yaml files listed in _all_.yaml 
 into one file: all.yaml and all.json
 
-usage: python yaml2json.py _all_.yaml
+usage: python _yaml2json.py _all_.yaml
 
 Author: Yuhang(Steven) Wang
-Date: 11-10-2016
+Date: 11-11-2016
 """
 import json
 import yaml
 import sys
+import copy
 from functools import reduce 
+from plot.tk.dict import merge
 
 def read_yaml(file):
     with open(file, "r") as IN:
@@ -28,20 +30,27 @@ def save_yaml(output, d):
     with open(output, "w") as OUT:
         OUT.write(yaml.dump(d))
     return True
-    
+
+def add_internal_key(d, key=None):
+    """Add internal keyword field "__" """
+    ooo = copy.deepcopy(d)
+    if key is not None and "__" not in d:
+        ooo["__"] = "_".join(key.split())
+
+    for k in d:
+        if isinstance(d[k], dict):
+            ooo[k] = add_internal_key(d[k], k)
+        else:
+            continue
+    return ooo
+
 def convert(file):
-    d = read_yaml(file)
+    d = add_internal_key(read_yaml(file))
     save_json(file.replace(".yaml", ".json"), d)
     return d
 
 def suffix(name, ext="yaml"):
     return "{}.{}".format(name, ext)
-
-def merge(base_dict, new_dict):
-    """merge to dictionaries"""
-    output = base_dict.copy()
-    output.update(new_dict)
-    return output
 
 def main(all_yaml):
     with open(all_yaml, "r") as IN:

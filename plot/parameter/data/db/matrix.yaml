@@ -1,0 +1,29 @@
+data:
+  matrix:
+    transpose:
+      v: [false]
+    color bar:
+      panel:
+        v: [~]
+    vertical:
+      min:
+        v: [~]
+      max:
+        v: [~]
+  
+    extent:
+      min:
+        "x":
+          v: [~]
+        "y":
+          v: [~]
+      max:
+        "x":
+          v: [~]
+        "y":
+          v: [~]
+      offset:
+        "x":
+          v: [-0.5]
+        "y":
+          v: [-0.5]

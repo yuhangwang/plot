@@ -1,0 +1,9 @@
+data:
+  file:
+    v: [~]
+  value:
+    v: [~]
+  plot type:
+    v: ["line","bar","matrix"]
+  panel:
+    v: [[0,0]]

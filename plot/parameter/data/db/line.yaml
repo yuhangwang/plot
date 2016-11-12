@@ -1,0 +1,17 @@
+data:
+  line:
+    width:
+      v: [2.0]
+    color:
+      v: [~]
+    style:
+      v: ['-']
+    opacity:
+      v: [1.0]
+    data column:
+      "x":
+        v: [0]
+      "y":
+        v: [1]
+    first row:
+      v: [0]

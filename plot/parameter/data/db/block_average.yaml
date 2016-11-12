@@ -1,0 +1,16 @@
+data:
+  block average:
+    window size:
+      v: [~]
+    legend:
+      content:
+        v: [~]
+      panel:
+        v: [~]
+    line:
+      width:
+        v: [2]
+      style:
+        v: ['-']
+      opacity:
+        v: [1.0]

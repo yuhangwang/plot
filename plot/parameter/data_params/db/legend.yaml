@@ -1,6 +1,0 @@
-data legend: # str
-  - data_legend
-  - [~]
-data legend panel indices: 
-  - data_legend_panel_indices
-  - [[0,0]]

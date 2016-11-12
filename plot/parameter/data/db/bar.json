@@ -1,0 +1,57 @@
+{
+  "data": {
+    "__": "data",
+    "bar": {
+      "__": "bar",
+      "align": {
+        "__": "align",
+        "v": [
+          "edge"
+        ]
+      },
+      "base line location": {
+        "__": "base_line_location",
+        "v": [
+          0
+        ]
+      },
+      "color": {
+        "__": "color",
+        "v": [
+          null
+        ]
+      },
+      "edge color": {
+        "__": "edge_color",
+        "v": [
+          null
+        ]
+      },
+      "line width": {
+        "__": "line_width",
+        "v": [
+          null
+        ]
+      },
+      "location offset": {
+        "__": "location_offset",
+        "v": [
+          0
+        ]
+      },
+      "orientation": {
+        "__": "orientation",
+        "v": [
+          "vertical",
+          "horizontal"
+        ]
+      },
+      "width": {
+        "__": "width",
+        "v": [
+          0.8
+        ]
+      }
+    }
+  }
+}

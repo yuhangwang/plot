@@ -1,0 +1,18 @@
+data:
+  bar:
+    base line location:
+      v: [0]
+    width:
+      v: [0.8]
+    color:
+      v: [~]
+    edge color:
+      v: [~]
+    line width:
+      v: [~]
+    orientation:
+      v: ['vertical','horizontal']
+    location offset:
+      v: [0]
+    align:
+      v: ['edge']

@@ -1,0 +1,34 @@
+{
+  "data": {
+    "__": "data",
+    "file": {
+      "__": "file",
+      "v": [
+        null
+      ]
+    },
+    "panel": {
+      "__": "panel",
+      "v": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    "plot type": {
+      "__": "plot_type",
+      "v": [
+        "line",
+        "bar",
+        "matrix"
+      ]
+    },
+    "value": {
+      "__": "value",
+      "v": [
+        null
+      ]
+    }
+  }
+}
