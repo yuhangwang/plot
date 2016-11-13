@@ -24,7 +24,4 @@ global:
       v: [0.2]
     show axis label:
       v: [false]
-    panel:
-      dimension:
-        v: [4]
 

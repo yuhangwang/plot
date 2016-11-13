@@ -3,16 +3,16 @@ global:
     axis:
       share:
         "x":
-          v: [none]
+          v: [false,true]
         "y":
-          v: [none]
+          v: [false,true]
 
       limits:
         tight:
           "x":
-            v: [true]
+            v: [true,false]
           "y":
-            v: [true]
+            v: [true,false]
         set:
           "x":
             v: [[]]

@@ -4,7 +4,7 @@ on user input parameter dictionary.
 """
 from typing import Dict
 import matplotlib
-from .matplotlibConfig import rcParams as new_rcParams
+from .matplotlibConfig import rcParams as new_rc_params
 
 
 def run(params, preview):
@@ -18,6 +18,6 @@ def run(params, preview):
     Returns:
         True if succeeded
     """
-    matplotlib.rcParams.update(new_rcParams)
+    matplotlib.rcParams.update(new_rc_params(params))
 
     return True

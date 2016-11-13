@@ -29,4 +29,4 @@ def main():
             )
         exit()
         
-    run(params, preview)
+    return run(params, preview)

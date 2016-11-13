@@ -22,8 +22,5 @@ def create(params):
         for an added new field 'canvas' which
         contains canvas objects.
     """
-    ooo = copy.deepcopy(params)
-    if params['global']['figure']['panel']['dimension'] < 2:
-        ooo['global']['figure']['panel']['dimension'] = 2
-
-    return params
+    params['canvas'] = {}  # add a new field
+    return
