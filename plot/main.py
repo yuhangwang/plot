@@ -10,27 +10,8 @@ import re
 import os
 from mpa import plot
 import mpa.mpa_toolkit as MpaTK
+from io.input import parse
 
-def parse(user_config_file):
-    # type: str -> Dict
-    """Read an input configuration file
-
-    Args:
-        user_config_file (str): user configuration file
-    Returns:
-        a dictionary
-    """
-    if re.match(".*\.json", user_config_file):
-        import json
-        parser = json.loads
-    elif re.match(".*\.yaml", user_config_file):
-        import yaml
-        parser = yaml.load
-    else:
-        return dict()
-
-    with open(user_config_file, "r") as IN:
-            return MpaTK.lowercase_keys(parser(IN.read()))
 
 def main():
     user_config_file = sys.argv[1]

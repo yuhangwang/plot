@@ -1,4 +1,4 @@
-from plot.tk.dict import update
+from plot.tk.dictTK import update
 
 
 def test():

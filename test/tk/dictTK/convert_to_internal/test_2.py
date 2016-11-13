@@ -1,4 +1,4 @@
-from plot.tk.dict import convert_to_internal
+from plot.tk.dictTK import convert_to_internal
 
 
 def test():

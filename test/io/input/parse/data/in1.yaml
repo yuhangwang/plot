@@ -1,0 +1,5 @@
+local:
+  __: local
+  k1:
+    __: k1
+    v: 1
