@@ -25,7 +25,7 @@ def convert_to_internal(user_dict):
             new_key = user_dict[k]["__"]
             ooo[new_key] = convert_to_internal(user_dict[k])
         elif k == "v":
-            return {"v": user_dict["v"]}
+            return user_dict["v"]
         else:
             continue
     return ooo
