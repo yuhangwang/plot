@@ -3,8 +3,9 @@ import os
 
 
 def test():
-    user_file = os.path.join(os.getcwd(), "data", "in1.yaml")
-    default_file = os.path.join(os.getcwd(), "data", 'default1.yaml')
-    solution = {'local': {'k1': {'v': 1}}}
+    here = os.path.dirname(os.path.realpath(__file__))
+    user_file = os.path.join(here, "data", "in1.yaml")
+    default_file = os.path.join(here, "data", 'default1.yaml')
+    solution = {'local': {'k_1': {'v': 1}}}
     answer = parse(user_file, default_file)
     assert answer == solution
