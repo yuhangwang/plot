@@ -1,0 +1,46 @@
+local:
+  tick:
+    major:
+      direction:
+        "x":
+          v: [in, out, inout]
+        "y":
+          v: [in, out, inout]
+      length:
+        "x":
+          v: [5]
+        "y":
+          v: [5]
+      width:
+        "x":
+          v: [2]
+        "y":
+          v: [2]
+      color:
+        "x":
+          v: [k]
+        "y":
+          v: [k]
+      layer:
+        "x":
+          v: [0]
+        "y":
+          v: [0]
+      show:
+        top:
+          "x":
+            v: [true]
+        bottom:
+          "x":
+            v: [true]
+        left:
+          "y":
+            v: [true]
+        right:
+          "y":
+            v: [true]
+      set:
+        "x":
+          v: [null]
+        "y":
+          v: [null]

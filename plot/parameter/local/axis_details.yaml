@@ -1,0 +1,51 @@
+local: 
+  axis:
+    scale:
+      "x":
+        [linear]
+      "y":
+        [linear]
+    twin panels:
+      "x":
+        v: [~]
+      "y":
+        v: [~]
+    label:
+      name:
+        "x":
+          v: [~]
+        "y":
+          v: [~]
+      padding:
+        "x":
+          v: [~]
+        "y":
+          v: [~]
+      font:
+        size:
+          "x":
+            v: [~]
+          "y":
+            v: [~]
+      range:
+        tight:
+          "x":
+            v: [false,true]
+          "y":
+            v: [false,true]
+        min:
+          "x":
+            v: [~]
+          "y":
+            v: [~]
+        max:
+          "x":
+            v: [~]
+          "y":
+            v: [~]
+        inverted:
+          "x":
+            v: [false,true]
+          "y":
+            v: [false,true]
+

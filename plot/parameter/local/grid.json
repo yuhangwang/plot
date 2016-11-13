@@ -1,51 +1,61 @@
 {
-  "grid axis": [
-    "grid_axis",
-    [
-      "both"
-    ]
-  ],
-  "grid line color": [
-    "grid_line_color",
-    [
-      "k"
-    ]
-  ],
-  "grid line opacity": [
-    "grid_line_opacity",
-    [
-      0.2
-    ]
-  ],
-  "grid line style": [
-    "grid_line_style",
-    [
-      "--",
-      "-"
-    ]
-  ],
-  "grid line width": [
-    "grid_line_width",
-    [
-      1
-    ]
-  ],
-  "grid on": [
-    "grid_on",
-    [
-      false
-    ]
-  ],
-  "grid ticks": [
-    "grid_ticks",
-    [
-      "major"
-    ]
-  ],
-  "grid z order": [
-    "grid_z_order",
-    [
-      -1
-    ]
-  ]
+  "local": {
+    "__": "local",
+    "grid": {
+      "__": "grid",
+      "axis": {
+        "__": "axis",
+        "v": [
+          "both"
+        ]
+      },
+      "layer": {
+        "__": "layer",
+        "v": [
+          -1
+        ]
+      },
+      "line": {
+        "__": "line",
+        "color": {
+          "__": "color",
+          "v": [
+            "k"
+          ]
+        },
+        "opacity": {
+          "__": "opacity",
+          "v": [
+            0.2
+          ]
+        },
+        "style": {
+          "__": "style",
+          "v": [
+            "--",
+            "-"
+          ]
+        },
+        "width": {
+          "__": "width",
+          "v": [
+            1
+          ]
+        }
+      },
+      "show": {
+        "__": "show",
+        "v": [
+          false
+        ]
+      },
+      "ticks": {
+        "__": "ticks",
+        "v": [
+          "major",
+          "minor"
+        ]
+      }
+    }
+  }
 }

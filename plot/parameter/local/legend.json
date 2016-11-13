@@ -1,137 +1,167 @@
 {
-  "legend anchor coordinate": [
-    "legend_anchor_coordinate",
-    [
-      [
-        0.9,
-        0.9
-      ]
-    ]
-  ],
-  "legend anchor corner": [
-    "legend_anchor_corner",
-    [
-      "upper right"
-    ]
-  ],
-  "legend border padding": [
-    "legend_border_padding",
-    [
-      0.5
-    ]
-  ],
-  "legend column spacing": [
-    "legend_column_spacing",
-    [
-      0.8
-    ]
-  ],
-  "legend edge color": [
-    "legend_edge_color",
-    [
-      "k"
-    ]
-  ],
-  "legend face color": [
-    "legend_face_color",
-    [
-      "w"
-    ]
-  ],
-  "legend face opacity": [
-    "legend_face_opacity",
-    [
-      1.0
-    ]
-  ],
-  "legend font size": [
-    "legend_font_size",
-    [
-      26
-    ]
-  ],
-  "legend font weight": [
-    "legend_font_weight",
-    [
-      500
-    ]
-  ],
-  "legend frame opacity": [
-    "legend_frame_opacity",
-    [
-      0.5
-    ]
-  ],
-  "legend handle length": [
-    "legend_handle_length",
-    [
-      2
-    ]
-  ],
-  "legend line width": [
-    "legend_line_width",
-    [
-      14
-    ]
-  ],
-  "legend marker scale": [
-    "legend_marker_scale",
-    [
-      1
-    ]
-  ],
-  "legend number of columns": [
-    "legend_number_of_columns",
-    [
-      1
-    ]
-  ],
-  "legend number of marker points": [
-    "legend_number_of_marker_points",
-    [
-      null
-    ]
-  ],
-  "legend number of scatter marker points": [
-    "legend_number_of_scatter_marker_points",
-    [
-      null
-    ]
-  ],
-  "legend padding between border and axes": [
-    "legend_padding_between_border_and_axes",
-    [
-      0
-    ]
-  ],
-  "legend padding between handle and text": [
-    "legend_padding_between_handle_and_text",
-    [
-      0.5
-    ]
-  ],
-  "legend vertial spacing": [
-    "legend_vertical_spacing",
-    [
-      0.5
-    ]
-  ],
-  "show legend frame": [
-    "show_legend_frame",
-    [
-      true
-    ]
-  ],
-  "use global legend": [
-    "use_global_legend",
-    [
-      true
-    ]
-  ],
-  "use round legend box": [
-    "use_round_legend_box",
-    [
-      true
-    ]
-  ]
+  "local": {
+    "__": "local",
+    "legend": {
+      "__": "legend",
+      "anchor": {
+        "__": "anchor",
+        "coordiniate": {
+          "__": "coordiniate",
+          "v": [
+            [
+              0.9,
+              0.9
+            ]
+          ]
+        },
+        "corner": {
+          "__": "corner",
+          "v": [
+            "upper right"
+          ]
+        }
+      },
+      "border padding": {
+        "__": "border_padding",
+        "v": [
+          0.5
+        ]
+      },
+      "box": {
+        "__": "box",
+        "rounded": {
+          "__": "rounded",
+          "v": [
+            true
+          ]
+        }
+      },
+      "column spacing": {
+        "__": "column_spacing",
+        "v": [
+          0.8
+        ]
+      },
+      "edge": {
+        "__": "edge",
+        "color": {
+          "__": "color",
+          "v": [
+            "k"
+          ]
+        },
+        "opacity": {
+          "__": "opacity",
+          "v": [
+            1.0
+          ]
+        }
+      },
+      "face": {
+        "__": "face",
+        "color": {
+          "__": "color",
+          "v": [
+            "w"
+          ]
+        },
+        "opacity": {
+          "__": "opacity",
+          "v": [
+            1.0
+          ]
+        }
+      },
+      "font": {
+        "__": "font",
+        "size": {
+          "__": "size",
+          "v": [
+            26
+          ]
+        },
+        "weight": {
+          "__": "weight",
+          "v": [
+            500
+          ]
+        }
+      },
+      "frame": {
+        "__": "frame",
+        "opacity": {
+          "__": "opacity",
+          "v": [
+            0.5
+          ]
+        },
+        "show": {
+          "__": "show",
+          "v": [
+            true
+          ]
+        }
+      },
+      "handle length": {
+        "__": "handle_length",
+        "v": [
+          2
+        ]
+      },
+      "line": {
+        "__": "line",
+        "width": {
+          "__": "width",
+          "v": [
+            14
+          ]
+        }
+      },
+      "marker": {
+        "__": "marker",
+        "number of points": {
+          "__": "number_of_points",
+          "v": [
+            null
+          ]
+        },
+        "scale": {
+          "__": "scale",
+          "v": [
+            1
+          ]
+        }
+      },
+      "merged": {
+        "__": "merged",
+        "v": [
+          true
+        ]
+      },
+      "number of columns": {
+        "__": "number_of_columns",
+        "v": [
+          1
+        ]
+      },
+      "padding between border and axes": {
+        "__": "padding_between_border_and_axes",
+        "v": [
+          0
+        ]
+      },
+      "padding between handle and text": {
+        "__": "padding_between_handle_and_text",
+        "v": [
+          0.5
+        ]
+      },
+      "vertial spacing": {
+        "__": "vertial_spacing",
+        "v": [
+          0.5
+        ]
+      }
+    }
+  }
 }

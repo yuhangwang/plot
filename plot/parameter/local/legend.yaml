@@ -1,66 +1,54 @@
-legend anchor coordinate:
-    - legend_anchor_coordinate
-    - [[0.9, 0.9]]
-legend number of columns:
-    - legend_number_of_columns
-    - [1]
-legend anchor corner:
-    - legend_anchor_corner
-    - ["upper right"]
-legend frame opacity:
-    - legend_frame_opacity
-    - [0.5]
-legend font size:
-    - legend_font_size
-    - [26]
-legend font weight:
-    - legend_font_weight
-    - [500]
-legend line width:
-    - legend_line_width
-    - [14]
-legend marker scale:
-    - legend_marker_scale
-    - [1]
-legend number of marker points:
-    - legend_number_of_marker_points
-    - [null]
-legend number of scatter marker points:
-    - legend_number_of_scatter_marker_points
-    - [null]
-legend handle length:
-    - legend_handle_length
-    - [2]
-legend border padding:
-    - legend_border_padding
-    - [0.5]
-legend vertial spacing:
-    - legend_vertical_spacing
-    - [0.5]
-legend padding between handle and text:
-    - legend_padding_between_handle_and_text
-    - [0.5]
-legend padding between border and axes:
-    - legend_padding_between_border_and_axes
-    - [0]
-legend column spacing:
-    - legend_column_spacing
-    - [0.8]
-legend face color:
-    - legend_face_color
-    - [w]
-legend edge color:
-    - legend_edge_color
-    - [k]
-legend face opacity:
-    - legend_face_opacity
-    - [1.0]
-use round legend box:
-    - use_round_legend_box
-    - [true]
-show legend frame:
-    - show_legend_frame
-    - [true]
-use global legend:
-    - use_global_legend
-    - [true]
+local:
+  legend:
+    merged:
+      v: [true]
+    anchor:
+      coordiniate:
+        v: [[0.9, 0.9]]
+      corner:
+        v: ["upper right"]
+    number of columns:
+      v: [1]
+    frame:
+      show:
+        v: [true]
+      opacity:
+        v: [0.5]
+    font:
+      size:
+        v: [26]
+      weight:
+        v: [500]
+    line:
+      width:
+        v: [14]
+    marker:
+      scale:
+        v: [1]
+      number of points:
+        v: [~]
+    handle length:
+      v: [2]
+    border padding:
+      v: [0.5]
+    vertial spacing:
+      v: [0.5]
+    padding between handle and text:
+      v: [0.5]
+    padding between border and axes:
+      v: [0]
+    column spacing:
+      v: [0.8]
+    face:
+      color:
+        v: [w]
+      opacity:
+        v: [1.0]
+    edge:
+      color:
+        v: [k]
+      opacity:
+        v: [1.0]
+    box:
+      rounded:
+        v: [true]

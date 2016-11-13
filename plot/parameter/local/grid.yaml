@@ -1,24 +1,19 @@
-grid on:
-  - grid_on
-  - [false]
-grid ticks:
-  - grid_ticks
-  - [major]
-grid axis:
-  - grid_axis
-  - [both]
-grid line color:
-  - grid_line_color
-  - [k]
-grid line opacity:
-  - grid_line_opacity
-  - [0.2]
-grid line width:
-  - grid_line_width
-  - [1]
-grid line style:
-  - grid_line_style
-  - ["--", "-"]
-grid z order:
-  - grid_z_order
-  - [-1]
+local:
+  grid:
+    show:
+      v: [false]
+    ticks:
+      v: [major, minor]
+    axis:
+      v: [both]
+    line:
+      color:
+        v: [k]
+      opacity:
+        v: [0.2]
+      width:
+        v: [1]
+      style:
+        v: ["--", "-"]
+    layer:
+      v: [-1]

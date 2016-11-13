@@ -1,2 +1,17 @@
-color bar:
-  tick label:
+local:
+  color bar:
+    tick label:
+      font:
+        size:
+          v: [20]
+      decimals:
+        v: [~]
+    tick:
+      set:
+        v: [~]
+      width:
+        v: [2]
+      length:
+        v: [7]
+      color:
+        v: [k]

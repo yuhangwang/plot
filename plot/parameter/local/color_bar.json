@@ -1,0 +1,53 @@
+{
+  "local": {
+    "__": "local",
+    "color bar": {
+      "__": "color_bar",
+      "tick": {
+        "__": "tick",
+        "color": {
+          "__": "color",
+          "v": [
+            "k"
+          ]
+        },
+        "length": {
+          "__": "length",
+          "v": [
+            7
+          ]
+        },
+        "set": {
+          "__": "set",
+          "v": [
+            null
+          ]
+        },
+        "width": {
+          "__": "width",
+          "v": [
+            2
+          ]
+        }
+      },
+      "tick label": {
+        "__": "tick_label",
+        "decimals": {
+          "__": "decimals",
+          "v": [
+            null
+          ]
+        },
+        "font": {
+          "__": "font",
+          "size": {
+            "__": "size",
+            "v": [
+              20
+            ]
+          }
+        }
+      }
+    }
+  }
+}

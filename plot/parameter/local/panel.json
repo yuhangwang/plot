@@ -1,152 +1,182 @@
 {
-  "panel color bar location": [
-    "panel_color_bar_location",
-    [
-      "right"
-    ]
-  ],
-  "panel color bar on": [
-    "panel_color_bar_on",
-    [
-      false
-    ]
-  ],
-  "panel color bar padding": [
-    "panel_color_bar_padding",
-    [
-      0.3
-    ]
-  ],
-  "panel color bar size": [
-    "panel_color_bar_size",
-    [
-      1.0
-    ]
-  ],
-  "panel indices": [
-    "panel_indices",
-    [
-      [
-        0,
-        0
-      ]
-    ]
-  ],
-  "panel label": [
-    "panel_label",
-    [
-      null
-    ]
-  ],
-  "panel label box anchor coordinate": [
-    "panel_label_box_anchor_coordinate",
-    [
-      [
-        0.01,
-        0.9
-      ]
-    ]
-  ],
-  "panel label box edge color": [
-    "panel_label_box_edge_color",
-    [
-      "w"
-    ]
-  ],
-  "panel label box face color": [
-    "panel_label_box_face_color",
-    [
-      "w"
-    ]
-  ],
-  "panel label box line style": [
-    "panel_label_box_line_style",
-    [
-      "solid"
-    ]
-  ],
-  "panel label box line width": [
-    "panel_label_box_line_width",
-    [
-      1
-    ]
-  ],
-  "panel label box opacity": [
-    "panel_label_box_opacity",
-    [
-      0.8
-    ]
-  ],
-  "panel label box padding": [
-    "panel_label_box_padding",
-    [
-      0.2
-    ]
-  ],
-  "panel label box shape": [
-    "panel_label_box_shape",
-    [
-      "square"
-    ]
-  ],
-  "panel label font size": [
-    "panel_label_font_size",
-    [
-      25
-    ]
-  ],
-  "panel label font weight": [
-    "panel_label_font_weight",
-    [
-      500
-    ]
-  ],
-  "panel label horizontal alignment": [
-    "panel_label_horizontal_alignmen",
-    [
-      "left"
-    ]
-  ],
-  "panel label rotation degree": [
-    "panel_label_rotation_degree",
-    [
-      0
-    ]
-  ],
-  "panel label vertical alignment": [
-    "panel_label_vertical_alignment",
-    [
-      "center"
-    ]
-  ],
-  "panel subdivision new panel index list": [
-    "panel_subdivision_new_panel_index_list",
-    [
-      null
-    ]
-  ],
-  "panel subdivision padding list": [
-    "panel_subdivision_padding_list",
-    [
-      [
-        0.3
-      ]
-    ]
-  ],
-  "panel subdivision position list": [
-    "panel_subdivision_position_list",
-    [
-      [
-        "right"
-      ]
-    ]
-  ],
-  "panel subdivision size list": [
-    "panel_subdivision_size_list",
-    [
-      [
-        1.0
-      ]
-    ]
-  ]
+  "local": {
+    "__": "local",
+    "panel": {
+      "__": "panel",
+      "box": {
+        "__": "box",
+        "anchor": {
+          "__": "anchor",
+          "coordinate": {
+            "__": "coordinate",
+            "v": [
+              [
+                0.01,
+                0.9
+              ]
+            ]
+          }
+        },
+        "edge color": {
+          "__": "edge_color",
+          "v": [
+            "w"
+          ]
+        },
+        "face color": {
+          "__": "face_color",
+          "v": [
+            "w"
+          ]
+        },
+        "line": {
+          "__": "line",
+          "style": {
+            "__": "style",
+            "v": [
+              "solid"
+            ]
+          },
+          "width": {
+            "__": "width",
+            "v": [
+              1
+            ]
+          }
+        },
+        "opacity": {
+          "__": "opacity",
+          "v": [
+            0.8
+          ]
+        },
+        "padding": {
+          "__": "padding",
+          "v": [
+            0.2
+          ]
+        },
+        "shape": {
+          "__": "shape",
+          "v": [
+            "square"
+          ]
+        }
+      },
+      "color bar": {
+        "__": "color_bar",
+        "location": {
+          "__": "location",
+          "v": [
+            "right"
+          ]
+        },
+        "padding": {
+          "__": "padding",
+          "v": [
+            0.3
+          ]
+        },
+        "show": {
+          "__": "show",
+          "v": [
+            true
+          ]
+        },
+        "size": {
+          "__": "size",
+          "v": [
+            1.0
+          ]
+        }
+      },
+      "indices": {
+        "__": "indices",
+        "v": [
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      "label": {
+        "__": "label",
+        "alignment": {
+          "__": "alignment",
+          "horizontal": {
+            "__": "horizontal",
+            "v": [
+              "left"
+            ]
+          },
+          "vertical": {
+            "__": "vertical",
+            "v": [
+              "center"
+            ]
+          }
+        },
+        "content": {
+          "__": "content",
+          "v": [
+            null
+          ]
+        },
+        "font": {
+          "__": "font",
+          "size": {
+            "__": "size",
+            "v": [
+              25
+            ]
+          },
+          "weight": {
+            "__": "weight",
+            "v": [
+              500
+            ]
+          }
+        },
+        "rotation": {
+          "__": "rotation",
+          "v": [
+            0
+          ]
+        }
+      },
+      "subdivision": {
+        "__": "subdivision",
+        "new panel indexes": {
+          "__": "new_panel_indexes",
+          "v": [
+            null
+          ]
+        },
+        "paddings": {
+          "__": "paddings",
+          "v": [
+            [
+              0.3
+            ]
+          ]
+        },
+        "positions": {
+          "__": "positions",
+          "v": [
+            [
+              "right"
+            ]
+          ]
+        },
+        "sizes": {
+          "__": "sizes",
+          "v": [
+            [
+              1.0
+            ]
+          ]
+        }
+      }
+    }
+  }
 }
