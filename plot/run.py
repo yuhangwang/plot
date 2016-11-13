@@ -1,23 +1,32 @@
 """
-Create, draw and save figures based
-on user input parameter dictionary.
+Read the input and start working
 """
-from typing import Dict
-import matplotlib
-from .matplotlibConfig import rcParams as new_rc_params
+from typing import Dict, AnyStr
+from .work import work
+import os
+from .io.input import parse
 
 
-def run(params, preview):
-    # type: (Dict, bool) -> bool
-    """Create, draw, and save figures
+def run(user_config_file, preview):
+    # type: (AnyStr, bool) -> bool
+    """Read input and start working
 
     Args:
-        params (dict): a dictionary that defines the figure
-        preview (bool): whether to show the preview of the figure
+        user_config_file (str): file name of user configuration file
+        preview (bool): whether to show the preview window
 
     Returns:
-        True if succeeded
+        True of succeeds
     """
-    matplotlib.rcParams.update(new_rc_params(params))
+    here = os.path.dirname(os.path.realpath(__file__))
+    default_config_file = os.path.join(here, "parameter", "all.json")
+    params = parse(user_config_file, default_config_file)
 
-    return True
+    if len(params.keys()) == 0:
+        raise Exception(
+            "ERROR HINT: invalid input "
+            "configuration file {}".format(user_config_file)
+            )
+        exit()
+
+    return work(params, preview)
