@@ -1,4 +1,4 @@
-plot.io package
+plot.tk package
 ===============
 
 Subpackages
@@ -6,13 +6,12 @@ Subpackages
 
 .. toctree::
 
-    plot.io.input
-    plot.io.output
+    plot.tk.dictTK
 
 Module contents
 ---------------
 
-.. automodule:: plot.io
+.. automodule:: plot.tk
     :members:
     :undoc-members:
     :show-inheritance:

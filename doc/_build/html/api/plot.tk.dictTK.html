@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>plot.tk.dictTK package &#8212; plot 0.1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="plot 0.1.0 documentation" href="../index.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="plot-tk-dicttk-package">
+<h1>plot.tk.dictTK package<a class="headerlink" href="#plot-tk-dicttk-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-plot.tk.dictTK.convert_to_internal">
+<span id="plot-tk-dicttk-convert-to-internal-module"></span><h2>plot.tk.dictTK.convert_to_internal module<a class="headerlink" href="#module-plot.tk.dictTK.convert_to_internal" title="Permalink to this headline">¶</a></h2>
+<p>Convert a user configuration dictionary to
+an internal parameter dictionary.</p>
+<dl class="function">
+<dt id="plot.tk.dictTK.convert_to_internal.convert_to_internal">
+<code class="descclassname">plot.tk.dictTK.convert_to_internal.</code><code class="descname">convert_to_internal</code><span class="sig-paren">(</span><em>user_dict</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/plot/tk/dictTK/convert_to_internal.html#convert_to_internal"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#plot.tk.dictTK.convert_to_internal.convert_to_internal" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert to &#8220;plot&#8221; internal dictionary.</p>
+<p>use the internal key defined by user_dict[&#8220;__&#8221;]
+as the new key.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>user_dict</strong> (<a class="reference external" href="https://docs.python.org/2/library/stdtypes.html#dict" title="(in Python v2.7)"><em>dict</em></a>) &#8211; user configuration dictionary</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A new dictionary with new keys.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-plot.tk.dictTK.default">
+<span id="plot-tk-dicttk-default-module"></span><h2>plot.tk.dictTK.default module<a class="headerlink" href="#module-plot.tk.dictTK.default" title="Permalink to this headline">¶</a></h2>
+<p>Replace all the &#8220;v&#8221; field of
+the input dictionary with the
+default value (i.e. the first entry of the  list).</p>
+<p>Example:
+{&#8220;k&#8221;: {&#8220;v&#8221;: [1,2,3]}} will be changed to {&#8220;k&#8221;: {&#8220;v&#8221;: 1}}</p>
+<dl class="function">
+<dt id="plot.tk.dictTK.default.default">
+<code class="descclassname">plot.tk.dictTK.default.</code><code class="descname">default</code><span class="sig-paren">(</span><em>d</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/plot/tk/dictTK/default.html#default"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#plot.tk.dictTK.default.default" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a new dictionary with default values</p>
+<p>Assuming the dictionary has &#8220;v&#8221; field value [v1, v2, ...],
+the returned dictionary will have value &#8220;v&#8221;: v1</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>d</strong> (<a class="reference external" href="https://docs.python.org/2/library/stdtypes.html#dict" title="(in Python v2.7)"><em>dict</em></a>) &#8211; input dictionary with structure like {&#8220;k&#8221;: {&#8220;v&#8221;: [1,2,3]}}</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a new dictionary with default values.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-plot.tk.dictTK.merge">
+<span id="plot-tk-dicttk-merge-module"></span><h2>plot.tk.dictTK.merge module<a class="headerlink" href="#module-plot.tk.dictTK.merge" title="Permalink to this headline">¶</a></h2>
+<p>Merge two dictionaries into one.</p>
+<dl class="function">
+<dt id="plot.tk.dictTK.merge.merge">
+<code class="descclassname">plot.tk.dictTK.merge.</code><code class="descname">merge</code><span class="sig-paren">(</span><em>dict1</em>, <em>dict2</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/plot/tk/dictTK/merge.html#merge"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#plot.tk.dictTK.merge.merge" title="Permalink to this definition">¶</a></dt>
+<dd><p>Recrusively merge two dictionaries.</p>
+<p>The two input dictionaries can have arbitrary depths.
+If there is a conflict, values from dict1 will
+override dict2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>dict1</strong> (<a class="reference external" href="https://docs.python.org/2/library/stdtypes.html#dict" title="(in Python v2.7)"><em>dict</em></a>) &#8211; input dictionary 1</li>
+<li><strong>dict2</strong> (<a class="reference external" href="https://docs.python.org/2/library/stdtypes.html#dict" title="(in Python v2.7)"><em>dict</em></a>) &#8211; input dictionary 2</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A new dictionary that combines both inputs.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-plot.tk.dictTK.update">
+<span id="plot-tk-dicttk-update-module"></span><h2>plot.tk.dictTK.update module<a class="headerlink" href="#module-plot.tk.dictTK.update" title="Permalink to this headline">¶</a></h2>
+<p>Update the second dictionary with
+the contents of the first dictionary.</p>
+<dl class="function">
+<dt id="plot.tk.dictTK.update.update">
+<code class="descclassname">plot.tk.dictTK.update.</code><code class="descname">update</code><span class="sig-paren">(</span><em>src_dict</em>, <em>target_dict</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/plot/tk/dictTK/update.html#update"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#plot.tk.dictTK.update.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Recursively update.</p>
+<p>Update the target_dict using
+content from the src_dict.
+Items from src_dict which are not in
+target_dict will be discarded.
+A easy way to remember the priority
+is &#8220;1st argument has #1 priority&#8221;.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>src_dict</strong> (<a class="reference external" href="https://docs.python.org/2/library/stdtypes.html#dict" title="(in Python v2.7)"><em>dict</em></a>) &#8211; new information source</li>
+<li><strong>target_dict</strong> (<a class="reference external" href="https://docs.python.org/2/library/stdtypes.html#dict" title="(in Python v2.7)"><em>dict</em></a>) &#8211; target dictionary to be updated</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">a new dictionary with updated entries.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-plot.tk.dictTK.wrap_value">
+<span id="plot-tk-dicttk-wrap-value-module"></span><h2>plot.tk.dictTK.wrap_value module<a class="headerlink" href="#module-plot.tk.dictTK.wrap_value" title="Permalink to this headline">¶</a></h2>
+<p>Wrap the value of a nested dictionary
+with a new field {&#8220;v&#8221;: value}</p>
+<dl class="function">
+<dt id="plot.tk.dictTK.wrap_value.wrap_value">
+<code class="descclassname">plot.tk.dictTK.wrap_value.</code><code class="descname">wrap_value</code><span class="sig-paren">(</span><em>d</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/plot/tk/dictTK/wrap_value.html#wrap_value"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#plot.tk.dictTK.wrap_value.wrap_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wrap the value field</p>
+<p>Add a new field &#8220;v&#8221;, which
+contains the actual value
+under the key.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>d</strong> (<a class="reference external" href="https://docs.python.org/2/library/stdtypes.html#dict" title="(in Python v2.7)"><em>dict</em></a>) &#8211; input dictionary</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a new dictionary with values wrapped
+inside &#8220;v&#8221; fields</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-plot.tk.dictTK">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-plot.tk.dictTK" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">plot.tk.dictTK package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-plot.tk.dictTK.convert_to_internal">plot.tk.dictTK.convert_to_internal module</a></li>
+<li><a class="reference internal" href="#module-plot.tk.dictTK.default">plot.tk.dictTK.default module</a></li>
+<li><a class="reference internal" href="#module-plot.tk.dictTK.merge">plot.tk.dictTK.merge module</a></li>
+<li><a class="reference internal" href="#module-plot.tk.dictTK.update">plot.tk.dictTK.update module</a></li>
+<li><a class="reference internal" href="#module-plot.tk.dictTK.wrap_value">plot.tk.dictTK.wrap_value module</a></li>
+<li><a class="reference internal" href="#module-plot.tk.dictTK">Module contents</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/api/plot.tk.dictTK.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Yuhang(Steven) Wang.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.8</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+      |
+      <a href="../_sources/api/plot.tk.dictTK.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

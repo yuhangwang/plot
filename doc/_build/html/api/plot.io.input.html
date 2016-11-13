@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>plot.io.input package &#8212; plot 0.1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="plot 0.1.0 documentation" href="../index.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="plot-io-input-package">
+<h1>plot.io.input package<a class="headerlink" href="#plot-io-input-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-plot.io.input.parse">
+<span id="plot-io-input-parse-module"></span><h2>plot.io.input.parse module<a class="headerlink" href="#module-plot.io.input.parse" title="Permalink to this headline">¶</a></h2>
+<p>Parse the user input configuration file,
+update the default configuration dictionary
+with the user-defined values and
+return the updated dictionary.</p>
+<dl class="function">
+<dt id="plot.io.input.parse.parse">
+<code class="descclassname">plot.io.input.parse.</code><code class="descname">parse</code><span class="sig-paren">(</span><em>user_config_file</em>, <em>default_config_file</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/plot/io/input/parse.html#parse"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#plot.io.input.parse.parse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return an updated configuration file</p>
+<p>Read a user configuration file and
+a default configuration file.
+Use the values in the user configuration
+file to update the default configuration file.
+Finally return an updated configuration dictionary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>user_config_file</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) &#8211; user configuration file</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">an updated configuration dictionary</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-plot.io.input.parser">
+<span id="plot-io-input-parser-module"></span><h2>plot.io.input.parser module<a class="headerlink" href="#module-plot.io.input.parser" title="Permalink to this headline">¶</a></h2>
+<p>Return an appropriate parser based on
+file extension name.</p>
+<dl class="function">
+<dt id="plot.io.input.parser.parser">
+<code class="descclassname">plot.io.input.parser.</code><code class="descname">parser</code><span class="sig-paren">(</span><em>file_name</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/plot/io/input/parser.html#parser"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#plot.io.input.parser.parser" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a parser function</p>
+<p>Return a function can read user input file
+and return a dictionary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>file_name</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) &#8211; input file name</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a dictionary containing the content
+of the file.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-plot.io.input.readAll">
+<span id="plot-io-input-readall-module"></span><h2>plot.io.input.readAll module<a class="headerlink" href="#module-plot.io.input.readAll" title="Permalink to this headline">¶</a></h2>
+<p>Read all the content of a file
+and return one big string.</p>
+<dl class="function">
+<dt id="plot.io.input.readAll.readAll">
+<code class="descclassname">plot.io.input.readAll.</code><code class="descname">readAll</code><span class="sig-paren">(</span><em>file_name</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/plot/io/input/readAll.html#readAll"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#plot.io.input.readAll.readAll" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the file content</p>
+<p>Return the content of a file as string.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>file_name</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) &#8211; name of the input file</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a string which is the content of the file</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-plot.io.input">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-plot.io.input" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">plot.io.input package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-plot.io.input.parse">plot.io.input.parse module</a></li>
+<li><a class="reference internal" href="#module-plot.io.input.parser">plot.io.input.parser module</a></li>
+<li><a class="reference internal" href="#module-plot.io.input.readAll">plot.io.input.readAll module</a></li>
+<li><a class="reference internal" href="#module-plot.io.input">Module contents</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/api/plot.io.input.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Yuhang(Steven) Wang.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.8</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+      |
+      <a href="../_sources/api/plot.io.input.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

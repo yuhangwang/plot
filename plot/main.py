@@ -1,16 +1,11 @@
 """
 Plot executable
 AUTHOR: YUHANG(STEVEN) WANG
-DATE: 10-11-2016
-Usage: plot my.json 
-    or plot my.yaml
+DATE: 13-11-2016
+Usage: plot my.json  or plot my.yaml
 """
 import sys
-import re
-import os
-from mpa import plot
-import mpa.mpa_toolkit as MpaTK
-from io.input import parse
+from plot.io.input import parse
 
 
 def main():
