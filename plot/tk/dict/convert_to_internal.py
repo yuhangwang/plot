@@ -21,9 +21,11 @@ def convert_to_internal(user_dict):
     """
     ooo = dict()
     for k in user_dict:
-        new_key = user_dict[k]["__"]
         if isinstance(user_dict[k], dict):
+            new_key = user_dict[k]["__"]
             ooo[new_key] = convert_to_internal(user_dict[k])
+        elif k == "v":
+            return {"v": user_dict["v"]}
         else:
-            ooo[new_key] = user_dict[k]
+            continue
     return ooo
