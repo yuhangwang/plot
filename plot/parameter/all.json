@@ -1,0 +1,2251 @@
+{
+  "data": {
+    "__": "data",
+    "bar": {
+      "__": "bar",
+      "align": {
+        "__": "align",
+        "v": [
+          "edge"
+        ]
+      },
+      "base line location": {
+        "__": "base_line_location",
+        "v": [
+          0
+        ]
+      },
+      "color": {
+        "__": "color",
+        "v": [
+          null
+        ]
+      },
+      "edge color": {
+        "__": "edge_color",
+        "v": [
+          null
+        ]
+      },
+      "line width": {
+        "__": "line_width",
+        "v": [
+          null
+        ]
+      },
+      "location offset": {
+        "__": "location_offset",
+        "v": [
+          0
+        ]
+      },
+      "orientation": {
+        "__": "orientation",
+        "v": [
+          "vertical",
+          "horizontal"
+        ]
+      },
+      "width": {
+        "__": "width",
+        "v": [
+          0.8
+        ]
+      }
+    },
+    "block average": {
+      "__": "block_average",
+      "legend": {
+        "__": "legend",
+        "content": {
+          "__": "content",
+          "v": [
+            null
+          ]
+        },
+        "panel": {
+          "__": "panel",
+          "v": [
+            null
+          ]
+        }
+      },
+      "line": {
+        "__": "line",
+        "opacity": {
+          "__": "opacity",
+          "v": [
+            1.0
+          ]
+        },
+        "style": {
+          "__": "style",
+          "v": [
+            "-"
+          ]
+        },
+        "width": {
+          "__": "width",
+          "v": [
+            2
+          ]
+        }
+      },
+      "window size": {
+        "__": "window_size",
+        "v": [
+          null
+        ]
+      }
+    },
+    "error bar": {
+      "__": "error_bar",
+      "cap": {
+        "__": "cap",
+        "resample window size": {
+          "__": "resample_window_size",
+          "v": [
+            1
+          ]
+        },
+        "size": {
+          "__": "size",
+          "v": [
+            4
+          ]
+        },
+        "thickness": {
+          "__": "thickness",
+          "v": [
+            2
+          ]
+        }
+      },
+      "data column": {
+        "__": "data_column",
+        "x": {
+          "__": "x",
+          "v": [
+            null
+          ]
+        },
+        "y": {
+          "__": "y",
+          "v": [
+            null
+          ]
+        }
+      },
+      "edge color": {
+        "__": "edge_color",
+        "v": [
+          null
+        ]
+      },
+      "line width": {
+        "__": "line_width",
+        "v": [
+          null
+        ]
+      }
+    },
+    "file": {
+      "__": "file",
+      "v": [
+        null
+      ]
+    },
+    "legend": {
+      "__": "legend",
+      "content": {
+        "__": "content",
+        "v": [
+          null
+        ]
+      },
+      "panel": {
+        "__": "panel",
+        "v": [
+          [
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    "line": {
+      "__": "line",
+      "color": {
+        "__": "color",
+        "v": [
+          null
+        ]
+      },
+      "data column": {
+        "__": "data_column",
+        "x": {
+          "__": "x",
+          "v": [
+            0
+          ]
+        },
+        "y": {
+          "__": "y",
+          "v": [
+            1
+          ]
+        }
+      },
+      "first row": {
+        "__": "first_row",
+        "v": [
+          0
+        ]
+      },
+      "opacity": {
+        "__": "opacity",
+        "v": [
+          1.0
+        ]
+      },
+      "style": {
+        "__": "style",
+        "v": [
+          "-"
+        ]
+      },
+      "width": {
+        "__": "width",
+        "v": [
+          2.0
+        ]
+      }
+    },
+    "marker": {
+      "__": "marker",
+      "size": {
+        "__": "size",
+        "v": [
+          5
+        ]
+      },
+      "style": {
+        "__": "style",
+        "v": [
+          null
+        ]
+      }
+    },
+    "matrix": {
+      "__": "matrix",
+      "color bar": {
+        "__": "color_bar",
+        "panel": {
+          "__": "panel",
+          "v": [
+            null
+          ]
+        }
+      },
+      "extent": {
+        "__": "extent",
+        "max": {
+          "__": "max",
+          "x": {
+            "__": "x",
+            "v": [
+              null
+            ]
+          },
+          "y": {
+            "__": "y",
+            "v": [
+              null
+            ]
+          }
+        },
+        "min": {
+          "__": "min",
+          "x": {
+            "__": "x",
+            "v": [
+              null
+            ]
+          },
+          "y": {
+            "__": "y",
+            "v": [
+              null
+            ]
+          }
+        },
+        "offset": {
+          "__": "offset",
+          "x": {
+            "__": "x",
+            "v": [
+              -0.5
+            ]
+          },
+          "y": {
+            "__": "y",
+            "v": [
+              -0.5
+            ]
+          }
+        }
+      },
+      "transpose": {
+        "__": "transpose",
+        "v": [
+          false
+        ]
+      },
+      "vertical": {
+        "__": "vertical",
+        "max": {
+          "__": "max",
+          "v": [
+            null
+          ]
+        },
+        "min": {
+          "__": "min",
+          "v": [
+            null
+          ]
+        }
+      }
+    },
+    "panel": {
+      "__": "panel",
+      "v": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    "plot type": {
+      "__": "plot_type",
+      "v": [
+        "line",
+        "bar",
+        "matrix"
+      ]
+    },
+    "value": {
+      "__": "value",
+      "v": [
+        null
+      ]
+    }
+  },
+  "figure": {
+    "__": "figure",
+    "label": {
+      "__": "label",
+      "alignment": {
+        "__": "alignment",
+        "horizontal": {
+          "__": "horizontal",
+          "v": [
+            "left"
+          ]
+        },
+        "vertical": {
+          "__": "vertical",
+          "v": [
+            "center"
+          ]
+        }
+      },
+      "box": {
+        "__": "box",
+        "anchor": {
+          "__": "anchor",
+          "v": [
+            [
+              0.01,
+              0.9
+            ]
+          ]
+        },
+        "edge color": {
+          "__": "edge_color",
+          "v": [
+            "w"
+          ]
+        },
+        "face color": {
+          "__": "face_color",
+          "v": [
+            "w"
+          ]
+        },
+        "line": {
+          "__": "line",
+          "style": {
+            "__": "style",
+            "v": [
+              "solid"
+            ]
+          },
+          "width": {
+            "__": "width",
+            "v": [
+              1
+            ]
+          }
+        },
+        "opacity": {
+          "__": "opacity",
+          "v": [
+            0.8
+          ]
+        },
+        "padding": {
+          "__": "padding",
+          "v": [
+            0.2
+          ]
+        },
+        "shape": {
+          "__": "shape",
+          "v": [
+            "square"
+          ]
+        }
+      },
+      "content": {
+        "__": "content",
+        "v": [
+          null
+        ]
+      },
+      "font": {
+        "__": "font",
+        "size": {
+          "__": "size",
+          "v": [
+            40
+          ]
+        },
+        "weight": {
+          "__": "weight",
+          "v": [
+            500
+          ]
+        }
+      },
+      "rotation": {
+        "__": "rotation",
+        "v": [
+          0
+        ]
+      }
+    }
+  },
+  "global": {
+    "__": "global",
+    "color": {
+      "__": "color",
+      "order": {
+        "__": "order",
+        "v": [
+          [
+            "k",
+            "r",
+            "g",
+            "b",
+            "m",
+            "y",
+            "c"
+          ]
+        ]
+      }
+    },
+    "deps": {
+      "__": "deps",
+      "latex": {
+        "__": "latex",
+        "v": [
+          false
+        ]
+      },
+      "scipy": {
+        "__": "scipy",
+        "v": [
+          false
+        ]
+      }
+    },
+    "figure": {
+      "__": "figure",
+      "axis": {
+        "__": "axis",
+        "label": {
+          "__": "label",
+          "content": {
+            "__": "content",
+            "x": {
+              "__": "x",
+              "v": [
+                ""
+              ]
+            },
+            "y": {
+              "__": "y",
+              "v": [
+                ""
+              ]
+            }
+          },
+          "font size": {
+            "__": "font_size",
+            "x": {
+              "__": "x",
+              "v": [
+                40
+              ]
+            },
+            "y": {
+              "__": "y",
+              "v": [
+                40
+              ]
+            }
+          },
+          "padding": {
+            "__": "padding",
+            "x": {
+              "__": "x",
+              "v": [
+                60
+              ]
+            },
+            "y": {
+              "__": "y",
+              "v": [
+                60
+              ]
+            }
+          }
+        },
+        "limits": {
+          "__": "limits",
+          "set": {
+            "__": "set",
+            "x": {
+              "__": "x",
+              "v": [
+                []
+              ]
+            },
+            "y": {
+              "__": "y",
+              "v": [
+                []
+              ]
+            }
+          },
+          "tight": {
+            "__": "tight",
+            "x": {
+              "__": "x",
+              "v": [
+                true
+              ]
+            },
+            "y": {
+              "__": "y",
+              "v": [
+                true
+              ]
+            }
+          }
+        },
+        "share": {
+          "__": "share",
+          "x": {
+            "__": "x",
+            "v": [
+              "none"
+            ]
+          },
+          "y": {
+            "__": "y",
+            "v": [
+              "none"
+            ]
+          }
+        }
+      },
+      "columns": {
+        "__": "columns",
+        "v": [
+          1
+        ]
+      },
+      "dpi": {
+        "__": "dpi",
+        "v": [
+          150
+        ]
+      },
+      "font": {
+        "__": "font",
+        "size": {
+          "__": "size",
+          "v": [
+            40
+          ]
+        }
+      },
+      "height": {
+        "__": "height",
+        "v": [
+          8
+        ]
+      },
+      "output": {
+        "__": "output",
+        "v": [
+          "out.png"
+        ]
+      },
+      "padding": {
+        "__": "padding",
+        "v": [
+          0.2
+        ]
+      },
+      "panel": {
+        "__": "panel",
+        "dimension": {
+          "__": "dimension",
+          "v": [
+            4
+          ]
+        }
+      },
+      "rows": {
+        "__": "rows",
+        "v": [
+          1
+        ]
+      },
+      "show axis label": {
+        "__": "show_axis_label",
+        "v": [
+          false
+        ]
+      },
+      "subplot": {
+        "__": "subplot",
+        "spacing": {
+          "__": "spacing",
+          "horizontal": {
+            "__": "horizontal",
+            "v": [
+              null
+            ]
+          },
+          "vertical": {
+            "__": "vertical",
+            "v": [
+              null
+            ]
+          }
+        }
+      },
+      "title": {
+        "__": "title",
+        "v": [
+          null
+        ]
+      },
+      "transparent": {
+        "__": "transparent",
+        "v": [
+          false
+        ]
+      },
+      "width": {
+        "__": "width",
+        "v": [
+          12
+        ]
+      }
+    }
+  },
+  "local": {
+    "__": "local",
+    "axis": {
+      "__": "axis",
+      "hide": [
+        [
+          false
+        ]
+      ],
+      "label": {
+        "__": "label",
+        "font": {
+          "__": "font",
+          "size": {
+            "__": "size",
+            "x": {
+              "__": "x",
+              "v": [
+                null
+              ]
+            },
+            "y": {
+              "__": "y",
+              "v": [
+                null
+              ]
+            }
+          }
+        },
+        "name": {
+          "__": "name",
+          "x": {
+            "__": "x",
+            "v": [
+              null
+            ]
+          },
+          "y": {
+            "__": "y",
+            "v": [
+              null
+            ]
+          }
+        },
+        "padding": {
+          "__": "padding",
+          "x": {
+            "__": "x",
+            "v": [
+              null
+            ]
+          },
+          "y": {
+            "__": "y",
+            "v": [
+              null
+            ]
+          }
+        },
+        "range": {
+          "__": "range",
+          "inverted": {
+            "__": "inverted",
+            "x": {
+              "__": "x",
+              "v": [
+                false,
+                true
+              ]
+            },
+            "y": {
+              "__": "y",
+              "v": [
+                false,
+                true
+              ]
+            }
+          },
+          "max": {
+            "__": "max",
+            "x": {
+              "__": "x",
+              "v": [
+                null
+              ]
+            },
+            "y": {
+              "__": "y",
+              "v": [
+                null
+              ]
+            }
+          },
+          "min": {
+            "__": "min",
+            "x": {
+              "__": "x",
+              "v": [
+                null
+              ]
+            },
+            "y": {
+              "__": "y",
+              "v": [
+                null
+              ]
+            }
+          },
+          "tight": {
+            "__": "tight",
+            "x": {
+              "__": "x",
+              "v": [
+                false,
+                true
+              ]
+            },
+            "y": {
+              "__": "y",
+              "v": [
+                false,
+                true
+              ]
+            }
+          }
+        }
+      },
+      "scale": {
+        "__": "scale",
+        "x": [
+          "linear"
+        ],
+        "y": [
+          "linear"
+        ]
+      },
+      "spine": {
+        "__": "spine",
+        "bottom": {
+          "__": "bottom",
+          "color": [
+            [
+              null
+            ]
+          ],
+          "line width": [
+            [
+              null
+            ]
+          ]
+        },
+        "left": {
+          "__": "left",
+          "color": [
+            [
+              null
+            ]
+          ],
+          "line width": [
+            [
+              null
+            ]
+          ]
+        },
+        "right": {
+          "__": "right",
+          "color": [
+            [
+              null
+            ]
+          ],
+          "line width": [
+            [
+              null
+            ]
+          ]
+        },
+        "top": {
+          "__": "top",
+          "color": [
+            [
+              null
+            ]
+          ],
+          "line width": [
+            [
+              null
+            ]
+          ]
+        }
+      },
+      "twin panels": {
+        "__": "twin_panels",
+        "x": {
+          "__": "x",
+          "v": [
+            null
+          ]
+        },
+        "y": {
+          "__": "y",
+          "v": [
+            null
+          ]
+        }
+      }
+    },
+    "color bar": {
+      "__": "color_bar",
+      "tick": {
+        "__": "tick",
+        "color": {
+          "__": "color",
+          "v": [
+            "k"
+          ]
+        },
+        "length": {
+          "__": "length",
+          "v": [
+            7
+          ]
+        },
+        "set": {
+          "__": "set",
+          "v": [
+            null
+          ]
+        },
+        "width": {
+          "__": "width",
+          "v": [
+            2
+          ]
+        }
+      },
+      "tick label": {
+        "__": "tick_label",
+        "decimals": {
+          "__": "decimals",
+          "v": [
+            null
+          ]
+        },
+        "font": {
+          "__": "font",
+          "size": {
+            "__": "size",
+            "v": [
+              20
+            ]
+          }
+        }
+      }
+    },
+    "draw": {
+      "__": "draw",
+      "span": {
+        "__": "span",
+        "horizontal": {
+          "__": "horizontal",
+          "edge color": {
+            "__": "edge_color",
+            "v": [
+              "k"
+            ]
+          },
+          "face color": {
+            "__": "face_color",
+            "v": [
+              "k"
+            ]
+          },
+          "filled": {
+            "__": "filled",
+            "v": [
+              true,
+              false
+            ]
+          },
+          "layer": {
+            "__": "layer",
+            "v": [
+              1
+            ]
+          },
+          "line": {
+            "__": "line",
+            "style": {
+              "__": "style",
+              "v": [
+                "solid"
+              ]
+            },
+            "width": {
+              "__": "width",
+              "v": [
+                0
+              ]
+            }
+          },
+          "min": {
+            "__": "min",
+            "y": {
+              "__": "y",
+              "v": [
+                null
+              ]
+            }
+          },
+          "opacity": {
+            "__": "opacity",
+            "v": [
+              0.2
+            ]
+          }
+        },
+        "vertical": {
+          "__": "vertical",
+          "edge color": {
+            "__": "edge_color",
+            "v": [
+              "k"
+            ]
+          },
+          "face color": {
+            "__": "face_color",
+            "v": [
+              "k"
+            ]
+          },
+          "filled": {
+            "__": "filled",
+            "v": [
+              true,
+              false
+            ]
+          },
+          "layer": {
+            "__": "layer",
+            "v": [
+              1
+            ]
+          },
+          "line": {
+            "__": "line",
+            "style": {
+              "__": "style",
+              "v": [
+                "solid"
+              ]
+            },
+            "width": {
+              "__": "width",
+              "v": [
+                0
+              ]
+            }
+          },
+          "min": {
+            "__": "min",
+            "x": {
+              "__": "x",
+              "v": [
+                null
+              ]
+            }
+          },
+          "opacity": {
+            "__": "opacity",
+            "v": [
+              0.2
+            ]
+          }
+        }
+      }
+    },
+    "grid": {
+      "__": "grid",
+      "axis": {
+        "__": "axis",
+        "v": [
+          "both"
+        ]
+      },
+      "layer": {
+        "__": "layer",
+        "v": [
+          -1
+        ]
+      },
+      "line": {
+        "__": "line",
+        "color": {
+          "__": "color",
+          "v": [
+            "k"
+          ]
+        },
+        "opacity": {
+          "__": "opacity",
+          "v": [
+            0.2
+          ]
+        },
+        "style": {
+          "__": "style",
+          "v": [
+            "--",
+            "-"
+          ]
+        },
+        "width": {
+          "__": "width",
+          "v": [
+            1
+          ]
+        }
+      },
+      "show": {
+        "__": "show",
+        "v": [
+          false
+        ]
+      },
+      "ticks": {
+        "__": "ticks",
+        "v": [
+          "major",
+          "minor"
+        ]
+      }
+    },
+    "legend": {
+      "__": "legend",
+      "anchor": {
+        "__": "anchor",
+        "coordiniate": {
+          "__": "coordiniate",
+          "v": [
+            [
+              0.9,
+              0.9
+            ]
+          ]
+        },
+        "corner": {
+          "__": "corner",
+          "v": [
+            "upper right"
+          ]
+        }
+      },
+      "border padding": {
+        "__": "border_padding",
+        "v": [
+          0.5
+        ]
+      },
+      "box": {
+        "__": "box",
+        "rounded": {
+          "__": "rounded",
+          "v": [
+            true
+          ]
+        }
+      },
+      "column spacing": {
+        "__": "column_spacing",
+        "v": [
+          0.8
+        ]
+      },
+      "edge": {
+        "__": "edge",
+        "color": {
+          "__": "color",
+          "v": [
+            "k"
+          ]
+        },
+        "opacity": {
+          "__": "opacity",
+          "v": [
+            1.0
+          ]
+        }
+      },
+      "face": {
+        "__": "face",
+        "color": {
+          "__": "color",
+          "v": [
+            "w"
+          ]
+        },
+        "opacity": {
+          "__": "opacity",
+          "v": [
+            1.0
+          ]
+        }
+      },
+      "font": {
+        "__": "font",
+        "size": {
+          "__": "size",
+          "v": [
+            26
+          ]
+        },
+        "weight": {
+          "__": "weight",
+          "v": [
+            500
+          ]
+        }
+      },
+      "frame": {
+        "__": "frame",
+        "opacity": {
+          "__": "opacity",
+          "v": [
+            0.5
+          ]
+        },
+        "show": {
+          "__": "show",
+          "v": [
+            true
+          ]
+        }
+      },
+      "handle length": {
+        "__": "handle_length",
+        "v": [
+          2
+        ]
+      },
+      "line": {
+        "__": "line",
+        "width": {
+          "__": "width",
+          "v": [
+            14
+          ]
+        }
+      },
+      "marker": {
+        "__": "marker",
+        "number of points": {
+          "__": "number_of_points",
+          "v": [
+            null
+          ]
+        },
+        "scale": {
+          "__": "scale",
+          "v": [
+            1
+          ]
+        }
+      },
+      "merged": {
+        "__": "merged",
+        "v": [
+          true
+        ]
+      },
+      "number of columns": {
+        "__": "number_of_columns",
+        "v": [
+          1
+        ]
+      },
+      "padding between border and axes": {
+        "__": "padding_between_border_and_axes",
+        "v": [
+          0
+        ]
+      },
+      "padding between handle and text": {
+        "__": "padding_between_handle_and_text",
+        "v": [
+          0.5
+        ]
+      },
+      "vertial spacing": {
+        "__": "vertial_spacing",
+        "v": [
+          0.5
+        ]
+      }
+    },
+    "panel": {
+      "__": "panel",
+      "box": {
+        "__": "box",
+        "anchor": {
+          "__": "anchor",
+          "coordinate": {
+            "__": "coordinate",
+            "v": [
+              [
+                0.01,
+                0.9
+              ]
+            ]
+          }
+        },
+        "edge color": {
+          "__": "edge_color",
+          "v": [
+            "w"
+          ]
+        },
+        "face color": {
+          "__": "face_color",
+          "v": [
+            "w"
+          ]
+        },
+        "line": {
+          "__": "line",
+          "style": {
+            "__": "style",
+            "v": [
+              "solid"
+            ]
+          },
+          "width": {
+            "__": "width",
+            "v": [
+              1
+            ]
+          }
+        },
+        "opacity": {
+          "__": "opacity",
+          "v": [
+            0.8
+          ]
+        },
+        "padding": {
+          "__": "padding",
+          "v": [
+            0.2
+          ]
+        },
+        "shape": {
+          "__": "shape",
+          "v": [
+            "square"
+          ]
+        }
+      },
+      "color bar": {
+        "__": "color_bar",
+        "location": {
+          "__": "location",
+          "v": [
+            "right"
+          ]
+        },
+        "padding": {
+          "__": "padding",
+          "v": [
+            0.3
+          ]
+        },
+        "show": {
+          "__": "show",
+          "v": [
+            true
+          ]
+        },
+        "size": {
+          "__": "size",
+          "v": [
+            1.0
+          ]
+        }
+      },
+      "indices": {
+        "__": "indices",
+        "v": [
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      "label": {
+        "__": "label",
+        "alignment": {
+          "__": "alignment",
+          "horizontal": {
+            "__": "horizontal",
+            "v": [
+              "left"
+            ]
+          },
+          "vertical": {
+            "__": "vertical",
+            "v": [
+              "center"
+            ]
+          }
+        },
+        "content": {
+          "__": "content",
+          "v": [
+            null
+          ]
+        },
+        "font": {
+          "__": "font",
+          "size": {
+            "__": "size",
+            "v": [
+              25
+            ]
+          },
+          "weight": {
+            "__": "weight",
+            "v": [
+              500
+            ]
+          }
+        },
+        "rotation": {
+          "__": "rotation",
+          "v": [
+            0
+          ]
+        }
+      },
+      "subdivision": {
+        "__": "subdivision",
+        "new panel indexes": {
+          "__": "new_panel_indexes",
+          "v": [
+            null
+          ]
+        },
+        "paddings": {
+          "__": "paddings",
+          "v": [
+            [
+              0.3
+            ]
+          ]
+        },
+        "positions": {
+          "__": "positions",
+          "v": [
+            [
+              "right"
+            ]
+          ]
+        },
+        "sizes": {
+          "__": "sizes",
+          "v": [
+            [
+              1.0
+            ]
+          ]
+        }
+      }
+    },
+    "tick": {
+      "__": "tick",
+      "major": {
+        "__": "major",
+        "color": {
+          "__": "color",
+          "x": {
+            "__": "x",
+            "v": [
+              "k"
+            ]
+          },
+          "y": {
+            "__": "y",
+            "v": [
+              "k"
+            ]
+          }
+        },
+        "direction": {
+          "__": "direction",
+          "x": {
+            "__": "x",
+            "v": [
+              "in",
+              "out",
+              "inout"
+            ]
+          },
+          "y": {
+            "__": "y",
+            "v": [
+              "in",
+              "out",
+              "inout"
+            ]
+          }
+        },
+        "layer": {
+          "__": "layer",
+          "x": {
+            "__": "x",
+            "v": [
+              0
+            ]
+          },
+          "y": {
+            "__": "y",
+            "v": [
+              0
+            ]
+          }
+        },
+        "length": {
+          "__": "length",
+          "x": {
+            "__": "x",
+            "v": [
+              5
+            ]
+          },
+          "y": {
+            "__": "y",
+            "v": [
+              5
+            ]
+          }
+        },
+        "set": {
+          "__": "set",
+          "x": {
+            "__": "x",
+            "v": [
+              null
+            ]
+          },
+          "y": {
+            "__": "y",
+            "v": [
+              null
+            ]
+          }
+        },
+        "show": {
+          "__": "show",
+          "bottom": {
+            "__": "bottom",
+            "x": {
+              "__": "x",
+              "v": [
+                true
+              ]
+            }
+          },
+          "left": {
+            "__": "left",
+            "y": {
+              "__": "y",
+              "v": [
+                true
+              ]
+            }
+          },
+          "right": {
+            "__": "right",
+            "y": {
+              "__": "y",
+              "v": [
+                true
+              ]
+            }
+          },
+          "top": {
+            "__": "top",
+            "x": {
+              "__": "x",
+              "v": [
+                true
+              ]
+            }
+          }
+        },
+        "width": {
+          "__": "width",
+          "x": {
+            "__": "x",
+            "v": [
+              2
+            ]
+          },
+          "y": {
+            "__": "y",
+            "v": [
+              2
+            ]
+          }
+        }
+      },
+      "minor": {
+        "__": "minor",
+        "color": {
+          "__": "color",
+          "x": {
+            "__": "x",
+            "v": [
+              "k"
+            ]
+          },
+          "y": {
+            "__": "y",
+            "v": [
+              "k"
+            ]
+          }
+        },
+        "direction": {
+          "__": "direction",
+          "x": {
+            "__": "x",
+            "v": [
+              "in",
+              "out",
+              "inout"
+            ]
+          },
+          "y": {
+            "__": "y",
+            "v": [
+              "in",
+              "out",
+              "inout"
+            ]
+          }
+        },
+        "layer": {
+          "__": "layer",
+          "x": {
+            "__": "x",
+            "v": [
+              0
+            ]
+          },
+          "y": {
+            "__": "y",
+            "v": [
+              0
+            ]
+          }
+        },
+        "length": {
+          "__": "length",
+          "x": {
+            "__": "x",
+            "v": [
+              5
+            ]
+          },
+          "y": {
+            "__": "y",
+            "v": [
+              5
+            ]
+          }
+        },
+        "set": {
+          "__": "set",
+          "x": {
+            "__": "x",
+            "v": [
+              null
+            ]
+          },
+          "y": {
+            "__": "y",
+            "v": [
+              null
+            ]
+          }
+        },
+        "show": {
+          "__": "show",
+          "bottom": {
+            "__": "bottom",
+            "x": {
+              "__": "x",
+              "v": [
+                true
+              ]
+            }
+          },
+          "left": {
+            "__": "left",
+            "y": {
+              "__": "y",
+              "v": [
+                true
+              ]
+            }
+          },
+          "right": {
+            "__": "right",
+            "y": {
+              "__": "y",
+              "v": [
+                true
+              ]
+            }
+          },
+          "top": {
+            "__": "top",
+            "x": {
+              "__": "x",
+              "v": [
+                true
+              ]
+            }
+          }
+        },
+        "width": {
+          "__": "width",
+          "x": {
+            "__": "x",
+            "v": [
+              2
+            ]
+          },
+          "y": {
+            "__": "y",
+            "v": [
+              2
+            ]
+          }
+        }
+      }
+    },
+    "tick label": {
+      "__": "tick_label",
+      "major": {
+        "__": "major",
+        "color": {
+          "__": "color",
+          "x": {
+            "__": "x",
+            "v": [
+              "k"
+            ]
+          },
+          "y": {
+            "__": "y",
+            "v": [
+              "k"
+            ]
+          }
+        },
+        "decimals": {
+          "__": "decimals",
+          "x": {
+            "__": "x",
+            "v": [
+              null
+            ]
+          },
+          "y": {
+            "__": "y",
+            "v": [
+              null
+            ]
+          }
+        },
+        "font": {
+          "__": "font",
+          "family": {
+            "__": "family",
+            "x": {
+              "__": "x",
+              "v": [
+                "serif"
+              ]
+            },
+            "y": {
+              "__": "y",
+              "v": [
+                "serif"
+              ]
+            }
+          },
+          "size": {
+            "__": "size",
+            "x": {
+              "__": "x",
+              "v": [
+                30
+              ]
+            },
+            "y": {
+              "__": "y",
+              "v": [
+                30
+              ]
+            }
+          },
+          "stretch": {
+            "__": "stretch",
+            "x": {
+              "__": "x",
+              "v": [
+                0
+              ]
+            },
+            "y": {
+              "__": "y",
+              "v": [
+                0
+              ]
+            }
+          },
+          "style": {
+            "__": "style",
+            "x": {
+              "__": "x",
+              "v": [
+                "normal",
+                "roman",
+                "italic",
+                "oblique"
+              ]
+            },
+            "y": {
+              "__": "y",
+              "v": [
+                "normal",
+                "roman",
+                "italic",
+                "oblique"
+              ]
+            }
+          },
+          "weight": {
+            "__": "weight",
+            "x": {
+              "__": "x",
+              "v": [
+                0
+              ]
+            },
+            "y": {
+              "__": "y",
+              "v": [
+                0
+              ]
+            }
+          }
+        },
+        "hide": {
+          "__": "hide",
+          "first": {
+            "__": "first",
+            "x": {
+              "__": "x",
+              "v": [
+                false,
+                true
+              ]
+            },
+            "y": {
+              "__": "y",
+              "v": [
+                false,
+                true
+              ]
+            }
+          },
+          "last": {
+            "__": "last",
+            "x": {
+              "__": "x",
+              "v": [
+                false,
+                true
+              ]
+            },
+            "y": {
+              "__": "y",
+              "v": [
+                false,
+                true
+              ]
+            }
+          },
+          "overlap": {
+            "__": "overlap",
+            "x": {
+              "__": "x",
+              "v": [
+                false,
+                true
+              ]
+            },
+            "y": {
+              "__": "y",
+              "v": [
+                false,
+                true
+              ]
+            }
+          }
+        },
+        "padding": {
+          "__": "padding",
+          "x": {
+            "__": "x",
+            "v": [
+              10
+            ]
+          },
+          "y": {
+            "__": "y",
+            "v": [
+              10
+            ]
+          }
+        },
+        "rotation": {
+          "__": "rotation",
+          "x": {
+            "__": "x",
+            "v": [
+              null
+            ]
+          },
+          "y": {
+            "__": "y",
+            "v": [
+              null
+            ]
+          }
+        },
+        "set": {
+          "__": "set",
+          "x": {
+            "__": "x",
+            "v": [
+              null
+            ]
+          },
+          "y": {
+            "__": "y",
+            "v": [
+              null
+            ]
+          }
+        },
+        "show": {
+          "__": "show",
+          "bottom": {
+            "__": "bottom",
+            "x": {
+              "__": "x",
+              "v": [
+                true,
+                false
+              ]
+            }
+          },
+          "left": {
+            "__": "left",
+            "y": {
+              "__": "y",
+              "v": [
+                true,
+                false
+              ]
+            }
+          },
+          "right": {
+            "__": "right",
+            "y": {
+              "__": "y",
+              "v": [
+                false,
+                true
+              ]
+            }
+          },
+          "top": {
+            "__": "top",
+            "x": {
+              "__": "x",
+              "v": [
+                false,
+                true
+              ]
+            }
+          }
+        }
+      },
+      "minor": {
+        "__": "minor",
+        "color": {
+          "__": "color",
+          "x": {
+            "__": "x",
+            "v": [
+              "k"
+            ]
+          },
+          "y": {
+            "__": "y",
+            "v": [
+              "k"
+            ]
+          }
+        },
+        "decimals": {
+          "__": "decimals",
+          "x": {
+            "__": "x",
+            "v": [
+              null
+            ]
+          },
+          "y": {
+            "__": "y",
+            "v": [
+              null
+            ]
+          }
+        },
+        "font": {
+          "__": "font",
+          "family": {
+            "__": "family",
+            "x": {
+              "__": "x",
+              "v": [
+                "serif"
+              ]
+            },
+            "y": {
+              "__": "y",
+              "v": [
+                "serif"
+              ]
+            }
+          },
+          "size": {
+            "__": "size",
+            "x": {
+              "__": "x",
+              "v": [
+                30
+              ]
+            },
+            "y": {
+              "__": "y",
+              "v": [
+                30
+              ]
+            }
+          },
+          "stretch": {
+            "__": "stretch",
+            "x": {
+              "__": "x",
+              "v": [
+                0
+              ]
+            },
+            "y": {
+              "__": "y",
+              "v": [
+                0
+              ]
+            }
+          },
+          "style": {
+            "__": "style",
+            "x": {
+              "__": "x",
+              "v": [
+                "normal",
+                "roman",
+                "italic",
+                "oblique"
+              ]
+            },
+            "y": {
+              "__": "y",
+              "v": [
+                "normal",
+                "roman",
+                "italic",
+                "oblique"
+              ]
+            }
+          },
+          "weight": {
+            "__": "weight",
+            "x": {
+              "__": "x",
+              "v": [
+                0
+              ]
+            },
+            "y": {
+              "__": "y",
+              "v": [
+                0
+              ]
+            }
+          }
+        },
+        "hide": {
+          "__": "hide",
+          "first": {
+            "__": "first",
+            "x": {
+              "__": "x",
+              "v": [
+                false,
+                true
+              ]
+            },
+            "y": {
+              "__": "y",
+              "v": [
+                false,
+                true
+              ]
+            }
+          },
+          "last": {
+            "__": "last",
+            "x": {
+              "__": "x",
+              "v": [
+                false,
+                true
+              ]
+            },
+            "y": {
+              "__": "y",
+              "v": [
+                false,
+                true
+              ]
+            }
+          },
+          "overlap": {
+            "__": "overlap",
+            "x": {
+              "__": "x",
+              "v": [
+                false,
+                true
+              ]
+            },
+            "y": {
+              "__": "y",
+              "v": [
+                false,
+                true
+              ]
+            }
+          }
+        },
+        "padding": {
+          "__": "padding",
+          "x": {
+            "__": "x",
+            "v": [
+              10
+            ]
+          },
+          "y": {
+            "__": "y",
+            "v": [
+              10
+            ]
+          }
+        },
+        "rotation": {
+          "__": "rotation",
+          "x": {
+            "__": "x",
+            "v": [
+              null
+            ]
+          },
+          "y": {
+            "__": "y",
+            "v": [
+              null
+            ]
+          }
+        },
+        "set": {
+          "__": "set",
+          "x": {
+            "__": "x",
+            "v": [
+              null
+            ]
+          },
+          "y": {
+            "__": "y",
+            "v": [
+              null
+            ]
+          }
+        },
+        "show": {
+          "__": "show",
+          "bottom": {
+            "__": "bottom",
+            "x": {
+              "__": "x",
+              "v": [
+                true,
+                false
+              ]
+            }
+          },
+          "left": {
+            "__": "left",
+            "y": {
+              "__": "y",
+              "v": [
+                true,
+                false
+              ]
+            }
+          },
+          "right": {
+            "__": "right",
+            "y": {
+              "__": "y",
+              "v": [
+                false,
+                true
+              ]
+            }
+          },
+          "top": {
+            "__": "top",
+            "x": {
+              "__": "x",
+              "v": [
+                false,
+                true
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
