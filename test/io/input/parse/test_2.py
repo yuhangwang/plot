@@ -9,7 +9,7 @@ def test():
     solution = {
         'local': [{'k_1': 0}],
         'data':  [{'k_1': 101}],
-        'global': {'k_1': 0},
+        'global': {'k_1': 1001},
         }
     answer = parse(user_file, default_file)
     assert answer == solution
