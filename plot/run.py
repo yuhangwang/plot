@@ -2,9 +2,9 @@
 Read the input and start working
 """
 from typing import Dict, AnyStr
-from .work import work
 import os
-from .io.input import parse
+from plot.work import work
+from plot.io.input import parse
 
 
 def run(user_config_file, preview):
