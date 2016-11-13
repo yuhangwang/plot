@@ -3,6 +3,8 @@ Create, draw and save figures based
 on user input parameter dictionary.
 """
 from typing import Dict
+import matplotlib
+from .matplotlibConfig import rcParams as new_rcParams
 
 
 def run(params, preview):
@@ -16,5 +18,6 @@ def run(params, preview):
     Returns:
         True if succeeded
     """
-    
+    matplotlib.rcParams.update(new_rcParams)
+
     return True
