@@ -10,7 +10,7 @@ def wrap_value(d):
     # type: (Dict) -> Dict
     """Wrap the value field
 
-    Add a new field "v", which 
+    Add a new field "v", which
     contains the actual value
     under the key.
 
@@ -26,5 +26,5 @@ def wrap_value(d):
         if isinstance(d[k], dict):
             ooo[k] = wrap_value(d[k])
         else:
-            ooo[k]= {"v": d[k]}
+            ooo[k] = {"v": d[k]}
     return ooo

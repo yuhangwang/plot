@@ -6,6 +6,7 @@ Usage: plot my.json  or plot my.yaml
 """
 import sys
 from plot.io.input import parse
+from plot.run import run
 
 
 def main():
@@ -15,8 +16,11 @@ def main():
     else:
         preview = True
 
-    user_config_dict = parse(user_config_file)
-    if len(user_config_dict.keys()) == 0:
-    	print("ERROR HINT: invalid input configuration file {}".format(user_config_file))
-    	exit()
-    plot(user_config_dict, preview)
+    params = parse(user_config_file)
+    if len(params.keys()) == 0:
+        print(
+            "ERROR HINT: invalid input "
+            "configuration file {}".format(user_config_file)
+            )
+        exit()
+    run(params, preview)
