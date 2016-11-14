@@ -29,4 +29,4 @@ def upgrade_dimension(a, new_dim):
         elif isinstance(a, list) and not isinstance(a[0], list):
             return [wrap(a[i], diff) for i in range(len(a))]
         else:
-            return wrap(a)
+            return a
