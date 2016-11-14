@@ -4,6 +4,8 @@ Create a figure object
 from typing import Dict
 import copy
 import matplotlib.pyplot
+from .subplot_spacing import subplot_spacing
+from .global_axis import global_axis
 
 
 def create_subplots(params):
@@ -28,4 +30,4 @@ def create_subplots(params):
             )
     params['canvas']['figure'] = fig
     params['canvas']['axes'] = axes
-    return params
+    return global_axis(subplot_spacing(params))
