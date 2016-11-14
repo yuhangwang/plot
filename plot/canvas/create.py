@@ -3,7 +3,7 @@ Create a canvas
 """
 from typing import Dict
 import copy
-import matplotlib as mpl
+from .create_subplots import create_subplots
 
 
 def create(params):
@@ -23,4 +23,4 @@ def create(params):
         contains canvas objects.
     """
     params['canvas'] = {}  # add a new field
-    return
+    return create_subplots(params)

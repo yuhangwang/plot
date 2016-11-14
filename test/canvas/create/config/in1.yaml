@@ -1,0 +1,8 @@
+data:
+- file: data/d1.dat
+  plot type: line
+  line:
+    first row: 3
+    data column:
+      "x": 0
+      "y": 1

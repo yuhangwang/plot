@@ -3,8 +3,8 @@ Read the input and start working
 """
 from typing import Dict, AnyStr
 import os
-from plot.work import work
-from plot.io.input import parse
+import plot.work
+import plot.parameter
 
 
 def run(user_config_file, preview):
@@ -18,9 +18,7 @@ def run(user_config_file, preview):
     Returns:
         True of succeeds
     """
-    here = os.path.dirname(os.path.realpath(__file__))
-    default_config_file = os.path.join(here, "parameter", "all.json")
-    params = parse(user_config_file, default_config_file)
+    params = plot.parameter.update(user_config_file)
 
     if len(params.keys()) == 0:
         raise Exception(
@@ -29,4 +27,4 @@ def run(user_config_file, preview):
             )
         exit()
 
-    return work(params, preview)
+    return plot.work(params, preview)
