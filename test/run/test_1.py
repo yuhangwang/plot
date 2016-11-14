@@ -6,4 +6,5 @@ def test():
     here = os.path.dirname(os.path.realpath(__file__))
     config = os.path.join(here, 'config', 'in1.yaml')
     preview = True
-    assert plot.run(config, preview) == True
+    answer = plot.run(config, preview)
+    assert answer is True
