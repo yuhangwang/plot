@@ -19,13 +19,14 @@ def upgrade_dimension(a, new_dim):
     """
     a_shape = shape(a)
     diff = new_dim - len(a_shape)
-    if diff <  0:
+    if diff < 0:
         return a
     else:
         if isinstance(a, list) and len(a) == 0:
             return wrap(a, diff)
         elif isinstance(a, list) and isinstance(a[0], list):
-            return [upgrade_dimension(a[i], new_dim - 1) for i in range(len(a))]
+            return [upgrade_dimension(a[i], new_dim - 1)
+                    for i in range(len(a))]
         elif isinstance(a, list) and not isinstance(a[0], list):
             return [wrap(a[i], diff) for i in range(len(a))]
         else:
