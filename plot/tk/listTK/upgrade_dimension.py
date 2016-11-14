@@ -3,6 +3,7 @@ Upgrade from a low-dimensional list to a high-dimensional list
 """
 from typing import List, Any
 from .shape import shape
+from .wrap import wrap
 
 
 def upgrade_dimension(a, new_dim):
@@ -17,5 +18,15 @@ def upgrade_dimension(a, new_dim):
         a new list with dimension: new_dim
     """
     a_shape = shape(a)
-    if new_dim < len(a_shape):
+    diff = new_dim - len(a_shape)
+    if diff <  0:
         return a
+    else:
+        if isinstance(a, list) and len(a) == 0:
+            return wrap(a, diff)
+        elif isinstance(a, list) and isinstance(a[0], list):
+            return [upgrade_dimension(a[i], new_dim - 1) for i in range(len(a))]
+        elif isinstance(a, list) and not isinstance(a[0], list):
+            return [wrap(a[i], diff) for i in range(len(a))]
+        else:
+            return wrap(a)

@@ -1,11 +1,11 @@
 """
 Return the shape of the input list
 """
-from typing import List
+from typing import Any, List
 
 
 def shape(a):
-    # type: (List) -> List
+    # type: (Any) -> List
     """Return the shape of the input list
 
     Args:
@@ -24,4 +24,8 @@ def shape(a):
                 return aux(a[0], accum + [len(a)])
         else:
             return accum
-    return aux(a, [])
+
+    if isinstance(a, list):
+        return aux(a, [])
+    else:
+        return []
