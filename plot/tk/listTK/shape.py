@@ -18,7 +18,10 @@ def shape(a):
     def aux(a, accum):
         # type: (List, List) -> List
         if isinstance(a, list):
-            return aux(a[0], accum + [len(a)])
+            if len(a) == 0:
+                return accum + [0]
+            else:
+                return aux(a[0], accum + [len(a)])
         else:
             return accum
     return aux(a, [])

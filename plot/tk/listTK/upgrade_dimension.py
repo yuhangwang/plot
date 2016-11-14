@@ -14,4 +14,3 @@ def upgrade_dimension(a, new_dim):
     Returns:
         a new list with dimension: new_dim
     """
-    if len()
