@@ -1,7 +1,9 @@
 """
 Upgrade from a low-dimensional list to a high-dimensional list
 """
-from typing import List
+from typing import List, Any
+from .shape import shape
+
 
 def upgrade_dimension(a, new_dim):
     # type: (List, int) -> List
@@ -14,3 +16,6 @@ def upgrade_dimension(a, new_dim):
     Returns:
         a new list with dimension: new_dim
     """
+    a_shape = shape(a)
+    if new_dim < len(a_shape):
+        return a

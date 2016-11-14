@@ -12,7 +12,7 @@ def shape(a):
         a (list): input list
 
     Returns:
-        a list containing the number elements 
+        a list containing the number elements
         along each dimension
     """
     def aux(a, accum):
