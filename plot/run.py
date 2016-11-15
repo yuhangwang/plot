@@ -28,7 +28,7 @@ def run(user_config_file, preview):
         exit()
 
     plot.work(params)
-    
+
     if preview:
         matplotlib.pyplot.show()
 
