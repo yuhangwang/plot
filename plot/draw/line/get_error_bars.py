@@ -5,7 +5,7 @@ from numpy import ndarray
 from typing import Dict
 
 
-def get_x_y(data, params):
+def get_error_bars(data, params):
     # type: (ndarray, Dict) -> (ndarray, ndarray)
     """Return error bar arrays
 

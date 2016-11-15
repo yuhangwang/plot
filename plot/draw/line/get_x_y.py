@@ -17,6 +17,11 @@ def get_x_y(data, params):
         (X, Y) where X and Y are 1-dimensional numpy arrays
     """
     row_begin = params['line']['first_row']
-    X = data[row_begin:, params['line']['data_column']['x']]
-    Y = data[row_begin:, params['line']['data_column']['y']]
-    return (X, Y)
+    ooo = []
+    for k in ['x', 'y']:
+        j = params['line']['data_column'][k]
+        if j is None:
+            ooo.append(None)
+        else:
+            ooo.append(data[row_begin:, j])
+    return tuple(ooo)
