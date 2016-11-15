@@ -38,6 +38,7 @@ def draw_one_line(
             xerr=x_bars, yerr=y_bars,
             axes=obj_axis
         )
+
     return {
             "line": line,
             "error_bar": {

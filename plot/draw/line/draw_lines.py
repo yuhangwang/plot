@@ -39,11 +39,13 @@ def draw_lines(params):
                 x_bars, y_bars = extract_data_error_bar(data, p)
                 index = p['which_panel']
                 obj_axis = params['canvas']['axes'][index]
-                new_accum = copy.deepcopy(accum)
-                new_accum[index] = draw_one_line(
-                    obj_axis,
-                    X, Y, x_bars, y_bars,
-                    p['line'], p['marker'], p['error_bar']
-                    )
-                return aux(tail(line_params), new_accum)
-    return aux(params['data'], dict())
+                new_item = {
+                    "which_panel": index,
+                    "objects": draw_one_line(
+                            obj_axis,
+                            X, Y, x_bars, y_bars,
+                            p['line'], p['marker'], p['error_bar']
+                        )
+                }
+                return aux(tail(line_params), accum + [new_item])
+    return aux(params['data'], [])

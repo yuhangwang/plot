@@ -4,6 +4,7 @@ on user input parameter dictionary.
 """
 from typing import Dict
 import matplotlib
+import matplotlib.pyplot
 from .matplotlibConfig import rcParams as new_rc_params
 from .draw import draw_data
 from .canvas import create as create_canvas
@@ -24,4 +25,6 @@ def work(params, preview):
     matplotlib.rcParams.update(new_rc_params(params))
     aux = compose([create_canvas, draw_data])
     aux(params)
+    if preview:
+        matplotlib.pyplot.show()
     return True

@@ -23,4 +23,6 @@ def create(params):
         contains canvas objects.
     """
     params['canvas'] = {}  # add a new field
-    return create_subplots(params)
+    params = create_subplots(params)
+
+    return params
