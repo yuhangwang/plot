@@ -1,0 +1,6 @@
+local:
+- which panel: [1,2]
+data:
+- which panel: [1,2,3]
+global:
+  k 1: 1001

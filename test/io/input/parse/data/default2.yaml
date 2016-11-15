@@ -1,0 +1,15 @@
+local:
+  __: local
+  which panel:
+    __: which_panel
+    v: [0, 0, 0, 0]
+global:
+  __: global
+  k 1:
+    __: k_1
+    v: [0,1]
+data:
+  __: data
+  which panel:
+    __: which_panel
+    v: [0,0,0,0]

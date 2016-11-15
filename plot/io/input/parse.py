@@ -8,7 +8,7 @@ from typing import Dict, AnyStr
 from .parser import parser
 from .readAll import readAll
 from .create_parameters import create_parameters
-
+from ... import tk
 
 def parse(user_config_file, default_config_file):
     # type: (AnyStr, AnyStr) -> (Dict)
@@ -40,5 +40,5 @@ def parse(user_config_file, default_config_file):
             else:
                 ooo[k] = create_parameters(user_dict[k], default_dict[k])
         else:
-            ooo[k] = create_parameters(default_dict[k], default_dict[k])
+            ooo[k] = create_parameters(dict(), default_dict[k])
     return ooo
