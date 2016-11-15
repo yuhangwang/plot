@@ -1,11 +1,11 @@
 local:
   grid:
     show:
-      v: [false]
+      v: [true]
     ticks:
-      v: [major, minor]
+      v: [major, minor, both]
     axis:
-      v: [both]
+      v: [both, x, "y"]
     line:
       color:
         v: [k]
@@ -14,6 +14,6 @@ local:
       width:
         v: [1]
       style:
-        v: ["--", "-"]
+        v: ["--", "-", ":", "None", " ", ""]
     layer:
       v: [-1]

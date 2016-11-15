@@ -18,5 +18,5 @@ def adjust(params):
     """
     aux = compose([
         add_axis_labels
-        ]) 
+        ])
     return aux(params)
