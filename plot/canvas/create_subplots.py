@@ -6,6 +6,7 @@ import copy
 import matplotlib.pyplot
 from .subplot_spacing import subplot_spacing
 from .global_axis import global_axis
+from ...tk.fnTK import compose
 
 
 def create_subplots(params):
@@ -19,6 +20,7 @@ def create_subplots(params):
         a parameter dict with a new field "figure"
         which contains the new figure object
     """
+    # axes has type: <class 'matplotlib.axes._subplots.AxesSubplot'>
     fig, axes = matplotlib.pyplot.subplots(
                 nrows=params['global']['figure']['rows'],
                 ncols=params['global']['figure']['columns'],
@@ -30,4 +32,5 @@ def create_subplots(params):
             )
     params['canvas']['figure'] = fig
     params['canvas']['axes'] = axes
-    return global_axis(subplot_spacing(params))
+    tweek = compose([subplot_spacing, global_axis])
+    return tweek(params)

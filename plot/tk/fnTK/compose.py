@@ -17,6 +17,6 @@ def compose(functions):
     """
     def aux(f1, f2):
         # type: (Callable, Callable) -> Callable
-        return lambda x: f1(f2(x))
+        return lambda x: f2(f1(x))
 
     return functools.reduce(aux, functions, lambda a: a)
