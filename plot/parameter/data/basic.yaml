@@ -1,7 +1,7 @@
 data:
   file:
     v: [~]
-  value:
+  values:
     v: [~]
   plot type:
     v: ["line","bar","matrix"]
