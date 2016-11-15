@@ -9,7 +9,7 @@ from .matplotlibConfig import rcParams as new_rc_params
 from .draw import draw_data
 from .canvas import create as create_canvas
 from .tk.fnTK import compose 
-
+from .io.output import saveFigure
 
 def work(params, preview):
     # type: (Dict, bool) -> bool
@@ -27,4 +27,5 @@ def work(params, preview):
     aux(params)
     if preview:
         matplotlib.pyplot.show()
-    return True
+
+    return saveFigure(params)
