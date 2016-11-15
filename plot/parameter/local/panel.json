@@ -90,15 +90,6 @@
           ]
         }
       },
-      "indices": {
-        "__": "indices",
-        "v": [
-          [
-            0,
-            0
-          ]
-        ]
-      },
       "label": {
         "__": "label",
         "alignment": {

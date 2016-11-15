@@ -130,70 +130,6 @@ local:
         size:
           __: size
           v: [20]
-  draw:
-    __: draw
-    span:
-      __: span
-      horizontal:
-        __: horizontal
-        edge color:
-          __: edge_color
-          v: [k]
-        face color:
-          __: face_color
-          v: [k]
-        filled:
-          __: filled
-          v: [true, false]
-        layer:
-          __: layer
-          v: [1]
-        line:
-          __: line
-          style:
-            __: style
-            v: [solid]
-          width:
-            __: width
-            v: [0]
-        min:
-          __: min
-          y:
-            __: y
-            v: [null]
-        opacity:
-          __: opacity
-          v: [0.2]
-      vertical:
-        __: vertical
-        edge color:
-          __: edge_color
-          v: [k]
-        face color:
-          __: face_color
-          v: [k]
-        filled:
-          __: filled
-          v: [true, false]
-        layer:
-          __: layer
-          v: [1]
-        line:
-          __: line
-          style:
-            __: style
-            v: [solid]
-          width:
-            __: width
-            v: [0]
-        min:
-          __: min
-          x:
-            __: x
-            v: [null]
-        opacity:
-          __: opacity
-          v: [0.2]
   grid:
     __: grid
     axis:
@@ -354,10 +290,6 @@ local:
       size:
         __: size
         v: [1.0]
-    indices:
-      __: indices
-      v:
-      - [0, 0]
     label:
       __: label
       alignment:
@@ -811,3 +743,7 @@ local:
           x:
             __: x
             v: [false, true]
+  which panel:
+    __: which_panel
+    v:
+    - [0, 0, 0, 0]

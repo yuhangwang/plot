@@ -1,6 +1,7 @@
 - basic
 - legend
 - line
+- span_line
 - marker
 - block_average
 - error_bar

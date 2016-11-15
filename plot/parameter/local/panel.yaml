@@ -1,7 +1,5 @@
 local:
   panel:
-    indices:
-      v: [[0,0]]
     label:
       content:
         v: [null]

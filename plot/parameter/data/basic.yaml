@@ -5,5 +5,5 @@ data:
     v: [~]
   plot type:
     v: ["line","bar","matrix"]
-  panel:
+  which panel:
     v: [[0,0]]

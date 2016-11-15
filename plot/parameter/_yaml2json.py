@@ -12,7 +12,7 @@ import yaml
 import sys
 import copy
 from functools import reduce
-from plot.tk.dict import merge
+from plot.tk.dictTK import merge
 
 
 def read_yaml(file):

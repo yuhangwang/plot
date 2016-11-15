@@ -7,15 +7,6 @@
         null
       ]
     },
-    "panel": {
-      "__": "panel",
-      "v": [
-        [
-          0,
-          0
-        ]
-      ]
-    },
     "plot type": {
       "__": "plot_type",
       "v": [
@@ -24,10 +15,19 @@
         "matrix"
       ]
     },
-    "value": {
-      "__": "value",
+    "values": {
+      "__": "values",
       "v": [
         null
+      ]
+    },
+    "which panel": {
+      "__": "which_panel",
+      "v": [
+        [
+          0,
+          0
+        ]
       ]
     }
   }

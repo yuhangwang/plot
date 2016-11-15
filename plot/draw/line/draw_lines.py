@@ -35,4 +35,6 @@ def draw_lines(params):
             else:
                 X, Y = extract_data_x_y(data, p)
                 x_bars, y_bars = extract_data_error_bar(data, p)
+                index = p['panel_index']
+                return aux(tail(line_params))
     return aux(params['data'], [])
