@@ -2,5 +2,5 @@ data:
   legend:
     content:
       v: [~]
-    panel: 
-      v: [[0,0]]
+    which panel: 
+      v: [[0,0,0,0]]
