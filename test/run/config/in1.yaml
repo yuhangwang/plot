@@ -14,4 +14,7 @@ global:
         content:
           "x": "Time"
           "y": "Quantity"
+        padding:
+          "x": 50
+          "y": 90
     
