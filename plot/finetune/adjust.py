@@ -3,6 +3,7 @@ Make adjustments to figure axes
 """
 from typing import Dict
 from .global_axis import adjust as adjust_global_axis
+from ..tk.fnTK import compose
 
 
 def adjust(params):

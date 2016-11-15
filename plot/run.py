@@ -5,6 +5,7 @@ from typing import Dict, AnyStr
 import os
 import plot.work
 import plot.parameter
+import matplotlib.pyplot
 
 
 def run(user_config_file, preview):
