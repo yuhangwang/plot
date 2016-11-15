@@ -21,12 +21,12 @@ def alter_axis_label(
         (True, "") if succeeded
         (False, "error message") if not
     """
-    if re.match(r"x", which_axis):
+    if which_axis == "x":
         obj_axis.set_xlabel(
             label_content,
             fontsize=label_font_size,
             labelpad=label_padding)
-    elif re.match(r"y", which_axis):
+    elif which_axis == "y":
         obj_axis.set_ylabel(
             label_content,
             fontsize=label_font_size,

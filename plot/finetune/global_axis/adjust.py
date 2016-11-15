@@ -2,6 +2,8 @@
 Adjust the global figure axis
 """
 from typing import Dict
+from .add_axis_labels import add_axis_labels
+from ...tk.fnTK import compose
 
 
 def adjust(params):
@@ -14,4 +16,7 @@ def adjust(params):
     Returns:
         same as input
     """
-    return params
+    aux = compose([
+        add_axis_labels
+        ]) 
+    return aux(params)

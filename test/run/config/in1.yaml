@@ -9,4 +9,9 @@ data:
 global:
   figure:
     output: output/d1.png
+    axis:
+      label:
+        content:
+          "x": "Time"
+          "y": "Quantity"
     

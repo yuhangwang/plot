@@ -16,7 +16,8 @@ def add_axis_labels(params):
         same as input
     """
     for k in ['x', 'y']:
-        add_axis_labels(
+        print(params['global']['figure']['axis']['label']['content'][k])
+        alter_axis_label(
             params['canvas']['global_axis'],
             k,
             params['global']['figure']['axis']['label']['content'][k],
