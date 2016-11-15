@@ -8,12 +8,12 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(name='plot',
-    version = "0.1.0",
+    version = "0.1.1",
     description="A matplotlib frontend executable using JSON file as user input",
     long_description=long_description,
     url="https://github.com/yuhangwang/plot",
     author="Yuhang(Steven) Wang",
-    license="MIT",
+    license="MIT/X11",
     packages = find_packages(),
     entry_points = {
             'console_scripts': [
@@ -21,7 +21,9 @@ setup(name='plot',
                 ],
         },
     install_requires = [
+            "matplotlib",
             "typing",
             "numpy",
+            "functools",
         ],
     )
