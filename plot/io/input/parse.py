@@ -10,6 +10,7 @@ from .readAll import readAll
 from .create_parameters import create_parameters
 from ... import tk
 
+
 def parse(user_config_file, default_config_file):
     # type: (AnyStr, AnyStr) -> (Dict)
     """Return an updated configuration file

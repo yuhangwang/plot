@@ -5,6 +5,7 @@ from typing import Dict
 from ...tk.listTK import upgrade_index
 import copy
 
+
 def format_panel_index(params, new_dim=4):
     # type: (Dict, int) -> Dict
     """Convert the value of "panel_index" to proper format

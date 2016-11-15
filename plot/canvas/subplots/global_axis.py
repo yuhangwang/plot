@@ -31,7 +31,7 @@ def global_axis(params):
     # Make the frame line transparent
     for child in obj_axis.get_children():
         if isinstance(child, matplotlib.spines.Spine):
-            child.set_color((0,0,0,0))
+            child.set_color((0, 0, 0, 0))
 
     params['canvas']['global_axis'] = obj_axis
     return params

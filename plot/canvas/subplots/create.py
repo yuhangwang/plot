@@ -23,7 +23,8 @@ def create(params):
         which contains the new figure object
     """
     # axes is a numpy.ndarray
-    # axes[0,0] is an instance of <class 'matplotlib.axes._subplots.AxesSubplot'>
+    # axes[0,0] is an instance of
+    #   <class 'matplotlib.axes._subplots.AxesSubplot'>
     fig, axes = matplotlib.pyplot.subplots(
                 nrows=params['global']['figure']['rows'],
                 ncols=params['global']['figure']['columns'],

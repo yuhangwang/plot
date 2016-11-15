@@ -8,8 +8,9 @@ import matplotlib.pyplot
 from .matplotlibConfig import rcParams as new_rc_params
 from .draw import draw_data
 from .canvas import create as create_canvas
-from .tk.fnTK import compose 
+from .tk.fnTK import compose
 from .io.output import saveFigure
+
 
 def work(params, preview):
     # type: (Dict, bool) -> bool
