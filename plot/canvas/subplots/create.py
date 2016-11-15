@@ -7,6 +7,8 @@ import matplotlib.pyplot
 from .subplot_spacing import subplot_spacing
 from .global_axis import global_axis
 from ...tk.fnTK import compose
+import numpy
+from ..tk.listTK import upgrade_dimension
 
 
 def create(params):
@@ -32,6 +34,6 @@ def create(params):
                 squeeze=False
             )
     params['canvas']['figure'] = fig
-    params['canvas']['axes'] = axes
+    params['canvas']['axes'] = numpy.array(upgrade_dimension(axes.tolist(), 4))
     tweek = compose([subplot_spacing, global_axis])
     return tweek(params)

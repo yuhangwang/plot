@@ -6,4 +6,4 @@ data:
   plot type:
     v: ["line","bar","matrix"]
   which panel:
-    v: [[0,0]]
+    v: [[0,0,0,0]]
