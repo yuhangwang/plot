@@ -19,6 +19,11 @@ def get_error_bars(data, params):
         (x_bars, y_bars) where x_bars and y_bars are 1-dimensional numpy arrays
     """
     row_begin = params['line']['first_row']
-    x_bars = data[row_begin:, params['error_bar']['data_column']['x']]
-    y_bars = data[row_begin:, params['error_bar']['data_column']['y']]
-    return (x_bars, y_bars)
+    ooo = []
+    for k in ['x', 'y']:
+        j = params['error_bar']['data_column'][k]
+        if j is None:
+            ooo.append(None)
+        else:
+            ooo.append(data[row_begin:, j])
+    return tuple(ooo)
