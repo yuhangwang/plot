@@ -13,7 +13,7 @@ def saveFigure(params):
         params (dict): plotting parameter dictionary
 
     Returns:
-        True if succeeded
+        same as input
     """
     obj_figure = params['canvas']['figure']
     obj_figure.savefig(
@@ -23,4 +23,4 @@ def saveFigure(params):
             pad_inches=params['global']['figure']['padding'],
             transparent=params['global']['figure']['transparent'],
         )
-    return True
+    return params

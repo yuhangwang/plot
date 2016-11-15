@@ -6,27 +6,18 @@ from typing import Dict
 import matplotlib
 import matplotlib.pyplot
 from .matplotlibConfig import rcParams as new_rc_params
-from .draw import draw_data
-from .canvas import create as create_canvas
-from .tk.fnTK import compose
 from .io.output import saveFigure
+from .workflow import workflow
 
-
-def work(params, preview):
-    # type: (Dict, bool) -> bool
+def work(params):
+    # type: (Dict, bool) -> Dict
     """Create, draw, and save figures
 
     Args:
         params (dict): a dictionary that defines the figure
-        preview (bool): whether to show the preview of the figure
 
     Returns:
-        True if succeeded
+        updated params
     """
     matplotlib.rcParams.update(new_rc_params(params))
-    aux = compose([create_canvas, draw_data])
-    aux(params)
-    if preview:
-        matplotlib.pyplot.show()
-
-    return saveFigure(params)
+    return workflow(params)
