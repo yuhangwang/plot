@@ -2,6 +2,7 @@
 Draw a line
 """
 from typing import Dict
+from .draw_lines import draw_lines
 
 
 def draw(params):
@@ -14,5 +15,5 @@ def draw(params):
     Returns:
         the same parameter dictionary as input
     """
-    line_objects = draw_lines(params['data'])
-        
+    line_objects = draw_lines(params)
+    return params

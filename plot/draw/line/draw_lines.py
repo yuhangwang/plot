@@ -5,6 +5,8 @@ from typing import List, Dict
 from .read_data import read_data
 from .extract_data_x_y import extract_data_x_y
 from .extract_data_error_bar import extract_data_error_bar
+from .draw_one_line import draw_one_line
+import copy
 
 
 def draw_lines(params):
@@ -25,7 +27,7 @@ def draw_lines(params):
         # type: (List, List) -> List
         if len(line_params) == 0:
             return accum
-        elif line_params[0]['plot type'] != 'line':
+        elif line_params[0]['plot_type'] != 'line':
             return aux(tail(line_params), accum)
         else:
             p = line_params[0]
@@ -35,7 +37,13 @@ def draw_lines(params):
             else:
                 X, Y = extract_data_x_y(data, p)
                 x_bars, y_bars = extract_data_error_bar(data, p)
-                index = tuple(p['which_panel'])
+                index = p['which_panel']
                 obj_axis = params['canvas']['axes'][index]
-                return aux(tail(line_params))
-    return aux(params['data'], [])
+                new_accum = copy.deepcopy(accum)
+                new_accum[index] = draw_one_line(
+                    obj_axis,
+                    X, Y, x_bars, y_bars,
+                    p['line'], p['marker'], p['error_bar']
+                    )
+                return aux(tail(line_params), new_accum)
+    return aux(params['data'], dict())

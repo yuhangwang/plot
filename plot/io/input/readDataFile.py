@@ -6,7 +6,7 @@ import numpy
 from numpy import ndarray
 
 
-def readDataFile(file_name):
+def readDataFile(file_name, skip_rows=0):
     # type: (AnyStr) -> ndarray
     """Read a data file
 
@@ -18,4 +18,4 @@ def readDataFile(file_name):
     Returns:
         a numpy.ndarray object
     """
-    return numpy.loadtxt(file_name)
+    return numpy.loadtxt(file_name, skiprows=skip_rows)

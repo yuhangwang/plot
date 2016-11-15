@@ -24,16 +24,22 @@
           ]
         }
       },
-      "first row": {
-        "__": "first_row",
-        "v": [
-          0
-        ]
-      },
       "opacity": {
         "__": "opacity",
         "v": [
           1.0
+        ]
+      },
+      "row end": {
+        "__": "row_end",
+        "v": [
+          null
+        ]
+      },
+      "row start": {
+        "__": "row_start",
+        "v": [
+          0
         ]
       },
       "style": {

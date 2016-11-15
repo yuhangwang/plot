@@ -7,8 +7,8 @@ import matplotlib.pyplot
 from .subplot_spacing import subplot_spacing
 from .global_axis import global_axis
 from ...tk.fnTK import compose
+from ...tk.listTK import upgrade_dimension
 import numpy
-from ..tk.listTK import upgrade_dimension
 
 
 def create(params):

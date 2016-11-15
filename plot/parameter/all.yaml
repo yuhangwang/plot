@@ -80,15 +80,18 @@ data:
   file:
     __: file
     v: [null]
+  include columns:
+    __: include_columns
+    v: [null]
   legend:
     __: legend
     content:
       __: content
       v: [null]
-    panel:
-      __: panel
+    which panel:
+      __: which_panel
       v:
-      - [0, 0]
+      - [0, 0, 0, 0]
   line:
     __: line
     color:
@@ -102,12 +105,15 @@ data:
       y:
         __: y
         v: [1]
-    first row:
-      __: first_row
-      v: [0]
     opacity:
       __: opacity
       v: [1.0]
+    row end:
+      __: row_end
+      v: [null]
+    row start:
+      __: row_start
+      v: [0]
     style:
       __: style
       v: ['-']
@@ -169,6 +175,9 @@ data:
   plot type:
     __: plot_type
     v: [line, bar, matrix]
+  skip rows:
+    __: skip_rows
+    v: [0]
   span line:
     __: span_line
     horizontal:
@@ -237,7 +246,7 @@ data:
   which panel:
     __: which_panel
     v:
-    - [0, 0]
+    - [0, 0, 0, 0]
 figure:
   __: figure
   label:

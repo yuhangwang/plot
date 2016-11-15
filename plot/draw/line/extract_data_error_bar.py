@@ -18,7 +18,7 @@ def extract_data_error_bar(data, params):
     Returns:
         (x_bars, y_bars) where x_bars and y_bars are 1-dimensional numpy arrays
     """
-    row_begin = params['line']['first_row']
+    row_begin = params['line']['row_start']
     ooo = []
     for k in ['x', 'y']:
         j = params['error_bar']['data_column'][k]

@@ -1,8 +1,8 @@
 data:
-- file: data/d1.dat
+- file: data/d1.data
+  skip rows: 3
   plot type: line
   line:
-    first row: 3
     data column:
       "x": 0
       "y": 1

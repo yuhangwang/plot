@@ -6,15 +6,15 @@ from numpy import ndarray
 
 
 def draw_one_line(
-    obj_axis          # type: object
-    x,                # type: ndarray
-    y,                # type: ndarray
-    x_bars,           # type: ndarray
-    y_bars,           # type: ndarray
-    line_styles,      # type: Dict
-    marker_styles,    # type: Dict
-    error_bar_styles  # type: Dict
-    ):
+        obj_axis,         # type: object
+        x,                # type: ndarray
+        y,                # type: ndarray
+        x_bars,           # type: ndarray
+        y_bars,           # type: ndarray
+        line_styles,      # type: Dict
+        marker_styles,    # type: Dict
+        error_bar_styles  # type: Dict
+        ):
     # type: (...) -> Tuple
     """Draw a single line
 
@@ -39,9 +39,9 @@ def draw_one_line(
             axes=obj_axis
         )
     return {
-            "line": line, 
+            "line": line,
             "error_bar": {
-                    "caps": error_bar_caps, 
+                    "caps": error_bar_caps,
                     "lines": error_bar_lines
                 }
         }
