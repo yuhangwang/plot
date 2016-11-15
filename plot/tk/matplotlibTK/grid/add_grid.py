@@ -2,6 +2,7 @@
 Add grids to a plot
 """
 from typing import AnyStr
+import matplotlib.pyplot
 
 
 def add_grid(

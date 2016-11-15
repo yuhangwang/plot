@@ -2,9 +2,9 @@ local:
   grid:
     show:
       v: [true]
-    ticks:
+    which ticks:
       v: [major, minor, both]
-    axis:
+    which axis:
       v: [both, x, "y"]
     line:
       color:
@@ -15,5 +15,5 @@ local:
         v: [1]
       style:
         v: ["--", "-", ":", "None", " ", ""]
-    layer:
-      v: [-1]
+    which layer:
+      v: [1]

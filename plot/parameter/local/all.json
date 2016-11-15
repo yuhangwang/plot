@@ -256,18 +256,6 @@
     },
     "grid": {
       "__": "grid",
-      "axis": {
-        "__": "axis",
-        "v": [
-          "both"
-        ]
-      },
-      "layer": {
-        "__": "layer",
-        "v": [
-          -1
-        ]
-      },
       "line": {
         "__": "line",
         "color": {
@@ -286,7 +274,11 @@
           "__": "style",
           "v": [
             "--",
-            "-"
+            "-",
+            ":",
+            "None",
+            " ",
+            ""
           ]
         },
         "width": {
@@ -299,14 +291,29 @@
       "show": {
         "__": "show",
         "v": [
-          false
+          true
         ]
       },
-      "ticks": {
-        "__": "ticks",
+      "which axis": {
+        "__": "which_axis",
+        "v": [
+          "both",
+          "x",
+          "y"
+        ]
+      },
+      "which layer": {
+        "__": "which_layer",
+        "v": [
+          1
+        ]
+      },
+      "which ticks": {
+        "__": "which_ticks",
         "v": [
           "major",
-          "minor"
+          "minor",
+          "both"
         ]
       }
     },

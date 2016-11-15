@@ -132,12 +132,6 @@ local:
           v: [20]
   grid:
     __: grid
-    axis:
-      __: axis
-      v: [both]
-    layer:
-      __: layer
-      v: [-1]
     line:
       __: line
       color:
@@ -148,16 +142,22 @@ local:
         v: [0.2]
       style:
         __: style
-        v: [--, '-']
+        v: [--, '-', ':', None, ' ', '']
       width:
         __: width
         v: [1]
     show:
       __: show
-      v: [false]
-    ticks:
-      __: ticks
-      v: [major, minor]
+      v: [true]
+    which axis:
+      __: which_axis
+      v: [both, x, y]
+    which layer:
+      __: which_layer
+      v: [1]
+    which ticks:
+      __: which_ticks
+      v: [major, minor, both]
   legend:
     __: legend
     anchor:
