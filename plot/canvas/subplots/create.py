@@ -9,7 +9,7 @@ from .global_axis import global_axis
 from ...tk.fnTK import compose
 
 
-def create_subplots(params):
+def create(params):
     # type: (Dict) -> Dict
     """Create a new figure object
 
@@ -20,7 +20,8 @@ def create_subplots(params):
         a parameter dict with a new field "figure"
         which contains the new figure object
     """
-    # axes has type: <class 'matplotlib.axes._subplots.AxesSubplot'>
+    # axes is a numpy.ndarray
+    # axes[0,0] is an instance of <class 'matplotlib.axes._subplots.AxesSubplot'>
     fig, axes = matplotlib.pyplot.subplots(
                 nrows=params['global']['figure']['rows'],
                 ncols=params['global']['figure']['columns'],

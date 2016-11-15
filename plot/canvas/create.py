@@ -3,7 +3,7 @@ Create a canvas
 """
 from typing import Dict
 import copy
-from .create_subplots import create_subplots
+from .subplots import create as create_subplots
 
 
 def create(params):
