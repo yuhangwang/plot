@@ -6,7 +6,7 @@ from typing import Dict
 import copy
 
 
-def set_id(params):
+def set_data_id(params):
     # type: (Dict) -> Dict
     """Set the ID of reach data entry
 
@@ -23,7 +23,7 @@ def set_id(params):
     # within each panel
     counter = dict()
     for p in params['data']:
-        panel_id = p['data']['which_panel']
+        panel_id = p['which_panel']
         if panel_id not in counter:
             counter[panel_id] = 0
         else:

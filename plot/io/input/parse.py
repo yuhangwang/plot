@@ -9,6 +9,7 @@ from .parser import parser
 from .readAll import readAll
 from .create_parameters import create_parameters
 from ... import tk
+from .postprocess import postprocess
 
 
 def parse(user_config_file, default_config_file):
@@ -42,4 +43,4 @@ def parse(user_config_file, default_config_file):
                 ooo[k] = create_parameters(user_dict[k], default_dict[k])
         else:
             ooo[k] = create_parameters(dict(), default_dict[k])
-    return ooo
+    return postprocess(ooo)
