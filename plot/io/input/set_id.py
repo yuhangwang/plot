@@ -1,5 +1,5 @@
 """
-Set the order ID (zero-based) for each object to be plotted 
+Set the order ID (zero-based) for each object to be plotted
 within the context of each panel
 """
 from typing import Dict
@@ -10,7 +10,7 @@ def set_id(params):
     # type: (Dict) -> Dict
     """Set the ID of reach data entry
 
-    Set the order ID (zero-based) for each object to be plotted 
+    Set the order ID (zero-based) for each object to be plotted
     within the context of each panel
 
     Args:

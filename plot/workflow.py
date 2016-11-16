@@ -4,7 +4,7 @@ all necessary operations for creating the figure
 """
 from typing import Callable, Dict
 from .tk.fnTK import compose
-from .apps import draw_data
+from .apps import draw
 from .canvas import create as create_canvas
 from .finetune import adjust
 from .io.output import saveFigure
@@ -21,7 +21,7 @@ def workflow(params):
     """
     aux = compose([
         create_canvas,
-        draw_data,
+        draw,
         adjust,
         saveFigure
         ])

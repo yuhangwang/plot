@@ -5,7 +5,7 @@ from typing import Dict
 from .draw_lines import draw_lines
 
 
-def draw(params):
+def main(params):
     # type: (Dict) -> Dict
     """Draw line objects
 

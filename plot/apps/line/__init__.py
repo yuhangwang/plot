@@ -1,1 +1,1 @@
-from .draw import draw
+from .main import main
