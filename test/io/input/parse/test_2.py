@@ -7,8 +7,8 @@ def test():
     user_file = os.path.join(here, "data", "in2.yaml")
     default_file = os.path.join(here, "data", 'default1.yaml')
     solution = {
-        'local': [{'k_1': 0}],
-        'data':  [{'k_1': 101}],
+        'local': [{'which_panel': (0, 0, 0, 0)}],
+        'data':  [{'which_panel': (0, 0, 0, 0)}],
         'global': {'k_1': 1001},
         }
     answer = parse(user_file, default_file)

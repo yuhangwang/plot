@@ -3,6 +3,8 @@ data:
     v: [~]
   values:
     v: [~]
+  id:
+    v: [~]
   plot type:
     v: ["line","bar","matrix"]
   which panel:

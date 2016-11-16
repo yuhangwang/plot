@@ -31,7 +31,6 @@ def draw_one_line(
     """
     line, error_bar_caps, error_bar_lines = obj_axis.errorbar(
             x, y, xerr=x_bars, yerr=y_bars, axes=obj_axis,
-            color=line_params['']
         )
 
     return {

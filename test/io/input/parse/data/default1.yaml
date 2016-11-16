@@ -1,8 +1,8 @@
 local:
   __: local
-  k 1:
-    __: k_1
-    v: [0,1,2,3]
+  which panel:
+    __: which_panel
+    v: [[0,0,0,0]]
 global:
   __: global
   k 1:
@@ -10,6 +10,6 @@ global:
     v: [0,1]
 data:
   __: data
-  k 1:
-    __: k_1
-    v: [0,1]
+  which panel:
+    __: which_panel
+    v: [[0,0,0,0]]
