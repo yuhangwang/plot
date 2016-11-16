@@ -4,6 +4,7 @@ Return the min/max of the input list of arrays
 from typing import List
 import numpy
 
+
 def minmax(xs):
     # type: (List) -> List
     """Return the min/max of the input list of arrays
@@ -12,7 +13,7 @@ def minmax(xs):
 
     Args:
         xs (list): numerical array
-    
+
     Returns:
         a list of min/max values
 
@@ -24,7 +25,7 @@ def minmax(xs):
             return accum
         else:
             return aux(
-                tail(xs), 
+                tail(xs),
                 accum + [[numpy.amin(xs[0]), numpy.amax(xs[0])]])
 
     return aux(xs, [])

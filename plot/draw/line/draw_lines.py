@@ -37,7 +37,6 @@ def draw_lines(params):
                 return aux(tail(line_params), accum)
             else:
                 X, Y = extract_data_x_y(data, p)
-                
                 x_bars, y_bars = extract_data_error_bar(data, p)
                 panel_id = p['which_panel']
                 obj_axis = params['canvas']['axes'][panel_id]

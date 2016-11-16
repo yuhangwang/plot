@@ -17,7 +17,7 @@ def choose_color(i, color_list):
     Args:
         i (int): index of the color
         color_list (list): a list of color strings
-    
+
     Returns:
         a color string
     """
