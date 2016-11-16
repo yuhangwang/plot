@@ -6,7 +6,7 @@ from .add_grid_lines import add_grid_lines
 from ...tk.fnTK import compose
 
 
-def adjust(params):
+def main(params):
     # type: (Dict) -> Dict
     """Adjust local axis parameters
 

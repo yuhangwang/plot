@@ -21,11 +21,11 @@ def subimport(path, parent_module):
         a list of modules
     """
     apps = []
-    for root, dirs, files in os.walk(path):
-        for d in dirs:
-            if re.match("^[a-zA-Z]+.*$", d):
-                m = importlib.import_module(
-                    ".{}".format(d),
-                    package=parent_module)
-                apps.append(m)
+    for d in os.listdir(path):
+        if (os.path.isdir(os.path.join(path, d)) and
+                re.match("^[a-zA-Z]+.*$", d)):
+            m = importlib.import_module(
+                ".{}".format(d),
+                package=parent_module)
+            apps.append(m)
     return apps

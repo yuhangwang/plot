@@ -1,1 +1,1 @@
-from .adjust import adjust
+from .main import main

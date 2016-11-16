@@ -2,12 +2,12 @@
 Make adjustments to figure axes
 """
 from typing import Dict
-from .global_axis import adjust as adjust_global_axis
-from .local_axis import adjust as adjust_local_axis
 from ..tk.fnTK import compose
+from ..tk.importTK import subimport
+import os
 
 
-def adjust(params):
+def finetune(params):
     # type: (Dict) -> Dict
     """Adjust figure/axes
 
@@ -19,8 +19,8 @@ def adjust(params):
     Returns:
         same as input
     """
-    tweek = compose([
-        adjust_global_axis,
-        adjust_local_axis,
-        ])
-    return tweek(params)
+    here = os.path.dirname(os.path.realpath(__file__))
+    modules = subimport(here, "plot.finetune")
+    apps = [m.main for m in modules]
+    aux = compose(apps)
+    return aux(params)

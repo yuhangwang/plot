@@ -6,7 +6,7 @@ from .add_axis_labels import add_axis_labels
 from ...tk.fnTK import compose
 
 
-def adjust(params):
+def main(params):
     # type: (Dict) -> Dict
     """Adjust global parameters
 
