@@ -2,7 +2,7 @@
 Convert value of "which_panel" to proper format
 """
 from typing import Dict
-from ...tk.listTK import upgrade_index
+from ....tk.listTK import upgrade_index
 import copy
 
 

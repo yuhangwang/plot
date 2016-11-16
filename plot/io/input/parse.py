@@ -7,9 +7,9 @@ return the updated dictionary.
 from typing import Dict, AnyStr
 from .parser import parser
 from .readAll import readAll
-from .create_parameters import create_parameters
 from ... import tk
-from .postprocess import postprocess
+from .preprocessing import preprocess
+from .postprocessing import postprocess
 
 
 def parse(user_config_file, default_config_file):
@@ -37,10 +37,10 @@ def parse(user_config_file, default_config_file):
     for k in ['global', 'local', 'data']:
         if k in user_dict:
             if isinstance(user_dict[k], list):
-                ooo[k] = [create_parameters(user_dict[k][i], default_dict[k])
+                ooo[k] = [preprocess(user_dict[k][i], default_dict[k])
                           for i in range(len(user_dict[k]))]
             else:
-                ooo[k] = create_parameters(user_dict[k], default_dict[k])
+                ooo[k] = preprocess(user_dict[k], default_dict[k])
         else:
-            ooo[k] = create_parameters(dict(), default_dict[k])
+            ooo[k] = preprocess(dict(), default_dict[k])
     return postprocess(ooo)

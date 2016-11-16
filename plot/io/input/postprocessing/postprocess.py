@@ -2,7 +2,7 @@
 Postprocess the internal parameter dictionary
 """
 from typing import Dict
-from ...tk.fnTK import compose
+from ....tk.fnTK import compose
 from .set_data_id import set_data_id
 from .set_panel_color_order import set_panel_color_order
 from .set_data_color import set_data_color

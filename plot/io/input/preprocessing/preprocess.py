@@ -2,12 +2,11 @@
 Create a dictionary of parameters
 """
 from typing import Dict
-from ... import tk
+from .... import tk
 from .format_panel_index import format_panel_index
-from ...tk.fnTK import compose
 
 
-def create_parameters(user_dict, default_dict):
+def preprocess(user_dict, default_dict):
     # type: (Dict, Dict) -> Dict
     """Create a new parameter dictionary
 
@@ -27,7 +26,7 @@ def create_parameters(user_dict, default_dict):
                     default_dict
             )
         )
-    aux = compose([
+    aux = tk.fnTK.compose([
         format_panel_index,
         ])
     return aux(p)
