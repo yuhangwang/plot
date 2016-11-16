@@ -28,5 +28,5 @@ def set_data_id(params):
             counter[panel_id] = 0
         else:
             counter[panel_id] += 1
-        p['id'] = counter[panel_id]
+        p['local_id'] = counter[panel_id]
     return params

@@ -9,6 +9,7 @@ def test():
     solution = {
         'local': [{'which_panel': (1, 2, 0, 0)}],
         'data':  [{
+            'local_id': 0,
             'which_panel': (1, 2, 3, 0),
             'legend': {
                 'which_panel': (1, 1, 0, 0)
