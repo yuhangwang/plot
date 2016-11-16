@@ -22,7 +22,7 @@ def workflow(params):
     aux = compose([
         create_canvas,
         draw,
-        # finetune,
+        finetune,
         saveFigure
         ])
     return aux(params)
