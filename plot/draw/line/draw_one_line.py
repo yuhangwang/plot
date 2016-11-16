@@ -11,9 +11,7 @@ def draw_one_line(
         y,                # type: ndarray
         x_bars,           # type: ndarray
         y_bars,           # type: ndarray
-        line_styles,      # type: Dict
-        marker_styles,    # type: Dict
-        error_bar_styles  # type: Dict
+        line_params       # type: Dict
         ):
     # type: (...) -> Tuple
     """Draw a single line
@@ -26,17 +24,14 @@ def draw_one_line(
         y (ndarray): data to be used as y
         x_bars (ndarray): data to be used as x error bars
         y_bars (ndarray): data to be used as y error bars
-        line_styles (dict): a dictionary of line styles
-        marker_styles (dict): a dictionary of marker styles
-        error_bar_styles (dict): a dictionary of error bar styles
+        line_params (dict): line parameters
 
     Returns:
         a tuple (obj_line, obj_error_bar_caps, obj_error_bar_lines)
     """
     line, error_bar_caps, error_bar_lines = obj_axis.errorbar(
-            x, y,
-            xerr=x_bars, yerr=y_bars,
-            axes=obj_axis
+            x, y, xerr=x_bars, yerr=y_bars, axes=obj_axis,
+            color=line_params['']
         )
 
     return {

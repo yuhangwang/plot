@@ -7,6 +7,7 @@ from .extract_data_x_y import extract_data_x_y
 from .extract_data_error_bar import extract_data_error_bar
 from .draw_one_line import draw_one_line
 import copy
+import numpy
 
 
 def draw_lines(params):
@@ -36,16 +37,13 @@ def draw_lines(params):
                 return aux(tail(line_params), accum)
             else:
                 X, Y = extract_data_x_y(data, p)
+                
                 x_bars, y_bars = extract_data_error_bar(data, p)
-                index = p['which_panel']
-                obj_axis = params['canvas']['axes'][index]
+                panel_id = p['which_panel']
+                obj_axis = params['canvas']['axes'][panel_id]
+                draw_one_line(obj_axis, X, Y, x_bars, y_bars, p)
                 new_item = {
-                    "which_panel": index,
-                    "objects": draw_one_line(
-                            obj_axis,
-                            X, Y, x_bars, y_bars,
-                            p['line'], p['marker'], p['error_bar']
-                        )
+                    "which_panel": panel_id,
                 }
-                return aux(tail(line_params), accum + [new_item])
+                return aux(tail(line_params), accum)
     return aux(params['data'], [])
