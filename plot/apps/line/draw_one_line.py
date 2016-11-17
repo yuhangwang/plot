@@ -34,7 +34,15 @@ def draw_one_line(
             color=line_params['line']['color'],
             linewidth=line_params['line']['width'],
             linestyle=line_params['line']['style'],
-        )
+            alpha=line_params['line']['opacity'],
+            ecolor=line_params['error_bar']['edge_color'],
+            elinewidth=line_params['error_bar']['line_width'],
+            capsize=line_params['error_bar']['cap']['size'],
+            capthick=line_params['error_bar']['cap']['thickness'],
+            errorevery=line_params['error_bar']['resample_window_size'],
+            marker=line_params['marker']['style'],
+            markersize=line_params['marker']['size']
+     )   
 
     return {
             "line": line,

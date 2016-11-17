@@ -5,12 +5,6 @@
       "__": "error_bar",
       "cap": {
         "__": "cap",
-        "resample window size": {
-          "__": "resample_window_size",
-          "v": [
-            1
-          ]
-        },
         "size": {
           "__": "size",
           "v": [
@@ -49,6 +43,12 @@
         "__": "line_width",
         "v": [
           null
+        ]
+      },
+      "resample window size": {
+        "__": "resample_window_size",
+        "v": [
+          1
         ]
       }
     }

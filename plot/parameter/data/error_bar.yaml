@@ -14,5 +14,5 @@ data:
         v: [4]
       thickness:
         v: [2]
-      resample window size:
-        v: [1]
+    resample window size:
+      v: [1]

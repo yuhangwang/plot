@@ -102,12 +102,6 @@
       "__": "error_bar",
       "cap": {
         "__": "cap",
-        "resample window size": {
-          "__": "resample_window_size",
-          "v": [
-            1
-          ]
-        },
         "size": {
           "__": "size",
           "v": [
@@ -147,10 +141,22 @@
         "v": [
           null
         ]
+      },
+      "resample window size": {
+        "__": "resample_window_size",
+        "v": [
+          1
+        ]
       }
     },
     "file": {
       "__": "file",
+      "v": [
+        null
+      ]
+    },
+    "id": {
+      "__": "id",
       "v": [
         null
       ]

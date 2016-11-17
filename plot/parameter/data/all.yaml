@@ -54,9 +54,6 @@ data:
     __: error_bar
     cap:
       __: cap
-      resample window size:
-        __: resample_window_size
-        v: [1]
       size:
         __: size
         v: [4]
@@ -77,8 +74,14 @@ data:
     line width:
       __: line_width
       v: [null]
+    resample window size:
+      __: resample_window_size
+      v: [1]
   file:
     __: file
+    v: [null]
+  id:
+    __: id
     v: [null]
   include columns:
     __: include_columns
