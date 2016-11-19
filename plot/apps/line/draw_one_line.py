@@ -42,7 +42,7 @@ def draw_one_line(
             errorevery=line_params['error_bar']['resample_window_size'],
             marker=line_params['marker']['style'],
             markersize=line_params['marker']['size']
-     )   
+     )
 
     return {
             "line": line,

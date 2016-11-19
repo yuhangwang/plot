@@ -15,4 +15,5 @@ internal:
       __: plots
       line:
         __: line
-        v: [null]
+        v:
+        - []

@@ -440,7 +440,8 @@ internal:
       __: plots
       line:
         __: line
-        v: [null]
+        v:
+        - []
 local:
   __: local
   axis:
