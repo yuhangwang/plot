@@ -104,10 +104,10 @@ data:
       __: data_column
       x:
         __: x
-        v: [0]
+        v: [null]
       y:
         __: y
-        v: [1]
+        v: [null]
     opacity:
       __: opacity
       v: [1.0]

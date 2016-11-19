@@ -10,9 +10,9 @@ data:
       v: [1.0]
     data column:
       "x":
-        v: [0]
+        v: [~]
       "y":
-        v: [1]
+        v: [~]
     row start:
       v: [0]
     row end:

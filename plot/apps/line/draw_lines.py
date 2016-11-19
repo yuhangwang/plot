@@ -20,29 +20,19 @@ def draw_lines(params):
         params (dict): a complete parameter dictionary
 
     Returns:
-        a list of line objects
+        same as input
     """
-    def tail(xs): return xs[1:]
-
-    def aux(line_params, accum):
-        # type: (List, List) -> List
-        if len(line_params) == 0:
-            return accum
-        elif line_params[0]['plot_type'] != 'line':
-            return aux(tail(line_params), accum)
+    accum = []
+    for i in params['internal']['user']['plots']['line']:
+        p = params['data'][i]
+        data = read_data(p)
+        if data is None:
+            continue
         else:
-            p = line_params[0]
-            data = read_data(p)
-            if data is None:
-                return aux(tail(line_params), accum)
-            else:
-                X, Y = extract_data_x_y(data, p)
-                x_bars, y_bars = extract_data_error_bar(data, p)
-                panel_id = p['which_panel']
-                obj_axis = params['canvas']['axes'][panel_id]
-                draw_one_line(obj_axis, X, Y, x_bars, y_bars, p)
-                new_item = {
-                    "which_panel": panel_id,
-                }
-                return aux(tail(line_params), accum)
-    return aux(params['data'], [])
+            XY = extract_data_x_y(data, p)
+            x_bars, y_bars = extract_data_error_bar(data, p)
+            panel_id = p['which_panel']
+            obj_axis = params['canvas']['axes'][panel_id]
+            draw_one_line(obj_axis, XY, x_bars, y_bars, p)
+
+    return params
