@@ -1,0 +1,16 @@
+{
+  "internal": {
+    "__": "internal",
+    "available": {
+      "__": "available",
+      "plot types": {
+        "__": "plot_types",
+        "v": [
+          [
+            "line"
+          ]
+        ]
+      }
+    }
+  }
+}

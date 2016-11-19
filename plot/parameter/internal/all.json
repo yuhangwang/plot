@@ -1,0 +1,34 @@
+{
+  "internal": {
+    "__": "internal",
+    "available": {
+      "__": "available",
+      "plot types": {
+        "__": "plot_types",
+        "v": [
+          [
+            "line"
+          ]
+        ]
+      }
+    },
+    "figure dimension": {
+      "__": "figure_dimension",
+      "v": [
+        4
+      ]
+    },
+    "user": {
+      "__": "user",
+      "plots": {
+        "__": "plots",
+        "line": {
+          "__": "line",
+          "v": [
+            null
+          ]
+        }
+      }
+    }
+  }
+}

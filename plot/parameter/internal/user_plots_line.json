@@ -1,0 +1,17 @@
+{
+  "internal": {
+    "__": "internal",
+    "user": {
+      "__": "user",
+      "plots": {
+        "__": "plots",
+        "line": {
+          "__": "line",
+          "v": [
+            null
+          ]
+        }
+      }
+    }
+  }
+}
