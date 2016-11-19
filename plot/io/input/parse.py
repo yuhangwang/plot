@@ -34,7 +34,7 @@ def parse(user_config_file, default_config_file):
     default_dict = tk.dictTK.default(fn_parser2(readAll(default_config_file)))
     ooo = {}
 
-    for k in ['global', 'local', 'data']:
+    for k in ['global', 'local', 'data', 'internal']:
         if k in user_dict:
             if isinstance(user_dict[k], list):
                 ooo[k] = [preprocess(user_dict[k][i], default_dict[k])
