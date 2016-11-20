@@ -611,8 +611,8 @@ local:
     __: legend
     anchor:
       __: anchor
-      coordiniate:
-        __: coordiniate
+      coordinate:
+        __: coordinate
         v:
         - [0.9, 0.9]
       corner:
@@ -689,8 +689,8 @@ local:
     padding between handle and text:
       __: padding_between_handle_and_text
       v: [0.5]
-    vertial spacing:
-      __: vertial_spacing
+    vertical spacing:
+      __: vertical_spacing
       v: [0.5]
   panel:
     __: panel

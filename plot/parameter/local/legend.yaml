@@ -3,7 +3,7 @@ local:
     merged:
       v: [true]
     anchor:
-      coordiniate:
+      coordinate:
         v: [[0.9, 0.9]]
       corner:
         v: ["upper right"]
@@ -31,7 +31,7 @@ local:
       v: [2]
     border padding:
       v: [0.5]
-    vertial spacing:
+    vertical spacing:
       v: [0.5]
     padding between handle and text:
       v: [0.5]

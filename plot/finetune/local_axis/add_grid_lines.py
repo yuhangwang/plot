@@ -15,7 +15,6 @@ def add_grid_lines(params):
     Returns:
         same as input
     """
-    def tail(xs): return xs[1:]
     obj_figure = params['canvas']['figure']
     for p in params['local']:
         if p['grid']['show'] is True:

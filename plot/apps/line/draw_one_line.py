@@ -46,5 +46,9 @@ def draw_one_line(
 
     if legend_label is not None:
         line.set_label(legend_label)
+    else:
+        # legend labels staring with '_' are ignored
+        #  see matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.legend
+        line.set_label("_")
 
     return line
