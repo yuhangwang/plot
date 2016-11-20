@@ -8,7 +8,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(name='plot',
-    version = "0.1.1",
+    version = "0.1.2",
     description="A matplotlib frontend executable using JSON file as user input",
     long_description=long_description,
     url="https://github.com/yuhangwang/plot",
