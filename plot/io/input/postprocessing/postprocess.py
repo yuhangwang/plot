@@ -7,6 +7,7 @@ from .set_data_id import set_data_id
 from .set_panel_color_order import set_panel_color_order
 from .set_data_color import set_data_color
 from .assort_plots_by_type import assort_plots_by_type
+from .set_line_data_columns import set_line_data_columns
 
 
 def postprocess(params):
@@ -24,5 +25,6 @@ def postprocess(params):
         set_panel_color_order,
         set_data_color,
         assort_plots_by_type,
+        set_line_data_columns,
         ])
     return aux(params)
