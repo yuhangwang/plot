@@ -25,7 +25,7 @@ def draw_one_line(
         line_params (dict): line parameters
 
     Returns:
-        
+        a matplotlib.lines.line2D object
     """
     line, error_bar_caps, error_bar_lines = obj_axis.errorbar(
             *xy, xerr=x_bars, yerr=y_bars, axes=obj_axis,

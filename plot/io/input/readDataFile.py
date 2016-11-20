@@ -18,4 +18,10 @@ def readDataFile(file_name, skip_rows=0):
     Returns:
         a numpy.ndarray object
     """
-    return numpy.loadtxt(file_name, skiprows=skip_rows)
+    data = numpy.loadtxt(file_name, skiprows=skip_rows)
+    if len(numpy.shape(data)) == 0:
+        return numpy.array([])
+    elif len(numpy.shape(data)) == 1:
+        return data[:, numpy.newaxis]
+    else:
+        return data
