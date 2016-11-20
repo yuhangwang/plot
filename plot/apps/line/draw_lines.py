@@ -2,10 +2,10 @@
 Draw lines (with error bars if defined)
 """
 from typing import List, Dict
-from .read_data import read_data
 from .extract_data_x_y import extract_data_x_y
 from .extract_data_error_bar import extract_data_error_bar
 from .draw_one_line import draw_one_line
+from ...io.input.readFileOrList import readFileOrList
 import copy
 import numpy
 
@@ -25,7 +25,7 @@ def draw_lines(params):
     accum = []
     for i in params['internal']['user']['plots']['line']:
         p = params['data'][i]
-        data = read_data(p)
+        data = readFileOrList(p['file'], p['values'], p['skip_rows'])
         if data is None:
             continue
         else:
