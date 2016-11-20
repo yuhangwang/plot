@@ -15,11 +15,11 @@ def add_grid_lines(params):
     Returns:
         same as input
     """
-    obj_figure = params['canvas']['figure']
+    obj_figure = params['internal']['canvas']['figure']
     for p in params['local']:
         if p['grid']['show'] is True:
             panel_id = p['which_panel']
-            obj_axis = params['canvas']['axes'][panel_id]
+            obj_axis = params['internal']['canvas']['axes'][panel_id]
             add_grid(
                 obj_axis, obj_figure, True,
                 which_ticks=p['grid']['which_ticks'],

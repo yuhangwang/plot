@@ -16,7 +16,7 @@ def subplot_spacing(params):
         has updated horizontal and vertical spacing
         between subplots
     """
-    params['canvas']['figure'].subplots_adjust(
+    params['internal']['canvas']['figure'].subplots_adjust(
         hspace=params['global']['figure']['subplot']['spacing']['horizontal'],
         wspace=params['global']['figure']['subplot']['spacing']['vertical'])
     return params

@@ -15,7 +15,7 @@ def global_axis(params):
     Returns:
         an updated dictionary with a new field ['canvas']['global_axes']
     """
-    obj_axis = params['canvas']['figure'].add_subplot(
+    obj_axis = params['internal']['canvas']['figure'].add_subplot(
                 1, 1, 1,
             )
 
@@ -33,5 +33,5 @@ def global_axis(params):
         if isinstance(child, matplotlib.spines.Spine):
             child.set_color((0, 0, 0, 0))
 
-    params['canvas']['global_axis'] = obj_axis
+    params['internal']['canvas']['global_axis'] = obj_axis
     return params

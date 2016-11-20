@@ -15,7 +15,7 @@ def saveFigure(params):
     Returns:
         same as input
     """
-    obj_figure = params['canvas']['figure']
+    obj_figure = params['internal']['canvas']['figure']
     obj_figure.savefig(
             params['global']['figure']['output'],
             bbox_inches='tight',

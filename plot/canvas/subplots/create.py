@@ -34,7 +34,7 @@ def create(params):
                 sharey=params['global']['figure']['axis']['share']['y'],
                 squeeze=False
             )
-    params['canvas']['figure'] = fig
-    params['canvas']['axes'] = numpy.array(upgrade_dimension(axes.tolist(), 4))
+    params['internal']['canvas']['figure'] = fig
+    params['internal']['canvas']['axes'] = numpy.array(upgrade_dimension(axes.tolist(), 4))
     tweek = compose([subplot_spacing, global_axis])
     return tweek(params)
