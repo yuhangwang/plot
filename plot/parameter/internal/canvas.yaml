@@ -1,0 +1,8 @@
+internal:
+  canvas:
+    figure:
+      v: [~]
+    axes:
+      v: [~]
+    global axis:
+      v: [~]

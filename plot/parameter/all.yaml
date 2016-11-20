@@ -431,6 +431,17 @@ internal:
       __: plot_types
       v:
       - [line]
+  canvas:
+    __: canvas
+    axes:
+      __: axes
+      v: [null]
+    figure:
+      __: figure
+      v: [null]
+    global axis:
+      __: global_axis
+      v: [null]
   figure dimension:
     __: figure_dimension
     v: [4]
