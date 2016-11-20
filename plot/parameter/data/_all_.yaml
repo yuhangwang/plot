@@ -3,7 +3,7 @@
 - line
 - span_line
 - marker
-- block_average
+- smooth
 - error_bar
 - matrix
 - bar

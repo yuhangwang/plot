@@ -1,5 +1,5 @@
 data:
-  block average:
+  smooth:
     window size:
       v: [~]
     legend:
@@ -14,3 +14,9 @@ data:
         v: ['-']
       opacity:
         v: [1.0]
+    mode:
+      v: [nearest, reflect, constant, mirror, wrap]
+    constant value:
+      v: [0]
+    origin:
+      v: [0]

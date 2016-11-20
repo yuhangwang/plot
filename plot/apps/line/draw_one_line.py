@@ -10,7 +10,6 @@ def draw_one_line(
         xy,               # type: List
         x_bars,           # type: ndarray
         y_bars,           # type: ndarray
-        legend_label,     # type: AnyStr
         line_params       # type: Dict
         ):
     # type: (...) -> Tuple
@@ -23,29 +22,29 @@ def draw_one_line(
         xy (list): a list containing either 1 or 2 data arrays
         x_bars (ndarray): data to be used as x error bars
         y_bars (ndarray): data to be used as y error bars
-        legend_label (str): text content for the legend
         line_params (dict): line parameters
 
     Returns:
         a matplotlib.lines.line2D object
     """
+    p = line_params
     line, error_bar_caps, error_bar_lines = obj_axis.errorbar(
             *xy, xerr=x_bars, yerr=y_bars, axes=obj_axis,
-            color=line_params['line']['color'],
-            linewidth=line_params['line']['width'],
-            linestyle=line_params['line']['style'],
-            alpha=line_params['line']['opacity'],
-            ecolor=line_params['error_bar']['edge_color'],
-            elinewidth=line_params['error_bar']['line_width'],
-            capsize=line_params['error_bar']['cap']['size'],
-            capthick=line_params['error_bar']['cap']['thickness'],
-            errorevery=line_params['error_bar']['resample_window_size'],
-            marker=line_params['marker']['style'],
-            markersize=line_params['marker']['size']
+            color=p['line']['color'],
+            linewidth=p['line']['width'],
+            linestyle=p['line']['style'],
+            alpha=p['line']['opacity'],
+            ecolor=p['error_bar']['edge_color'],
+            elinewidth=p['error_bar']['line_width'],
+            capsize=p['error_bar']['cap']['size'],
+            capthick=p['error_bar']['cap']['thickness'],
+            errorevery=p['error_bar']['resample_window_size'],
+            marker=p['marker']['style'],
+            markersize=p['marker']['size']
      )
 
-    if legend_label is not None:
-        line.set_label(legend_label)
+    if p['legend']['content'] is not None:
+        line.set_label(p['legend']['content'])
     else:
         # legend labels staring with '_' are ignored
         #  see matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.legend

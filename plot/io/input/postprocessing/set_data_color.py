@@ -32,7 +32,11 @@ def set_data_color(params):
     for p in params['data']:
         for field in fields:
             if p[field]['color'] is None:
-                panel_id = p['which_panel']
-                p[field]['color'] = aux(p['local_id'], panel_id)
+                p[field]['color'] = aux(p['local_id'], p['which_panel'])
+            elif type(p[field]['color']) == int:
+                # this allows the user to specify which default color to use
+                p[field]['color'] = aux(p[field]['color'], p['which_panel'])
+            else:
+                pass  # keep user's color choice
 
     return params

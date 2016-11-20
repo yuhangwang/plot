@@ -3,6 +3,7 @@ Return two arrays based on input data and input parameters
 """
 from numpy import ndarray
 from typing import Dict
+from ...tk.arrayTK import smooth
 
 
 def extract_data_x_y(data, params):
@@ -25,4 +26,8 @@ def extract_data_x_y(data, params):
             continue
         else:
             ooo.append(data[row_start:, j])
+
+    if params['smooth']['window_size'] is not None:
+        ooo[-1] = smooth(ooo[-1], params['smooth'])
+
     return tuple(ooo)
