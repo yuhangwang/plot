@@ -17,12 +17,12 @@ def extract_data_x_y(data, params):
         (X, Y) where X and Y are 1-dimensional numpy arrays
         or (Y) if only params['line']['data_column']['y'] is specified
     """
-    row_begin = params['line']['row_start']
+    row_start = params['line']['row_start']
     ooo = []
     for k in ['x', 'y']:
         j = params['line']['data_column'][k]
         if j is None:
             continue
         else:
-            ooo.append(data[row_begin:, j])
+            ooo.append(data[row_start:, j])
     return tuple(ooo)
