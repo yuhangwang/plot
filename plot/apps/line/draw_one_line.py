@@ -1,7 +1,7 @@
 """
 Draw a single line
 """
-from typing import Dict, Tuple, List
+from typing import Dict, Tuple, List, AnyStr
 from numpy import ndarray
 
 
@@ -10,6 +10,7 @@ def draw_one_line(
         xy,               # type: List
         x_bars,           # type: ndarray
         y_bars,           # type: ndarray
+        legend_label,     # type: AnyStr
         line_params       # type: Dict
         ):
     # type: (...) -> Tuple
@@ -22,6 +23,7 @@ def draw_one_line(
         xy (list): a list containing either 1 or 2 data arrays
         x_bars (ndarray): data to be used as x error bars
         y_bars (ndarray): data to be used as y error bars
+        legend_label (str): text content for the legend
         line_params (dict): line parameters
 
     Returns:
@@ -41,5 +43,8 @@ def draw_one_line(
             marker=line_params['marker']['style'],
             markersize=line_params['marker']['size']
      )
+
+    if legend_label is not None:
+        line.set_label(legend_label)
 
     return line

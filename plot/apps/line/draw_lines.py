@@ -33,6 +33,8 @@ def draw_lines(params):
             x_bars, y_bars = extract_data_error_bar(data, p)
             panel_id = p['which_panel']
             obj_axis = params['canvas']['axes'][panel_id]
-            draw_one_line(obj_axis, XY, x_bars, y_bars, p)
+            draw_one_line(
+                obj_axis, XY, x_bars, y_bars,
+                p['legend']['content'], p)
 
     return params

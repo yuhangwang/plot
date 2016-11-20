@@ -1,0 +1,57 @@
+"""
+Add legends to an axis object
+"""
+from typing import Dict
+import matplotlib.pyplot
+
+
+def add_legend(obj_axis, legend_params):
+    # type: (object, Dict) -> obj_axis
+    """Add legends to an axis object
+
+    Args:
+        obj_axis (object): a matplotlib axis object
+        legend_params (dict): a dictionary with legend property specifications
+
+    Returns:
+        the input axis object
+    """
+    p = legend_params
+    handles, labels = obj_axis.get_legend_handles_labels()
+    obj_axis.legend(
+        handles, labels,
+        fancybox=legend_params['box']['rounded'],
+        loc=p['anchor']['corner'],
+        bbox_to_anchor=p['anchor']['coordinate'],
+        frameon=p['frame']['show'],
+        framealpha=p['frame']['opacity'],
+        ncol=p['number_of_columns'],
+        fontsize=p['font']['size'],
+        markerscale=p['marker']['scale'],
+        numpoints=p['marker']['number_of_points'],
+        handlelength=p['handle_length']
+        borderpad=p['border_padding'],
+        labelspacing=p['vertical_spacing'],
+        handletextpad=p['padding_between_handle_and_text'],
+        borderaxespad=p['padding_between_border_and_axes'],
+        columnspacing=p['column_spacing'],
+        )
+    obj_legend = matplotlib.pyplot.gca().get_legend()
+    # get all the lines.Line2D instance from the legend
+    obj_legend_lines = obj_legend.get_lines()
+    # get all the text.Text instance from the legend
+    obj_legend_text = obj_legend.get_texts()
+    matplotlib.pyplot.setp(obj_legend_lines, linewidth=p['line']['width'])
+    matplotlib.pyplot.setp(obj_legend_text, fontweight=p['font']['weight'])
+
+    # Change legend face color
+    # get the patch.Rectangle instance surrounding the legend
+    obj_legend_frame = obj_legend.get_frame()
+    if legend_face_color is not None:
+        obj_legend_frame.set_facecolor(p['face']['color'])
+
+    # Change legend edge color
+    if legend_face_color is not None:
+        obj_legend_frame.set_edgecolor(p['edge']['color'])
+
+    return obj_axis
