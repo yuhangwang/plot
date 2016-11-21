@@ -7,7 +7,9 @@
         "__": "plot_types",
         "v": [
           [
-            "line"
+            "line",
+            "bar",
+            "matrix"
           ]
         ]
       }
@@ -52,12 +54,9 @@
       "__": "user",
       "plots": {
         "__": "plots",
-        "line": {
-          "__": "line",
-          "v": [
-            []
-          ]
-        }
+        "v": [
+          null
+        ]
       }
     }
   }

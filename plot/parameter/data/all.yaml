@@ -4,25 +4,43 @@ data:
     __: bar
     align:
       __: align
-      v: [edge]
+      v: [center, edge]
     base line location:
       __: base_line_location
       v: [0]
     color:
       __: color
-      v: [null]
-    edge color:
-      __: edge_color
-      v: [null]
-    line width:
-      __: line_width
-      v: [null]
+      edge:
+        __: edge
+        v: [null]
+      face:
+        __: face
+        v: [null]
+    data column:
+      __: data_column
+      x:
+        __: x
+        v: [null]
+      y:
+        __: y
+        v: [null]
+    line:
+      __: line
+      width:
+        __: width
+        v: [null]
     location offset:
       __: location_offset
       v: [0]
     orientation:
       __: orientation
       v: [vertical, horizontal]
+    row end:
+      __: row_end
+      v: [null]
+    row start:
+      __: row_start
+      v: [0]
     width:
       __: width
       v: [0.8]
@@ -36,6 +54,11 @@ data:
       thickness:
         __: thickness
         v: [2]
+    color:
+      __: color
+      edge:
+        __: edge
+        v: [null]
     data column:
       __: data_column
       x:
@@ -44,12 +67,11 @@ data:
       y:
         __: y
         v: [null]
-    edge color:
-      __: edge_color
-      v: [null]
-    line width:
-      __: line_width
-      v: [null]
+    line:
+      __: line
+      width:
+        __: width
+        v: [null]
     resample window size:
       __: resample_window_size
       v: [1]

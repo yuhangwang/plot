@@ -13,12 +13,12 @@ global:
   figure:
     output: output/d1.png
     title: 
-      content: NYC water consumption
+      content: Bar plot
     axis:
       label:
         content:
-          "x": "Year"
-          "y": "Water\n(million gallons per day per person)"
+          "x": "Index"
+          "y": "Frequency"
         font size:
           "y": 35
 local:

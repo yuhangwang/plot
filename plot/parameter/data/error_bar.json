@@ -18,6 +18,15 @@
           ]
         }
       },
+      "color": {
+        "__": "color",
+        "edge": {
+          "__": "edge",
+          "v": [
+            null
+          ]
+        }
+      },
       "data column": {
         "__": "data_column",
         "x": {
@@ -33,17 +42,14 @@
           ]
         }
       },
-      "edge color": {
-        "__": "edge_color",
-        "v": [
-          null
-        ]
-      },
-      "line width": {
-        "__": "line_width",
-        "v": [
-          null
-        ]
+      "line": {
+        "__": "line",
+        "width": {
+          "__": "width",
+          "v": [
+            null
+          ]
+        }
       },
       "resample window size": {
         "__": "resample_window_size",

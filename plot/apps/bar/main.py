@@ -15,5 +15,5 @@ def main(params):
     Returns:
         the same parameter dictionary as input
     """
-    line_objects = draw_bars(params)
+    bar_objects = draw_bars(params)
     return params

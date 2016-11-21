@@ -18,3 +18,12 @@ data:
       v: [0]
     align:
       v: ['center', 'edge']
+    data column:
+      "x":
+        v: [~]
+      "y":
+        v: [~]
+    row start:
+      v: [0]
+    row end:
+      v: [~]
