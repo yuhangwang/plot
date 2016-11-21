@@ -30,6 +30,8 @@ def draw_bars(params):
             x_bars, y_bars = extract_data_error_bar(data, p)
             panel_id = p['which_panel']
             obj_axis = params['internal']['canvas']['axes'][panel_id]
-            draw_one_bar_series(obj_axis, XY, x_bars, y_bars, p)
+            draw_one_bar_series(
+                obj_axis, XY, x_bars, y_bars, 
+                p['bar'], p['error_bar'])
 
     return params

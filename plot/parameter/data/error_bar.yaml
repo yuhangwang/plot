@@ -5,10 +5,12 @@ data:
         v: [~]
       "y":
         v: [~]
-    line width:
-      v: [~]
-    edge color:
-      v: [~]
+    line:
+      width:
+        v: [~]
+    color:
+      edge:
+        v: [~]
     cap:
       size:
         v: [4]

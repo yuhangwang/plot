@@ -5,14 +5,16 @@ data:
     width:
       v: [0.8]
     color:
-      v: [~]
-    edge color:
-      v: [~]
-    line width:
-      v: [~]
+      face:
+        v: [~]
+      edge:
+        v: [~]
+    line:
+      width:
+        v: [~]
     orientation:
       v: ['vertical','horizontal']
     location offset:
       v: [0]
     align:
-      v: ['edge']
+      v: ['center', 'edge']
