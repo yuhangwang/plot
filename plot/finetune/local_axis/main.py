@@ -5,6 +5,7 @@ from typing import Dict
 from ...tk.fnTK import compose
 from .add_grid_lines import add_grid_lines
 from .refine_legend import refine_legend
+from .tighten_panel_axis_range import tighten_panel_axis_range
 
 
 def main(params):
@@ -20,5 +21,6 @@ def main(params):
     aux = compose([
         add_grid_lines,
         refine_legend,
+        tighten_panel_axis_range
         ])
     return aux(params)

@@ -57,72 +57,72 @@
               null
             ]
           }
+        }
+      },
+      "range": {
+        "__": "range",
+        "inverted": {
+          "__": "inverted",
+          "x": {
+            "__": "x",
+            "v": [
+              false,
+              true
+            ]
+          },
+          "y": {
+            "__": "y",
+            "v": [
+              false,
+              true
+            ]
+          }
         },
-        "range": {
-          "__": "range",
-          "inverted": {
-            "__": "inverted",
-            "x": {
-              "__": "x",
-              "v": [
-                false,
-                true
-              ]
-            },
-            "y": {
-              "__": "y",
-              "v": [
-                false,
-                true
-              ]
-            }
+        "max": {
+          "__": "max",
+          "x": {
+            "__": "x",
+            "v": [
+              null
+            ]
           },
-          "max": {
-            "__": "max",
-            "x": {
-              "__": "x",
-              "v": [
-                null
-              ]
-            },
-            "y": {
-              "__": "y",
-              "v": [
-                null
-              ]
-            }
+          "y": {
+            "__": "y",
+            "v": [
+              null
+            ]
+          }
+        },
+        "min": {
+          "__": "min",
+          "x": {
+            "__": "x",
+            "v": [
+              null
+            ]
           },
-          "min": {
-            "__": "min",
-            "x": {
-              "__": "x",
-              "v": [
-                null
-              ]
-            },
-            "y": {
-              "__": "y",
-              "v": [
-                null
-              ]
-            }
+          "y": {
+            "__": "y",
+            "v": [
+              null
+            ]
+          }
+        },
+        "tight": {
+          "__": "tight",
+          "x": {
+            "__": "x",
+            "v": [
+              false,
+              true
+            ]
           },
-          "tight": {
-            "__": "tight",
-            "x": {
-              "__": "x",
-              "v": [
-                false,
-                true
-              ]
-            },
-            "y": {
-              "__": "y",
-              "v": [
-                false,
-                true
-              ]
-            }
+          "y": {
+            "__": "y",
+            "v": [
+              false,
+              true
+            ]
           }
         }
       },

@@ -27,25 +27,25 @@ local:
             v: [~]
           "y":
             v: [~]
-      range:
-        tight:
-          "x":
-            v: [false,true]
-          "y":
-            v: [false,true]
-        min:
-          "x":
-            v: [~]
-          "y":
-            v: [~]
-        max:
-          "x":
-            v: [~]
-          "y":
-            v: [~]
-        inverted:
-          "x":
-            v: [false,true]
-          "y":
-            v: [false,true]
+    range:
+      tight:
+        "x":
+          v: [false,true]
+        "y":
+          v: [false,true]
+      min:
+        "x":
+          v: [~]
+        "y":
+          v: [~]
+      max:
+        "x":
+          v: [~]
+        "y":
+          v: [~]
+      inverted:
+        "x":
+          v: [false,true]
+        "y":
+          v: [false,true]
 

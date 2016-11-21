@@ -39,6 +39,15 @@
         4
       ]
     },
+    "panel": {
+      "__": "panel",
+      "minmax": {
+        "__": "minmax",
+        "v": [
+          null
+        ]
+      }
+    },
     "user": {
       "__": "user",
       "plots": {

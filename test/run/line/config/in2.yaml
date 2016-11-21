@@ -39,3 +39,8 @@ local:
   legend:
     anchor:
       coordinate: [0.98, 0.96]
+  axis:
+    range:
+      tight:
+        x: True
+        y: True

@@ -2,9 +2,9 @@
 Set which data columns to use for line objects
 """
 from typing import Dict
-import numpy
 from ..readDataFile import readDataFile
 from ..readFileOrList import readFileOrList
+import numpy
 
 
 def set_line_data_columns(params):
