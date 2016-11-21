@@ -43,7 +43,7 @@ def bar_generator(
     }
 
     return obj_axis.bar(
-            left=left, 
+            left=left,
             width=width,
             height=height,
             bottom=bottom,

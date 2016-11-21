@@ -5,6 +5,7 @@ from typing import Dict
 from numpy import ndarray
 from .bar_generator import bar_generator
 
+
 def draw_horizontal_bars(
         obj_axis,      # type: object
         x,             # type: ndarray

@@ -16,7 +16,7 @@ def assort_plots_by_type(params):
         an updated parameter dictionary
     """
     params['internal']['user']['plots'] = dict()
-    
+
     for t in params['internal']['available']['plot_types']:
         params['internal']['user']['plots'][t] = []
 
