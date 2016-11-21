@@ -12,8 +12,7 @@ def draw_one_bar_series(
         xy,               # type: List
         x_error_bars,     # type: ndarray
         y_error_bars,     # type: ndarray
-        p_bars            # type: Dict
-        p_errors          # type: Dict
+        p_data,           # type: Dict
         ):
     # type: (...) -> Tuple
     """Draw a single line
@@ -25,22 +24,22 @@ def draw_one_bar_series(
         xy (list): a list containing either 1 or 2 data arrays
         x_error_bars (ndarray): data to be used as x error bars
         y_error_bars (ndarray): data to be used as y error bars
-        p_bars (dict): bar parameters
-        p_errors (dict): error bar parameters
+        p_data (dict): data parameters
 
     Returns:
         a matplotlib.container.BarContainer object
     """
-    p = p_bars
-    if p['orientation'] == 'vertical':
-        draw_vertical_bars(
-            *xy, x_error_bars, p_bars, p_errors)
+    p_bars = p_data['bar']
+    p_errors = p_data['error_bar']
+    if p_bars['orientation'] == 'vertical':
+        bar = draw_vertical_bars(
+            obj_axis, *xy, x_error_bars, p_bars, p_errors)
     else:
         bar = draw_horizontal_bars(
-            *xy, y_error_bars, p_bars, p_errors)
+            obj_axis, *xy, y_error_bars, p_bars, p_errors)
 
-    if p['legend']['content'] is not None:
-        bar.set_label(p['legend']['content'])
+    if p_data['legend']['content'] is not None:
+        bar.set_label(p_data['legend']['content'])
     else:
         # legend labels staring with '_' are ignored
         #  see matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.legend

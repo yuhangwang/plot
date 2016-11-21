@@ -16,12 +16,13 @@ def extract_data_x_y(data, params):
 
     Returns:
         (X, Y) where X and Y are 1-dimensional numpy arrays
-        or (Y) if only params['line']['data_column']['y'] is specified
+        or (Y) if only params[plot_type]['data_column']['y'] is specified
     """
-    row_start = params['line']['row_start']
+    plot_type = params['plot_type']
+    row_start = params[plot_type]['row_start']
     ooo = []
     for k in ['x', 'y']:
-        j = params['line']['data_column'][k]
+        j = params[plot_type]['data_column'][k]
         if j is None:
             continue
         else:

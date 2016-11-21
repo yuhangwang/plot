@@ -2,13 +2,26 @@ data:
 - file: data/d1.data
   skip rows: 3
   plot type: line
+  line:
+    data column:
+      "x": 0
+      "y": 1
+    opacity: 0.2
+    color: 0
+
+- file: data/d1.data
+  skip rows: 3
+  plot type: line
   legend:
     content: "water usage"
   line:
     data column:
       "x": 0
       "y": 1
-    opacity: 0.2
+    color: 0
+  smooth:
+    window size: 10
+
 global:
   figure:
     output: output/d1.png
@@ -26,3 +39,8 @@ local:
   legend:
     anchor:
       coordinate: [0.98, 0.96]
+  axis:
+    range:
+      tight:
+        x: True
+        y: True

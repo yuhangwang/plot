@@ -2,8 +2,8 @@
 Draw lines (with error bars if defined)
 """
 from typing import List, Dict
-from .extract_data_x_y import extract_data_x_y
-from .extract_data_error_bar import extract_data_error_bar
+from ...io.input.extract_data_x_y import extract_data_x_y
+from ...io.input.extract_data_error_bar import extract_data_error_bar
 from .draw_one_line import draw_one_line
 from ...io.input.readFileOrList import readFileOrList
 import numpy

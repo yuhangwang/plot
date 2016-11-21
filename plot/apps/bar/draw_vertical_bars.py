@@ -5,12 +5,12 @@ from typing import Dict
 from numpy import ndarray
 from .bar_generator import bar_generator
 
-def draw_horizontal_bars(
-        obj_axis       # type: object
+def draw_vertical_bars(
+        obj_axis,      # type: object
         x,             # type: ndarray
         y,             # type: ndarray
         error_bars,    # type: ndarray
-        p_bars         # type: Dict
+        p_bars,        # type: Dict
         p_errors       # type: Dict
         ):
     # type: (...) -> object
@@ -30,8 +30,8 @@ def draw_horizontal_bars(
     p = p_bars
     bottom = p_bars['base_line_location']
     height = y
-    left = x + p_bars['location offset']
+    left = x + p_bars['location_offset']
     width = p['width']
     return bar_generator(
-        obj_axis, left, width, bottom, height,
+        obj_axis, left, width, height, bottom,
         None, error_bars, p_bars, p_errors)
