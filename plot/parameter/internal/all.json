@@ -36,6 +36,15 @@
         ]
       }
     },
+    "default": {
+      "__": "default",
+      "local": {
+        "__": "local",
+        "v": [
+          null
+        ]
+      }
+    },
     "figure dimension": {
       "__": "figure_dimension",
       "v": [

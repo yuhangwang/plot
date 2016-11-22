@@ -574,6 +574,11 @@ internal:
     global axis:
       __: global_axis
       v: [null]
+  default:
+    __: default
+    local:
+      __: local
+      v: [null]
   figure dimension:
     __: figure_dimension
     v: [4]
