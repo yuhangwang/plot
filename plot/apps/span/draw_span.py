@@ -28,9 +28,10 @@ def draw_span(params):
             if (p['span'][k]['min'] is None) or (p['span'][k]['max'] is None):
                 continue
             else:
-                obj_span = fn[k](obj_axis, p['span'][k])
+                obj_span = fn[k](obj_axis, p['span'][k], p['span'])
                 legend_label = format_legend_label(p['legend']['content'])
                 legend_panel = p['legend']['which_panel']
+                print("== legend label", obj_span, k, legend_label)
                 append_legend(obj_span, legend_label, legend_panel, params)
 
     return params

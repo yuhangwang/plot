@@ -3,56 +3,35 @@
     "__": "data",
     "span": {
       "__": "span",
-      "horizontal": {
-        "__": "horizontal",
-        "color": {
-          "__": "color",
-          "edge": {
-            "__": "edge",
-            "v": [
-              "k"
-            ]
-          },
-          "face": {
-            "__": "face",
-            "v": [
-              "k"
-            ]
-          }
-        },
-        "filled": {
-          "__": "filled",
+      "color": {
+        "__": "color",
+        "edge": {
+          "__": "edge",
           "v": [
-            true,
-            false
+            "k"
           ]
         },
+        "face": {
+          "__": "face",
+          "v": [
+            "k"
+          ]
+        }
+      },
+      "filled": {
+        "__": "filled",
+        "v": [
+          true,
+          false
+        ]
+      },
+      "horizontal": {
+        "__": "horizontal",
         "left": {
           "__": "left",
           "v": [
             0
           ]
-        },
-        "line": {
-          "__": "line",
-          "style": {
-            "__": "style",
-            "v": [
-              "-",
-              "--",
-              "-.",
-              ":",
-              "None",
-              " ",
-              ""
-            ]
-          },
-          "width": {
-            "__": "width",
-            "v": [
-              1
-            ]
-          }
         },
         "max": {
           "__": "max",
@@ -66,24 +45,39 @@
             null
           ]
         },
-        "opacity": {
-          "__": "opacity",
-          "v": [
-            0.2
-          ]
-        },
         "right": {
           "__": "right",
           "v": [
             1
           ]
+        }
+      },
+      "line": {
+        "__": "line",
+        "style": {
+          "__": "style",
+          "v": [
+            "-",
+            "--",
+            "-.",
+            ":",
+            "None",
+            " ",
+            ""
+          ]
         },
-        "which layer": {
-          "__": "which_layer",
+        "width": {
+          "__": "width",
           "v": [
             1
           ]
         }
+      },
+      "opacity": {
+        "__": "opacity",
+        "v": [
+          1.0
+        ]
       },
       "vertical": {
         "__": "vertical",
@@ -93,49 +87,6 @@
             0
           ]
         },
-        "color": {
-          "__": "color",
-          "edge": {
-            "__": "edge",
-            "v": [
-              "k"
-            ]
-          },
-          "face": {
-            "__": "face",
-            "v": [
-              "k"
-            ]
-          }
-        },
-        "filled": {
-          "__": "filled",
-          "v": [
-            true,
-            false
-          ]
-        },
-        "line": {
-          "__": "line",
-          "style": {
-            "__": "style",
-            "v": [
-              "-",
-              "--",
-              "-.",
-              ":",
-              "None",
-              " ",
-              ""
-            ]
-          },
-          "width": {
-            "__": "width",
-            "v": [
-              1
-            ]
-          }
-        },
         "max": {
           "__": "max",
           "v": [
@@ -148,24 +99,18 @@
             null
           ]
         },
-        "opacity": {
-          "__": "opacity",
-          "v": [
-            0.2
-          ]
-        },
         "top": {
           "__": "top",
           "v": [
             1
           ]
-        },
-        "which layer": {
-          "__": "which_layer",
-          "v": [
-            1
-          ]
         }
+      },
+      "which layer": {
+        "__": "which_layer",
+        "v": [
+          1
+        ]
       }
     }
   }
