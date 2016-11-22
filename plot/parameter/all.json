@@ -439,12 +439,6 @@
             false
           ]
         },
-        "layer": {
-          "__": "layer",
-          "v": [
-            1
-          ]
-        },
         "left": {
           "__": "left",
           "v": [
@@ -489,6 +483,12 @@
           "v": [
             1
           ]
+        },
+        "which layer": {
+          "__": "which_layer",
+          "v": [
+            1
+          ]
         }
       },
       "vertical": {
@@ -521,18 +521,18 @@
             false
           ]
         },
-        "layer": {
-          "__": "layer",
-          "v": [
-            1
-          ]
-        },
         "line": {
           "__": "line",
           "style": {
             "__": "style",
             "v": [
-              "solid"
+              "-",
+              "--",
+              "-.",
+              ":",
+              "None",
+              " ",
+              ""
             ]
           },
           "width": {
@@ -562,6 +562,12 @@
         },
         "top": {
           "__": "top",
+          "v": [
+            1
+          ]
+        },
+        "which layer": {
+          "__": "which_layer",
           "v": [
             1
           ]

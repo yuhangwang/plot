@@ -227,9 +227,6 @@ data:
       filled:
         __: filled
         v: [true, false]
-      layer:
-        __: layer
-        v: [1]
       left:
         __: left
         v: [0]
@@ -253,6 +250,9 @@ data:
       right:
         __: right
         v: [1]
+      which layer:
+        __: which_layer
+        v: [1]
     vertical:
       __: vertical
       bottom:
@@ -269,14 +269,11 @@ data:
       filled:
         __: filled
         v: [true, false]
-      layer:
-        __: layer
-        v: [1]
       line:
         __: line
         style:
           __: style
-          v: [solid]
+          v: ['-', --, -., ':', None, ' ', '']
         width:
           __: width
           v: [0]
@@ -291,6 +288,9 @@ data:
         v: [0.2]
       top:
         __: top
+        v: [1]
+      which layer:
+        __: which_layer
         v: [1]
   values:
     __: values
