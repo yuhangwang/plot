@@ -5,19 +5,22 @@ from typing import Dict
 import matplotlib.pyplot
 
 
-def refine_legend(obj_axis, legend_params):
+def refine_legend(obj_axis, handle_label_pairs, legend_params):
     # type: (object, Dict) -> obj_axis
     """Refine legends to an axis object
 
     Args:
         obj_axis (object): a matplotlib axis object
+        handle_label_pairs (list): a list of [handle, label] pairs
         legend_params (dict): a dictionary with legend property specifications
 
     Returns:
         the input axis object
     """
     p = legend_params
-    handles, labels = obj_axis.get_legend_handles_labels()
+    handles = [p[0] for p in handle_label_pairs]
+    labels = [p[1] for p in handle_label_pairs]
+    
     if len(labels) == 0:
         return obj_axis
     else:

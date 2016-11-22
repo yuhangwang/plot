@@ -2,16 +2,15 @@
 Return all the indexes for an array
 """
 from typing import List, Tuple
-from numpy import ndarray
 import numpy
 
 
-def all_indexes(X):
-    # (ndarray) -> List[Tuple]
+def all_indexes(shape):
+    # (Tuple) -> List[Tuple]
     """Return all the indexes for an array
 
     Args:
-        X (ndarray): numpy ndarray
+        shape (tuple): a tuple representing array shape
 
     Returns:
         a list of all possible indexes (tuples)
@@ -27,4 +26,4 @@ def all_indexes(X):
                 tail(shape),
                 [xs + [j] for xs in accum
                  for j in range(shape[0])])
-    return [tuple(x) for x in aux(numpy.shape(X), [[]])]
+    return [tuple(x) for x in aux(shape, [[]])]

@@ -9,6 +9,7 @@ from .set_data_color import set_data_color
 from .assort_plots_by_type import assort_plots_by_type
 from .set_data_columns import set_data_columns
 from .set_panel_minmax import set_panel_minmax
+from .initialize_panel_legend import initialize_panel_legend
 
 
 def postprocess(params):
@@ -27,6 +28,7 @@ def postprocess(params):
         set_data_color,
         assort_plots_by_type,
         set_data_columns,
-        set_panel_minmax
+        set_panel_minmax,
+        initialize_panel_legend
         ])
     return aux(params)

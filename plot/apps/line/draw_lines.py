@@ -34,16 +34,16 @@ def draw_lines(params):
             x_bars, y_bars = extract_data_error_bar(data, p)
             panel_id = p['which_panel']
             obj_axis = axes[panel_id]
-            legend_panel_id = p['legend']['which_panel']
-
-            if legend_panel_id is not None:
-                obj_legend_axis = axes[legend_panel_id]
-            else:
-                obj_legend_axis = None
 
             obj_line, legend_label = draw_one_line(
-                obj_axis, obj_legend_axis, XY, x_bars, y_bars, p)
-            panel_legends[legend_panel_id].append(
-                [obj_line, legend_label])
+                obj_axis, XY, x_bars, y_bars, p)
+
+            legend_panel_id = p['legend']['which_panel']
+            if legend_panel_id is not None:
+                obj_legend_axis = axes[legend_panel_id]
+                panel_legends[legend_panel_id].append(
+                    [obj_line, legend_label])
+            else:
+                pass
 
     return params

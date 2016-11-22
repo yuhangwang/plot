@@ -2,6 +2,7 @@
 Initialize the internal panel legend parameter field
 """
 from typing import Dict
+from ....tk.arrayTK import all_indexes
 
 
 def initialize_panel_legend(params):
@@ -14,4 +15,9 @@ def initialize_panel_legend(params):
     Returns:
         updated params
     """
+    params['internal']['panel']['legend'] = dict()
+    print(params['internal']['canvas']['axes'])
+    for index in all_indexes(params['internal']['canvas']['axes']):
+        print("== initialize panel legend", index)
+        params['internal']['panel']['legend'][index] = []
     return params
