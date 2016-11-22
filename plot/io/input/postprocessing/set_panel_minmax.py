@@ -31,18 +31,21 @@ def set_panel_minmax(params):
 
     for p in params['data']:
         panel_id = p['which_panel']
-        data = readFileOrList(p['file'], p['values'], p['skip_rows'])
-        row_count, column_count = numpy.shape(data)
-
-        if column_count == 0:
+        if p['file'] is None and p['values'] is None:
             continue
-        elif column_count == 1:
-            mm = [
-                [0, row_count - 1],
-                minmax(data[:, 0])
-            ]
         else:
-            mm = minmax(data[:, 0], data[:, 1])
+            data = readFileOrList(p['file'], p['values'], p['skip_rows'])
+            row_count, column_count = numpy.shape(data)
 
-        p_minmax[panel_id] = aux({'x': mm[0], 'y': mm[1]}, panel_id)
+            if column_count == 0:
+                continue
+            elif column_count == 1:
+                mm = [
+                    [0, row_count - 1],
+                    minmax(data[:, 0])
+                ]
+            else:
+                mm = minmax(data[:, 0], data[:, 1])
+
+            p_minmax[panel_id] = aux({'x': mm[0], 'y': mm[1]}, panel_id)
     return params

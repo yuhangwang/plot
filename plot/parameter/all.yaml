@@ -234,10 +234,10 @@ data:
         __: line
         style:
           __: style
-          v: [solid]
+          v: ['-', --, -., ':', None, ' ', '']
         width:
           __: width
-          v: [0]
+          v: [1]
       max:
         __: max
         v: [null]
@@ -276,7 +276,7 @@ data:
           v: ['-', --, -., ':', None, ' ', '']
         width:
           __: width
-          v: [0]
+          v: [1]
       max:
         __: max
         v: [null]

@@ -3,6 +3,8 @@ Draw span regions
 """
 from typing import List, Dict
 from .draw_horizontal_span import draw_horizontal_span
+from .._tk import append_legend
+from ...tk.matplotlibTK.legend import format_legend_label
 
 
 def draw_span(params):
@@ -26,7 +28,8 @@ def draw_span(params):
                 continue
             else:
                 obj_span = fn[k](obj_axis, p['span'][k])
-                if p['legend']['content'] is not None:
-                    obj_span.set_label(p['legend']['content'])
+                legend_label = format_legend_label(p['legend']['content'])
+                legend_panel = p['legend']['which_panel']
+                append_legend(obj_span, legend_panel, legend_panel, params)
 
     return params

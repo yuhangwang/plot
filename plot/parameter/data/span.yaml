@@ -20,7 +20,7 @@ data:
         style:
           v: ['-', '--', '-.', ':', 'None', ' ', '']
         width:
-          v: [0]
+          v: [1]
       filled:
         v: [true,false]
       which layer:
@@ -43,9 +43,9 @@ data:
         v: [0.2]
       line:
         style:
-          v: [solid]
+          v: ['-', '--', '-.', ':', 'None', ' ', '']
         width:
-          v: [0]
+          v: [1]
       filled:
         v: [true,false]
       which layer:
