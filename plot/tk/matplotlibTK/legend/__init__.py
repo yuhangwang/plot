@@ -1,2 +1,2 @@
-from .add_legend import add_legend
+from .format_legend_label import format_legend_label
 from .refine_legend import refine_legend

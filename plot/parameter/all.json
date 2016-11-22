@@ -1159,6 +1159,12 @@
     },
     "panel": {
       "__": "panel",
+      "legend": {
+        "__": "legend",
+        "v": [
+          null
+        ]
+      },
       "minmax": {
         "__": "minmax",
         "v": [

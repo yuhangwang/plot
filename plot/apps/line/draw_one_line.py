@@ -3,12 +3,12 @@ Draw a single line
 """
 from typing import Dict, Tuple, List, AnyStr
 from numpy import ndarray
-from ...tk.matplotlibTK import add_legend
+from ...tk.matplotlibTK.legend import format_legend_label
 
 
 def draw_one_line(
         obj_axis,         # type: object
-        obj_legend_axis   # type: object
+        obj_legend_axis,  # type: object
         xy,               # type: List
         x_bars,           # type: ndarray
         y_bars,           # type: ndarray
@@ -46,16 +46,4 @@ def draw_one_line(
             markersize=p['marker']['size']
      )
 
-    if p['legend']['content'] is not None:
-        legend_label = p['legend']['content']
-    else:
-        # legend labels staring with '_' are ignored
-        #  see matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.legend
-        legend_label = "_"
-
-    if obj_legend_axis is not None:
-        add_legend(obj_legend_axis, [line], [legend_label])
-    else:
-        pass
-
-    return line
+    return (line, format_legend_label(legend_label))

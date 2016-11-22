@@ -5,7 +5,7 @@ from typing import Dict
 import matplotlib.pyplot
 
 
-def add_legend(obj_axis, legend_params):
+def refine_legend(obj_axis, legend_params):
     # type: (object, Dict) -> obj_axis
     """Refine legends to an axis object
 

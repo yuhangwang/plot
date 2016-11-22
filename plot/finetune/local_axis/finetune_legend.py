@@ -5,7 +5,7 @@ from typing import Dict
 from ...tk.matplotlibTK.legend import refine_legend
 
 
-def refine_legend(params):
+def finetune_legend(params):
     # type: (Dict) -> Dict
     """Refine legend properties
 
