@@ -417,14 +417,8 @@
       "__": "span",
       "horizontal": {
         "__": "horizontal",
-        "edge color": {
-          "__": "edge_color",
-          "v": [
-            "k"
-          ]
-        },
-        "face color": {
-          "__": "face_color",
+        "color": {
+          "__": "color",
           "v": [
             "k"
           ]
@@ -457,14 +451,17 @@
             ]
           }
         },
+        "max": {
+          "__": "max",
+          "v": [
+            null
+          ]
+        },
         "min": {
           "__": "min",
-          "y": {
-            "__": "y",
-            "v": [
-              null
-            ]
-          }
+          "v": [
+            null
+          ]
         },
         "opacity": {
           "__": "opacity",
@@ -475,14 +472,8 @@
       },
       "vertical": {
         "__": "vertical",
-        "edge color": {
-          "__": "edge_color",
-          "v": [
-            "k"
-          ]
-        },
-        "face color": {
-          "__": "face_color",
+        "color": {
+          "__": "color",
           "v": [
             "k"
           ]
@@ -515,14 +506,17 @@
             ]
           }
         },
+        "max": {
+          "__": "max",
+          "v": [
+            null
+          ]
+        },
         "min": {
           "__": "min",
-          "x": {
-            "__": "x",
-            "v": [
-              null
-            ]
-          }
+          "v": [
+            null
+          ]
         },
         "opacity": {
           "__": "opacity",
