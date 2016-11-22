@@ -41,8 +41,15 @@ def draw_lines(params):
             legend_panel_id = p['legend']['which_panel']
             if legend_panel_id is not None:
                 obj_legend_axis = axes[legend_panel_id]
-                panel_legends[legend_panel_id].append(
-                    [obj_line, legend_label])
+                if legend_panel_id not in panel_legends:
+                    panel_legends[legend_panel_id] = []
+                else:
+                    pass
+                if legend_label is not None:
+                    panel_legends[legend_panel_id].append(
+                        [obj_line, legend_label])
+                else:
+                    pass
             else:
                 pass
 

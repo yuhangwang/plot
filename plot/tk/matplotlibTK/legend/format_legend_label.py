@@ -20,4 +20,4 @@ def format_legend_label(legend_label):
     else:
         # legend labels staring with '_' are ignored
         #  see matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.legend
-        return "_"
+        return None

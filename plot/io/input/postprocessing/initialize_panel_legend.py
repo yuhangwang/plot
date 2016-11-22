@@ -16,8 +16,4 @@ def initialize_panel_legend(params):
         updated params
     """
     params['internal']['panel']['legend'] = dict()
-    print(params['internal']['canvas']['axes'])
-    for index in all_indexes(params['internal']['canvas']['axes']):
-        print("== initialize panel legend", index)
-        params['internal']['panel']['legend'][index] = []
     return params

@@ -15,7 +15,7 @@ def finetune_legend(params):
     Returns:
         same as input
     """
-    for p in params['local']:
+    for panel_id in params['internal']['panel']['legend']:
         panel_id = p['which_panel']
         handles_labels = params['internal']['panel']['legend'][panel_id]
         obj_axis = params['internal']['canvas']['axes'][panel_id]
