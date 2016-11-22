@@ -1,0 +1,54 @@
+data:
+- plot type: span
+  legend:
+    content: "span line"
+  span:
+    horizontal:
+      min: 1.0
+      max: 1.0
+    vertical:
+      min: 0.5
+      max: 0.5
+  line:
+    width: 3
+  opacity: 1.0
+
+- plot type: span
+  legend:
+    content: "span region"
+  span:
+    vertical:
+      min: 0.45
+      max: 0.55
+    line:
+      width: 0
+    opacity: 0.4
+    color:
+      face: [0.8,0.8,0.8]
+      edge: [0.8,0.8,0.8]
+    which layer: 0
+
+global:
+  figure:
+    output: output/d1.png
+    title: 
+      content: Test span
+    axis:
+      label:
+        content:
+          "x": "index"
+          "y": "Y"
+        font size:
+          "y": 35
+
+local:
+- which panel: [0,0]
+  legend:
+    anchor:
+      coordinate: [0.98, 0.96]
+  axis:
+    range:
+      min:
+        x: 0
+      max:
+        x: 1

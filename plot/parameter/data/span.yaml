@@ -31,7 +31,7 @@ data:
       style:
         v: ['-', '--', '-.', ':', 'None', ' ', '']
       width:
-        v: [1]
+        v: [3]
     filled:
       v: [true,false]
     which layer:

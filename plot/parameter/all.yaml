@@ -246,7 +246,7 @@ data:
         v: ['-', --, -., ':', None, ' ', '']
       width:
         __: width
-        v: [1]
+        v: [3]
     opacity:
       __: opacity
       v: [1.0]

@@ -31,7 +31,8 @@ def draw_span(params):
                 obj_span = fn[k](obj_axis, p['span'][k], p['span'])
                 legend_label = format_legend_label(p['legend']['content'])
                 legend_panel = p['legend']['which_panel']
-                print("== legend label", obj_span, k, legend_label)
-                append_legend(obj_span, legend_label, legend_panel, params)
+        # I intentionally only want to keep the legend
+        # for the last horizontal/vertical plot
+        append_legend(obj_span, legend_label, legend_panel, params)
 
     return params
