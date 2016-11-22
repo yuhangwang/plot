@@ -27,6 +27,5 @@ setup(
             "matplotlib",
             "typing",
             "numpy",
-            "functools",
         ],
     )

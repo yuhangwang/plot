@@ -2,7 +2,6 @@
 Take many functions and compose
 """
 from typing import List, Callable, Optional
-import functools
 
 
 def compose(functions):
@@ -19,4 +18,13 @@ def compose(functions):
         # type: (Callable, Callable) -> Callable
         return lambda x: f2(f1(x))
 
-    return functools.reduce(aux, functions, lambda a: a)
+    def tail(xs): return xs[1:]
+
+    def reduce(aux, functions, f):
+        if len(functions) == 0:
+            return f
+        else:
+            return reduce(
+                aux, tail(functions), aux(f, functions[0]))
+
+    return reduce(aux, functions, lambda a: a)
