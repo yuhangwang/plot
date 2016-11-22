@@ -20,7 +20,7 @@ def refine_legend(obj_axis, handle_label_pairs, legend_params):
     p = legend_params
     handles = [p[0] for p in handle_label_pairs]
     labels = [p[1] for p in handle_label_pairs]
-    
+
     if len(labels) == 0:
         return obj_axis
     else:
