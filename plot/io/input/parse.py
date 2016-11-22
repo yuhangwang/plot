@@ -43,6 +43,6 @@ def parse(user_config_file, default_config_file):
                 ooo[k] = preprocess(user_dict[k], default_dict[k])
         else:
             ooo[k] = preprocess(dict(), default_dict[k])
-    default_local = ooo['internal']['default']['local']
-    default_local = preprocess(dict(), default_dict['local'])
+    ooo['internal']['default']['local'] = (
+            preprocess(dict(), default_dict['local']))
     return postprocess(ooo)

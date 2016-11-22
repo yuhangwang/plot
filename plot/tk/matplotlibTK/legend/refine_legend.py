@@ -3,7 +3,7 @@ Refine legends to an axis object
 """
 from typing import Dict
 import matplotlib.pyplot
-from .extract_handles_labels import extract_handles_labels
+from .extract_legend_handles_labels import extract_legend_handles_labels
 
 
 def refine_legend(obj_axis, handle_label_pairs, legend_params):
@@ -19,7 +19,7 @@ def refine_legend(obj_axis, handle_label_pairs, legend_params):
         the input axis object
     """
     p = legend_params
-    handles, labels = extract_handles_labels(handle_label_pairs)
+    handles, labels = extract_legend_handles_labels(handle_label_pairs)
 
     if len(labels) == 0:
         return obj_axis
