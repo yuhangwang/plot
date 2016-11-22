@@ -544,7 +544,7 @@ internal:
     plot types:
       __: plot_types
       v:
-      - [line, bar, matrix]
+      - [line, span, bar, matrix]
   canvas:
     __: canvas
     axes:
