@@ -22,8 +22,8 @@ def draw_horizontal_span(obj_axis, p):
         alpha=p['opacity'],
         facecolor=p['color']['face'],
         edgecolor=p['color']['edge'],
-        linesytle=p['line']['style'],
-        linewdith=p['line']['width'],
+        linestyle=p['line']['style'],
+        linewidth=p['line']['width'],
         fill=p['filled'],
         zorder=p['which_layer']
         )

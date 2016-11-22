@@ -15,7 +15,7 @@ data:
         edge:
           v: [k]
       opacity:
-        v: [0.2]
+        v: [1.0]
       line:
         style:
           v: ['-', '--', '-.', ':', 'None', ' ', '']
@@ -40,7 +40,7 @@ data:
         edge:
           v: [k]
       opacity:
-        v: [0.2]
+        v: [1.0]
       line:
         style:
           v: ['-', '--', '-.', ':', 'None', ' ', '']
