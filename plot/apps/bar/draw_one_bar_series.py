@@ -5,6 +5,7 @@ from typing import Dict, Tuple, List, AnyStr
 from numpy import ndarray
 from .draw_vertical_bars import draw_vertical_bars
 from .draw_horizontal_bars import draw_horizontal_bars
+from ...tk.matplotlibTK.legend import format_legend_label
 
 
 def draw_one_bar_series(
@@ -38,11 +39,4 @@ def draw_one_bar_series(
         bar = draw_horizontal_bars(
             obj_axis, *xy, y_error_bars, p_bars, p_errors)
 
-    if p_data['legend']['content'] is not None:
-        bar.set_label(p_data['legend']['content'])
-    else:
-        # legend labels staring with '_' are ignored
-        #  see matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.legend
-        bar.set_label("_")
-
-    return bar
+    return (bar, format_legend_label(p_data['legend']['content']))

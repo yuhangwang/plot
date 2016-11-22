@@ -6,6 +6,7 @@ from ...io.input.extract_data_x_y import extract_data_x_y
 from ...io.input.extract_data_error_bar import extract_data_error_bar
 from ...io.input.readFileOrList import readFileOrList
 from .draw_one_bar_series import draw_one_bar_series
+from .._tk import append_legend
 import numpy
 
 
@@ -32,6 +33,9 @@ def draw_bars(params):
             x_bars, y_bars = extract_data_error_bar(data, p)
             panel_id = p['which_panel']
             obj_axis = params['internal']['canvas']['axes'][panel_id]
-            draw_one_bar_series(obj_axis, XY, x_bars, y_bars, p)
+            obj_bar, legend_label = draw_one_bar_series(
+                obj_axis, XY, x_bars, y_bars, p)
 
+            legend_panel = p['legend']['which_panel']
+            append_legend(obj_bar, legend_label, legend_panel, params)
     return params
