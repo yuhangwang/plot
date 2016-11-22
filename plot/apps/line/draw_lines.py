@@ -22,6 +22,7 @@ def draw_lines(params):
         same as input
     """
     accum = []
+    axes = params['internal']['canvas']['axes']
     for i in params['internal']['user']['plots']['line']:
         p = params['data'][i]
         data = readFileOrList(p['file'], p['values'], p['skip_rows'])
@@ -31,7 +32,12 @@ def draw_lines(params):
             XY = extract_data_x_y(data, p)
             x_bars, y_bars = extract_data_error_bar(data, p)
             panel_id = p['which_panel']
-            obj_axis = params['internal']['canvas']['axes'][panel_id]
-            draw_one_line(obj_axis, XY, x_bars, y_bars, p)
+            obj_axis = axes[panel_id]
+            legend_panel_id = p['legend']['which_panel']
+            if legend_panel_id is not None:
+                obj_legend_axis = axes[legend_panel_id]
+            else:
+                obj_legend_axis = None
+            draw_one_line(obj_axis, obj_legend_axis, XY, x_bars, y_bars, p)
 
     return params

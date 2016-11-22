@@ -1,0 +1,53 @@
+data:
+  span:
+    vertical:
+      min:
+        v: [~]
+      max:
+        v: [~]
+      top:
+        v: [1]
+      bottom:
+        v: [0]
+      color:
+        face:
+          v: [k]
+        edge:
+          v: [k]
+      opacity:
+        v: [0.2]
+      line:
+        style:
+          v: ['-', '--', '-.', ':', 'None', ' ', '']
+        width:
+          v: [0]
+      filled:
+        v: [true,false]
+      which layer:
+        v: [1]
+    horizontal:
+      min:
+        v: [~]
+      max:
+        v: [~]
+      left:
+        v: [0]
+      right:
+        v: [1]
+      color:
+        face:
+          v: [k]
+        edge:
+          v: [k]
+      opacity:
+        v: [0.2]
+      line:
+        style:
+          v: [solid]
+        width:
+          v: [0]
+      filled:
+        v: [true,false]
+      which layer:
+        v: [1]
+

@@ -2,7 +2,7 @@
 Refine the properties of legend
 """
 from typing import Dict
-from ...tk.matplotlibTK.legend import add_legend
+from ...tk.matplotlibTK.legend import refine_legend
 
 
 def refine_legend(params):
@@ -18,5 +18,5 @@ def refine_legend(params):
     for p in params['local']:
         panel_id = p['which_panel']
         obj_axis = params['internal']['canvas']['axes'][panel_id]
-        add_legend(obj_axis, p['legend'])
+        refine_legend(obj_axis, p['legend'])
     return params
