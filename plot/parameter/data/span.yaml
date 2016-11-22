@@ -11,7 +11,7 @@ data:
         v: [0]
       color:
         face:
-          v: [k]
+          v: [0.2]
         edge:
           v: [k]
       opacity:
@@ -36,7 +36,7 @@ data:
         v: [1]
       color:
         face:
-          v: [k]
+          v: [0.2]
         edge:
           v: [k]
       opacity:
