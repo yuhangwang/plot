@@ -21,7 +21,6 @@ def set_panel_color_order(params):
         an updated parameter dictionary
     """
     params['global']['panel_colors'] = {}
-    for p in params['local']:
-        panel_id = p['which_panel']
+    for panel_id, p in params['local'].items():
         params['global']['panel_colors'][panel_id] = p['colors']
     return params

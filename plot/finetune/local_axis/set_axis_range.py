@@ -14,8 +14,7 @@ def set_axis_range(params):
     Returns:
         same as input
     """
-    for p in params['local']:
-        panel_id = p['which_panel']
+    for panel_id, p in params['local'].items():
         obj_axis = params['internal']['canvas']['axes'][panel_id]
         for k in ['x', 'y']:
             attr = "get_{}lim".format(k)

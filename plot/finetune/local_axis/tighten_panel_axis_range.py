@@ -14,7 +14,7 @@ def tighten_panel_axis_range(params):
     Returns:
         same as input
     """
-    for p in params['local']:
+    for panel_id, p in params['local'].items():
         panel_id = p['which_panel']
         obj_axis = params['internal']['canvas']['axes'][panel_id]
         for k in ['x', 'y']:

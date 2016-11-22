@@ -16,9 +16,8 @@ def add_grid_lines(params):
         same as input
     """
     obj_figure = params['internal']['canvas']['figure']
-    for p in params['local']:
+    for panel_id, p in params['local'].items():
         if p['grid']['show'] is True:
-            panel_id = p['which_panel']
             obj_axis = params['internal']['canvas']['axes'][panel_id]
             add_grid(
                 obj_axis, obj_figure, True,
