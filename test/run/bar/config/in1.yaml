@@ -25,3 +25,7 @@ local:
   legend:
     anchor:
       coordinate: [0.98, 0.96]
+  axis:
+    range:
+      max:
+        "y": 0.5
