@@ -157,7 +157,8 @@ html_theme = 'alabaster'
 # html_logo = None
 
 # The name of an image file (relative to this directory) to use as a favicon of
-# the docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
+# the docs.
+# This file should be a Windows icon file (.ico) being 16x16 or 32x32
 # pixels large.
 #
 # html_favicon = None
@@ -438,8 +439,6 @@ epub_exclude_files = ['search.html']
 # Example configuration for intersphinx: refer to the Python standard library.
 intersphinx_mapping = {'https://docs.python.org/': None}
 
-
-
 # Napoleon settings
 napoleon_google_docstring = True
 napoleon_numpy_docstring = True
@@ -451,20 +450,3 @@ napoleon_use_admonition_for_references = False
 napoleon_use_ivar = False
 napoleon_use_param = True
 napoleon_use_rtype = True
-
-def autodoc_skip_member(app, what, name, obj, skip, options):
-    exclusions = ('plot.parameter.yaml2json',  # special-members
-                 
-                  )
-    exclude = name in exclusions
-    return skip or exclude
-
-def remove_module_docstring(app, what, name, obj, options, lines):
-    if what == "module" and name == "yaml2json":
-        del lines[:]
-
-def setup(app):
-    app.connect("autodoc-process-docstring", remove_module_docstring)
-
-# def setup(app):
-#     app.connect("autodoc-skip-member", autodoc_skip_member)
