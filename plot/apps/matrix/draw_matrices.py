@@ -5,6 +5,7 @@ from typing import List, Dict
 from .draw_matrix import draw_matrix
 from ...io.input.readFileOrList import readFileOrList
 import numpy
+from .._tk import append_addon
 
 
 def draw_matrices(params):
@@ -31,6 +32,9 @@ def draw_matrices(params):
             panel_id = p['which_panel']
             obj_axis = axes[panel_id]
             obj_matrix = draw_matrix(obj_axis, data, p)
-            params['internal']['panel']['color_bar'][panel_id]
+            label = p['color_bar']['content']
+            color_bar_panel = p['color_bar']['which_panel']
+            append_addon('color_bar', 
+                obj_matrix, label, color_bar_panel, params)
 
     return params
