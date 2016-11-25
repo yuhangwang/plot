@@ -15,3 +15,8 @@ local:
         v: [7]
       color:
         v: [k]
+    box:
+      color:
+        v: ['k']
+    padding:
+      v: [5]

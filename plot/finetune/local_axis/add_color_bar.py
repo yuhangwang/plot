@@ -5,27 +5,37 @@ from ...tk import matplotlibTK as mtk
 from typing import Dict
 
 
-def add_color_bar(obj_axis, obj_mat, p):
-    # type: (object, object, Dict) -> object
-    """ Add color bar
-    
-    Args:
-        obj_axis (object): axis object
-        obj_mat (object): matrix object
-        p (dict): parameters for the matrix plot
-    
-    Returns:
-        a `matplotlib.colorbar.Colorbar` object
-    """
-    object_color_bar = mtk.add_color_bar(
-        obj_axis,
-        obj_mat,
-        bar_tick_label_font_size=p["color_bar_tick_label_font_size"],
-        bar_tick_label_decimals=p["color_bar_tick_label_number_of_decimal_places"],
-        bar_ticks = p["color_bar_tick_array"],
-        bar_tick_width = p["color_bar_tick_width"],
-        bar_tick_length = p["color_bar_tick_length"],
-        bar_tick_color = p["color_bar_tick_color"],
-        )
+def add_color_bar(params):
+    # type: (Dict) -> Dict
+    """Refine legend properties
 
-    return object_color_bar
+    Args:
+        params (dict): plotting parameter dictionary
+
+    Returns:
+        same as input
+    """
+    for panel_id in params['internal']['panel']['color_bar']:
+        if panel_id in params['local']:
+            p = params['local'][panel_id]['color_bar']
+        else:
+            p = params['internal']['default']['local']['color_bar']
+        obj_axis = params['internal']['canvas']['axes'][panel_id]
+        for handles_labels in params['internal']['panel']['legend'][panel_id]:
+            handle, label = handles_labels
+            obj_color_bar = mtk.add_color_bar(
+                obj_axis,
+                handle,
+                bar_label=label,
+                bar_tick_label_font_size=p['tick_label']['font']['size'],
+                bar_tick_label_decimals=p['tick_label']['decimals'],
+                bar_tick_label_color=p['tick_label']['color'],
+                bar_ticks=p['tick']['set'],
+                bar_tick_width=p['tick']['width'],
+                bar_tick_length=p['tick']['length'],
+                bar_tick_color=p['tick']['color'],
+                box_color=p['box']['color'],
+                padding=p['padding']
+                )
+
+    return params

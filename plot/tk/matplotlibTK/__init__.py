@@ -1,4 +1,4 @@
 from . import axis
-from . import colorbar
+from . import color_bar
 from . import grid
 from . import legend
