@@ -1,0 +1,20 @@
+{
+  "data": {
+    "__": "data",
+    "color bar": {
+      "__": "color_bar",
+      "content": {
+        "__": "content",
+        "v": [
+          null
+        ]
+      },
+      "which panel": {
+        "__": "which_panel",
+        "v": [
+          null
+        ]
+      }
+    }
+  }
+}

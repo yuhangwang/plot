@@ -1,0 +1,6 @@
+data:
+  color bar:
+    content:
+      v: [~]
+    which panel:
+      v: [~]
