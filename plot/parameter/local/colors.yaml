@@ -1,14 +1,3 @@
 local:
   colors:
-    v:
-    -   - "#000000"  # black
-        - "#33B2FF"  # blue
-        - "#FFC433"  # orange
-        - "#FF4D33"  # red
-        - "#189674"  # green
-        - "#871896"  # purple
-        - "#961852"  # magenta
-        - "#965A18"  # brown
-        - "#82AE12"  # lime
-        - "#094970"  # navy
-        - "#D75D5D"  # pink
+    v: [~]

@@ -1,1 +1,1 @@
-from . import msgpack
+from . import _msgpack as msgpack

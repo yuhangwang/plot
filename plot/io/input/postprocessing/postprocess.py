@@ -5,7 +5,6 @@ from typing import Dict
 from ....tk.fnTK import compose
 from .make_local_dict import make_local_dict
 from .set_data_id import set_data_id
-from .set_panel_color_order import set_panel_color_order
 from .set_line_color import set_line_color
 from .set_shape_color import set_shape_color
 from .assort_plots_by_type import assort_plots_by_type
@@ -27,7 +26,6 @@ def postprocess(params):
     aux = compose([
         make_local_dict,
         set_data_id,
-        set_panel_color_order,
         set_line_color,
         set_shape_color,
         assort_plots_by_type,

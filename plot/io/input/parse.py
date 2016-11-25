@@ -41,8 +41,11 @@ def parse(user_config_file, default_config_file):
                           for i in range(len(user_dict[k]))]
             else:
                 ooo[k] = preprocess(user_dict[k], default_dict[k])
+        elif k not in user_dict and k in ['data', 'local']:
+            ooo[k] = []
         else:
             ooo[k] = preprocess(dict(), default_dict[k])
+
     ooo['internal']['default']['local'] = (
             preprocess(dict(), default_dict['local']))
     return postprocess(ooo)
