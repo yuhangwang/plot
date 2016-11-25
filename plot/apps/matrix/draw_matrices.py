@@ -31,5 +31,6 @@ def draw_matrices(params):
             panel_id = p['which_panel']
             obj_axis = axes[panel_id]
             obj_matrix = draw_matrix(obj_axis, data, p)
+            params['internal']['panel']['color_bar'][panel_id]
 
     return params

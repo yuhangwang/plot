@@ -1,1 +1,1 @@
-from .append_legend import append_legend
+from .append_addon import append_addon

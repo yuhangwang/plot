@@ -6,7 +6,7 @@ from ...io.input.extract_data_x_y import extract_data_x_y
 from ...io.input.extract_data_error_bar import extract_data_error_bar
 from .draw_one_line import draw_one_line
 from ...io.input.readFileOrList import readFileOrList
-from .._tk import append_legend
+from .._tk import append_addon
 import numpy
 
 
@@ -38,6 +38,6 @@ def draw_lines(params):
             obj_line, legend_label = draw_one_line(
                 obj_axis, XY, x_bars, y_bars, p)
             legend_panel = p['legend']['which_panel']
-            append_legend(obj_line, legend_label, legend_panel, params)
+            append_addon('legend', obj_line, legend_label, legend_panel, params)
 
     return params

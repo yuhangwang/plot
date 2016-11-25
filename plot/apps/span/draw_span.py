@@ -4,7 +4,7 @@ Draw span regions
 from typing import List, Dict
 from .draw_horizontal_span import draw_horizontal_span
 from .draw_vertical_span import draw_vertical_span
-from .._tk import append_legend
+from .._tk import append_addon
 from ...tk.matplotlibTK.legend import format_legend_label
 
 
@@ -33,6 +33,6 @@ def draw_span(params):
                 legend_panel = p['legend']['which_panel']
         # I intentionally only want to keep the legend
         # for the last horizontal/vertical plot
-        append_legend(obj_span, legend_label, legend_panel, params)
+        append_addon('legend', obj_span, legend_label, legend_panel, params)
 
     return params
