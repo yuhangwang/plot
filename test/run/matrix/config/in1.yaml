@@ -5,13 +5,3 @@ data:
 global:
   figure:
     output: output/d1.png
-    title: 
-      content: Bar Chart
-    axis:
-      label:
-        content:
-          "x": "X"
-          "y": "Y"
-        font size:
-          "y": 35
-  

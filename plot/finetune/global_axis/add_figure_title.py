@@ -17,6 +17,8 @@ def add_figure_title(params):
     Returns:
         same as input
     """
+    if params['global']['figure']['title']['content'] is None:
+        return params
     obj_figure = params['internal']['canvas']['global_axis']
     title_params = params['global']['figure']['title']
     font_properties = {
