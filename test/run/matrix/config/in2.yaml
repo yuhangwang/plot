@@ -1,6 +1,8 @@
 data:
 - file: data/rand100x50.npy
   plot type: matrix
+  matrix:
+    transpose: true
 
 global:
   figure:
