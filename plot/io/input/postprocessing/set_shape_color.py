@@ -22,7 +22,7 @@ def set_shape_color(params):
     p_types = ['bar', 'span']
 
     def aux(i, panel_id):
-        if (panel_id in params['local'] and 
+        if (panel_id in params['local'] and
                 params['local'][panel_id]['colors'] is not None):
             return choose_color(i, params['local'][panel_id]['colors'])
         else:
