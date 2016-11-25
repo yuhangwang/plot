@@ -3,6 +3,8 @@ Draw a matrix
 """
 from typing import Dict
 from numpy import ndarray
+from .set_aspect_ratio import set_aspect_ratio
+from .set_matrix_extent import set_matrix_extent
 
 
 def draw_matrix(
@@ -10,7 +12,7 @@ def draw_matrix(
         data,             # type: ndarray
         p                 # type: Dict
         ):
-    # type: (...) -> Tuple
+    # type: (...) -> object
     """Draw a matrix
 
     Args:
@@ -21,7 +23,10 @@ def draw_matrix(
     Returns:
         a `matplotlib.image.AxesImage` object
     """
-    return obj_axis.matshow(
+    obj = obj_axis.matshow(
         data,
         vmin=p['matrix']['vertical']['min'],
         vmax=p['matrix']['vertical']['max'])
+    set_aspect_ratio(obj_axis)
+    set_matrix_extent(obj, p)
+    return obj

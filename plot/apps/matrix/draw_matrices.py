@@ -19,7 +19,6 @@ def draw_matrices(params):
     Returns:
         same as input
     """
-    accum = []
     axes = params['internal']['canvas']['axes']
     for i in params['internal']['user']['plots']['matrix']:
         p = params['data'][i]
