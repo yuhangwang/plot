@@ -25,7 +25,7 @@ def set_line_color(params):
 
     def aux(i, panel_id):
         if (panel_id in params['local'] and 
-                params['local']['colors'] is not None):
+                params['local'][panel_id]['colors'] is not None):
             return choose_color(i, params['local'][panel_id]['colors'])
         else:
             return choose_color(i, params['global']['colors'])

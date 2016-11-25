@@ -17,8 +17,8 @@ def initialize_panel_legend(params):
     """
     params['internal']['panel']['legend'] = dict()
     for p in params['data']:
-        k = p['legend']['which_panel']
-        if k is not None:
+        if p['legend']['content'] is not None:
+            k = p['legend']['which_panel']
             params['internal']['panel']['legend'][k] = []
         else:
             pass
