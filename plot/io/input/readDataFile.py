@@ -27,7 +27,7 @@ def readDataFile(file_name, dtype="float" skip_rows=0):
         file_name,
         dtype=dtype,
         skiprows=skip_rows)
-    
+
     if len(numpy.shape(data)) == 0:
         return numpy.array([])
     elif len(numpy.shape(data)) == 1:
