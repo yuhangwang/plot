@@ -1,0 +1,7 @@
+data:
+- file: data/rand100x50.npy
+  plot type: matrix
+
+global:
+  figure:
+    output: output/d2.png

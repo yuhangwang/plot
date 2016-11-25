@@ -23,6 +23,8 @@ def draw_matrices(params):
     for i in params['internal']['user']['plots']['matrix']:
         p = params['data'][i]
         data = readFileOrList(p['file'], p['values'], p['skip_rows'])
+        if p['matrix']['transpose'] is True:
+            data = numpy.transpose(data)
         if data is None:
             continue
         else:

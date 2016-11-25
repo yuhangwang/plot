@@ -7,7 +7,7 @@ from .readDataFile import readDataFile
 import numpy
 
 
-def readFileOrList(file_name, data_list, skip_rows=0):
+def readFileOrList(file_name, data_list, skip_rows=0, transpose=False):
     # type: (AnyStr, List) -> ndarray
     """Read a file or just convert an alternative list to numpy array
 
@@ -17,6 +17,8 @@ def readFileOrList(file_name, data_list, skip_rows=0):
     Args:
         file_name (str): input file name
         data_list (list): a list of numbers
+        skip_rows=0 (int): number of rows to skip
+        transpose=False (bool): whether to transpose data
 
     Returns:
         a numpy ndarray
