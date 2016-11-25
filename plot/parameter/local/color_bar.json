@@ -3,6 +3,21 @@
     "__": "local",
     "color bar": {
       "__": "color_bar",
+      "box": {
+        "__": "box",
+        "color": {
+          "__": "color",
+          "v": [
+            "k"
+          ]
+        }
+      },
+      "padding": {
+        "__": "padding",
+        "v": [
+          5
+        ]
+      },
       "tick": {
         "__": "tick",
         "color": {

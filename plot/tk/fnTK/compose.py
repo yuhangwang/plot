@@ -2,6 +2,8 @@
 Take many functions and compose
 """
 from typing import List, Callable, Optional
+from .reduce import reduce
+from .compose2 import compose2
 
 
 def compose(functions):
@@ -14,17 +16,4 @@ def compose(functions):
     Returns:
         a new function with combined effects from all inputs
     """
-    def aux(f1, f2):
-        # type: (Callable, Callable) -> Callable
-        return lambda x: f2(f1(x))
-
-    def tail(xs): return xs[1:]
-
-    def reduce(aux, functions, f):
-        if len(functions) == 0:
-            return f
-        else:
-            return reduce(
-                aux, tail(functions), aux(f, functions[0]))
-
-    return reduce(aux, functions, lambda a: a)
+    return reduce(compose2, functions, lambda a: a)

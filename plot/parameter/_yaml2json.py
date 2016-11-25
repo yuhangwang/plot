@@ -11,7 +11,7 @@ import json
 import yaml
 import sys
 import copy
-from functools import reduce
+from plot.tk.fnTK import reduce
 from plot.tk.dictTK import merge
 
 
