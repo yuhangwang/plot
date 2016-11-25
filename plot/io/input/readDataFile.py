@@ -13,7 +13,7 @@ def readDataFile(
         skip_rows=0,     # type: int
         dtype="float",   # type: str
         transpose=False  # type: bool
-        ):  
+        ):
     # type: (...) -> ndarray
     """Read a data file
 

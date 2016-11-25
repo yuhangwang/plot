@@ -24,7 +24,7 @@ def draw_matrices(params):
         p = params['data'][i]
         data = readFileOrList(
             p['file'], p['values'], p['skip_rows'],
-            transpose= p['matrix']['transpose'])
+            transpose=p['matrix']['transpose'])
         if data is None:
             continue
         else:

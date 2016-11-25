@@ -9,11 +9,11 @@ from ...tk.arrayTK import transpose as array_transpose
 
 
 def readFileOrList(
-        file_name,      # type: AnyStr
-        data_list,      # type: ndarray
-        skip_rows=0,    # type: int
-        dtype='float',  # type: AnyStr
-        transpose=False # type: bool
+        file_name,       # type: AnyStr
+        data_list,       # type: ndarray
+        skip_rows=0,     # type: int
+        dtype='float',   # type: AnyStr
+        transpose=False  # type: bool
         ):
     # type: (AnyStr, List) -> ndarray
     """Read a file or just convert an alternative list to numpy array
