@@ -8,7 +8,7 @@ from .readNpy import readNpy
 from .readMdat import readMdat
 
 
-def readDataFile(input, dtype="float"):
+def readDataFile(file_name, dtype="float", skiprows=0):
     """Read one data file
 
     Return a numpy array
@@ -21,10 +21,10 @@ def readDataFile(input, dtype="float"):
     Returns:
         an ndarray
     """
-    _, ext = os.path.splitext(f)
+    _, ext = os.path.splitext(file_name)
     if ext == ".npy":
-        return readNpy(f)
+        return readNpy(file_name)
     elif ext == ".mdat":
-        return readMdat(f)
+        return readMdat(file_name)
     else:
-        return readTextData(f, dtype)
+        return readTextData(file_name, dtype, skiprows)

@@ -4,10 +4,10 @@ Read a data file and return the content as array.
 from typing import AnyStr
 import numpy
 from numpy import ndarray
-from ..tk.ioTK import read as R
+from ...tk.ioTK import read as R
 
 
-def readDataFile(file_name, dtype="float" skip_rows=0):
+def readDataFile(file_name, skip_rows=0, dtype="float"):
     # type: (AnyStr) -> ndarray
     """Read a data file
 

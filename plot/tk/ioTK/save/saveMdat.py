@@ -1,7 +1,7 @@
 """
 Save a ndarray into an mdat file
 """
-import msgpack
+from ....deps import msgpack
 import numpy
 
 

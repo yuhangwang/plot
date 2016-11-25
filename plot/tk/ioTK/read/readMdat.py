@@ -4,7 +4,7 @@ Read a mdat file (MessagePack) array
 from typing import AnyStr
 from numpy import ndarray
 import numpy
-import msgpack
+from ....deps import msgpack
 
 
 def readMdat(file_name):

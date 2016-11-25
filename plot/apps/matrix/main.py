@@ -2,7 +2,7 @@
 Draw a matrix
 """
 from typing import Dict
-from .draw_matrix import draw_matrix
+from .draw_matrices import draw_matrices
 
 
 def main(params):
@@ -15,5 +15,5 @@ def main(params):
     Returns:
         the same parameter dictionary as input
     """
-    line_objects = draw_matrix(params)
+    line_objects = draw_matrices(params)
     return params
