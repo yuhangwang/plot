@@ -723,7 +723,7 @@ local:
         v: [1]
     show:
       __: show
-      v: [true]
+      v: [false, true]
     which axis:
       __: which_axis
       v: [both, x, y]

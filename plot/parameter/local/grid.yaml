@@ -1,7 +1,7 @@
 local:
   grid:
     show:
-      v: [true]
+      v: [false,true]
     which ticks:
       v: [major, minor, both]
     which axis:

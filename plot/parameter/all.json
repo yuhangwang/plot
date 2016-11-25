@@ -1440,6 +1440,7 @@
       "show": {
         "__": "show",
         "v": [
+          false,
           true
         ]
       },
