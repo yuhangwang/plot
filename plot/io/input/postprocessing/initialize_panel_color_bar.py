@@ -5,7 +5,7 @@ from typing import Dict
 from ....tk.arrayTK import all_indexes
 
 
-def initialize_panel_legend(params):
+def initialize_panel_color_bar(params):
     # type: (Dict) -> Dict
     """Initialize the internal panel color bar
 

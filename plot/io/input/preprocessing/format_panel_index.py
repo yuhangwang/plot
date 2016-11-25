@@ -20,7 +20,7 @@ def format_panel_index(params, new_dim=4):
         updated internal parameter dictionary
     """
     for k in params:
-        if k == "which_panel":
+        if k == "which_panel" and params[k] is not None:
             params[k] = tuple(upgrade_index(params[k], new_dim))
         elif isinstance(params[k], dict):
             params[k] = format_panel_index(params[k], new_dim)
