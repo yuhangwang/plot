@@ -1,6 +1,8 @@
 local:
   color bar:
     tick label:
+      color:
+        v: ['k']
       font:
         size:
           v: [20]

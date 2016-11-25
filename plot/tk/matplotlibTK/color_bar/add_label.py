@@ -12,6 +12,6 @@ def add_label(obj, label):
     Returns:
         same as input
     """
-    if bar_label is not None:
-        obj_color_bar.set_label(bar_label)
+    if label is not None:
+        obj.set_label(label)
     return obj

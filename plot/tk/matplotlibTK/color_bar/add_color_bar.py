@@ -61,7 +61,7 @@ def add_color_bar(
             cax=obj_axis)
 
     # add color bar label
-    add_label(obj, bar_label)
+    add_label(obj_color_bar, bar_label)
     
     # change tick label font size
     set_tick_label_font_size(obj_color_bar, bar_tick_label_font_size)

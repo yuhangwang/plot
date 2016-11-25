@@ -47,6 +47,12 @@
       },
       "tick label": {
         "__": "tick_label",
+        "color": {
+          "__": "color",
+          "v": [
+            "k"
+          ]
+        },
         "decimals": {
           "__": "decimals",
           "v": [

@@ -1,7 +1,7 @@
 """
 Add color bar
 """
-from ...tk import matplotlibTK as mtk
+from ...tk.matplotlibTK import color_bar
 from typing import Dict
 
 
@@ -21,9 +21,9 @@ def add_color_bar(params):
         else:
             p = params['internal']['default']['local']['color_bar']
         obj_axis = params['internal']['canvas']['axes'][panel_id]
-        for handles_labels in params['internal']['panel']['legend'][panel_id]:
+        for handles_labels in params['internal']['panel']['color_bar'][panel_id]:
             handle, label = handles_labels
-            obj_color_bar = mtk.add_color_bar(
+            obj_color_bar = color_bar.add_color_bar(
                 obj_axis,
                 handle,
                 bar_label=label,
