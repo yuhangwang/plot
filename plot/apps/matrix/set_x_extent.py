@@ -41,4 +41,3 @@ def set_x_extent(obj_mat, p):
         new_extent = new_x_extent + old_y_extent
         pyplot.setp(obj_mat, extent=new_extent)
         return
-
