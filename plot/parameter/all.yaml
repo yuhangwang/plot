@@ -711,9 +711,15 @@ local:
       color:
         __: color
         v: [k]
+    location:
+      __: location
+      v: [right, left, top, bottom]
     padding:
       __: padding
       v: [5]
+    size:
+      __: size
+      v: [5%]
     tick:
       __: tick
       color:

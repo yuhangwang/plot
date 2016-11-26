@@ -22,3 +22,7 @@ local:
         v: ['k']
     padding:
       v: [5]
+    size:
+      v: ["5%"]
+    location:
+      v: ['right', 'left', 'top', 'bottom']
