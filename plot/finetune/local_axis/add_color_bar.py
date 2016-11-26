@@ -16,13 +16,14 @@ def add_color_bar(params):
     Returns:
         same as input
     """
-    for panel_id in params['internal']['panel']['color_bar']:
+    p_panel = params['internal']['panel']
+    for panel_id in p_panel['color_bar']:
         if panel_id in params['local']:
             p = params['local'][panel_id]['color_bar']
         else:
             p = params['internal']['default']['local']['color_bar']
         obj_axis = params['internal']['canvas']['axes'][panel_id]
-        for handles_labels in params['internal']['panel']['color_bar'][panel_id]:
+        for handles_labels in p_panel['color_bar'][panel_id]:
             handle, label = handles_labels
             obj_color_bar = color_bar.add_color_bar(
                 make_color_bar_axis(obj_axis, p),

@@ -34,7 +34,8 @@ def draw_matrices(params):
             obj_matrix = draw_matrix(obj_axis, data, p)
             label = p['color_bar']['content']
             color_bar_panel = p['color_bar']['which_panel']
-            append_addon('color_bar', 
+            append_addon(
+                'color_bar',
                 obj_matrix, label, color_bar_panel, params)
 
     return params

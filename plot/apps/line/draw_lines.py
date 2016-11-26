@@ -38,6 +38,8 @@ def draw_lines(params):
             obj_line, legend_label = draw_one_line(
                 obj_axis, XY, x_bars, y_bars, p)
             legend_panel = p['legend']['which_panel']
-            append_addon('legend', obj_line, legend_label, legend_panel, params)
+            append_addon(
+                'legend',
+                obj_line, legend_label, legend_panel, params)
 
     return params

@@ -2,7 +2,7 @@
 Add a color bar
 """
 from typing import List, AnyStr
-import matplotlib.ticker 
+import matplotlib.ticker
 import matplotlib.pyplot
 import mpl_toolkits.axes_grid1 as MplTkAxes
 from .add_label import add_label
@@ -23,17 +23,18 @@ def add_color_bar(
         padding=5                                        # type: int
         ):
     # type: (...) -> object
-    """Add color bar to an axis object 
+    """Add color bar to an axis object
 
     Args:
-        obj_axis (object): matplotlib axis object where the color bar will be plotted
+        obj_axis (object): matplotlib axis object
+            where the color bar will be plotted
         obj_matshow (object): a ``matplotlib.image.AxesImage`` object
         bar_label=None (str): label for the color bar
-        bar_tick_label_font_size (int): color bar tick label font size 
-        bar_tick_label_decimals (int): number of decimal places to show 
+        bar_tick_label_font_size (int): color bar tick label font size
+        bar_tick_label_decimals (int): number of decimal places to show
             (default: None, i.e. use matplotlib default)
         bar_tick_label_color='k' (str): color for tick labels
-        bar_ticks (list): a list/tuple of tick locations, e.g. (0, 0.5, 1.0) 
+        bar_ticks (list): a list/tuple of tick locations, e.g. (0, 0.5, 1.0)
             (default: None, i.e. use matplotlib default)
         bar_tick_width (int): width of the color bar ticks
         bar_tick_length (int): length of the color bar ticks
@@ -49,25 +50,27 @@ def add_color_bar(
             return "{0:.{1}f}".format(tick_value, bar_tick_label_decimals)
 
     if bar_tick_label_decimals is not None:
-        obj_color_bar = matplotlib.pyplot.colorbar(obj_matshow, 
+        obj_color_bar = matplotlib.pyplot.colorbar(
+            obj_matshow,
             cax=obj_axis,
             ticks=bar_ticks,
             format=matplotlib.ticker.FuncFormatter(tick_formatter))
     else:
-        obj_color_bar = matplotlib.pyplot.colorbar(obj_matshow, 
+        obj_color_bar = matplotlib.pyplot.colorbar(
+            obj_matshow,
             ticks=bar_ticks,
             cax=obj_axis)
 
     # add color bar label
     add_label(obj_color_bar, bar_label)
-    
+
     # change tick label font size
     set_tick_label_font_size(obj_color_bar, bar_tick_label_font_size)
 
     # set tick label color
     obj_color_bar.ax.yaxis.set_tick_params(labelcolor=bar_tick_label_color)
 
-    #set ticks color 
+    # set ticks color
     obj_color_bar.ax.yaxis.set_tick_params(color=bar_tick_color)
 
     # set tick width
