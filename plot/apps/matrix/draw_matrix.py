@@ -3,6 +3,7 @@ Draw a matrix
 """
 from typing import Dict
 from numpy import ndarray
+import matplotlib.pyplot as pyplot
 from .set_aspect_ratio import set_aspect_ratio
 from .set_matrix_extent import set_matrix_extent
 
@@ -28,7 +29,8 @@ def draw_matrix(
         vmin=p['matrix']['vertical']['min'],
         vmax=p['matrix']['vertical']['max'],
         interpolation=p['matrix']['interpolation'],
-        origin=p['matrix']['origin'])
+        origin=p['matrix']['origin'],
+        cmap=pyplot.get_cmap(p['matrix']['color_map']))
     set_aspect_ratio(obj_axis)
     set_matrix_extent(obj, p)
     obj_axis.xaxis.set_ticks_position('bottom')
