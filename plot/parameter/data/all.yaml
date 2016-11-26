@@ -170,6 +170,13 @@ data:
         y:
           __: y
           v: [-0.5]
+    interpolation:
+      __: interpolation
+      v: [none, nearest, bilinear, bicubic, spline16, spline36, hanning, hamming,
+        hermite, kaiser, quadric, catrom, gaussian, bessel, mitchell, sinc, lanczos]
+    origin:
+      __: origin
+      v: [lower, upper]
     transpose:
       __: transpose
       v: [false]

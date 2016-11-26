@@ -26,7 +26,10 @@ def draw_matrix(
     obj = obj_axis.matshow(
         data,
         vmin=p['matrix']['vertical']['min'],
-        vmax=p['matrix']['vertical']['max'])
+        vmax=p['matrix']['vertical']['max'],
+        interpolation=p['matrix']['interpolation'],
+        origin=p['matrix']['origin'])
     set_aspect_ratio(obj_axis)
     set_matrix_extent(obj, p)
+    obj_axis.xaxis.set_ticks_position('bottom')
     return obj
