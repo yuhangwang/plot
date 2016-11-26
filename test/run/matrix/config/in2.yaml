@@ -6,6 +6,14 @@ data:
     vertical:
       min: 0
       max: 1
+    extent:
+      min:
+        x: 0
+        y: 0
+      max:
+        x: 100
+        y: 50
+
   color bar:
     which panel: [0,0]
 
@@ -30,6 +38,4 @@ local:
       length:
         x: 8
         y: 8
-      set:
-        x: [0, 50, 99]
 
