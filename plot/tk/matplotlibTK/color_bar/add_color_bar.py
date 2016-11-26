@@ -20,7 +20,6 @@ def add_color_bar(
         bar_tick_width=2,                                # type: int
         bar_tick_length=7,                               # type: int
         bar_tick_color="k",                              # type: AnyStr
-        box_color="k",                                   # type: AnyStr
         padding=5                                        # type: int
         ):
     # type: (...) -> object
@@ -39,7 +38,6 @@ def add_color_bar(
         bar_tick_width (int): width of the color bar ticks
         bar_tick_length (int): length of the color bar ticks
         bar_tick_color (str): color of the color bar ticks
-        box_color (str): color bar box color
         padding (int): padding between ticks and tick labels
 
     Returns:
@@ -77,9 +75,6 @@ def add_color_bar(
 
     # set tick length
     obj_color_bar.ax.yaxis.set_tick_params(length=bar_tick_length)
-
-    # set box color
-    # obj_color_bar.outline.set_color(box_color)
 
     # set padding between ticks and tick labels
     obj_color_bar.ax.yaxis.set_tick_params(pad=padding)

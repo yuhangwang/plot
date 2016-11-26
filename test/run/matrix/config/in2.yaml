@@ -3,6 +3,9 @@ data:
   plot type: matrix
   matrix:
     transpose: true
+    vertical:
+      min: 0
+      max: 1
   color bar:
     which panel: [0,0]
 
@@ -13,5 +16,6 @@ global:
 local:
 - color bar:
     tick:
-      length: 0.1
-      width: 0.1
+      length: 10
+      width: 2
+      color: k

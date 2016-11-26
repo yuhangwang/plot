@@ -35,7 +35,6 @@ def add_color_bar(params):
                 bar_tick_width=p['tick']['width'],
                 bar_tick_length=p['tick']['length'],
                 bar_tick_color=p['tick']['color'],
-                box_color=p['box']['color'],
                 padding=p['padding']['label_and_tick']
                 )
 

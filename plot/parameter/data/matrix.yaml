@@ -6,15 +6,13 @@ data:
       v: ['lower', 'upper']
     interpolation:
       v: ['none','nearest', 'bilinear', 'bicubic', 'spline16', 'spline36', 'hanning', 'hamming', 'hermite', 'kaiser', 'quadric', 'catrom', 'gaussian', 'bessel', 'mitchell', 'sinc', 'lanczos']
-    color bar:
-      panel:
-        v: [~]
     vertical:
       min:
         v: [~]
       max:
         v: [~]
-  
+    color map:
+      v: ['viridis', 'inferno', 'plasma', 'magma']
     extent:
       min:
         "x":

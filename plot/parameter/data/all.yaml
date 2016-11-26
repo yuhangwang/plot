@@ -139,11 +139,9 @@ data:
       v: [null]
   matrix:
     __: matrix
-    color bar:
-      __: color_bar
-      panel:
-        __: panel
-        v: [null]
+    color map:
+      __: color_map
+      v: [viridis, inferno, plasma, magma]
     extent:
       __: extent
       max:
