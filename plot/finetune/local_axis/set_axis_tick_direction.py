@@ -6,7 +6,7 @@ from typing import Dict
 
 def set_axis_tick_direction(params):
     # type: (Dict) -> Dict
-    """Set the axis range
+    """Set the axis direction
 
     Args:
         params (dict): plotting parameter dictionary

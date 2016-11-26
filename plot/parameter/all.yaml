@@ -981,10 +981,18 @@ local:
         __: length
         x:
           __: x
-          v: [5]
+          v: [8]
         y:
           __: y
-          v: [5]
+          v: [8]
+      rescale:
+        __: rescale
+        x:
+          __: x
+          v: [null]
+        y:
+          __: y
+          v: [null]
       set:
         __: set
         x:
@@ -1057,6 +1065,14 @@ local:
         y:
           __: y
           v: [5]
+      rescale:
+        __: rescale
+        x:
+          __: x
+          v: [null]
+        y:
+          __: y
+          v: [null]
       set:
         __: set
         x:

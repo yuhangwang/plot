@@ -27,4 +27,9 @@ local:
       width:
         x: 2
         y: 2
+      length:
+        x: 8
+        y: 8
+      set:
+        x: [0, 50, 99]
 

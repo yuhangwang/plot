@@ -10,6 +10,8 @@ from .set_axis_range import set_axis_range
 from .add_color_bar import add_color_bar
 from .set_axis_tick_direction import set_axis_tick_direction
 from .set_axis_tick_width import set_axis_tick_width
+from .set_axis_tick_length import set_axis_tick_length
+from .set_axis_ticks import set_axis_ticks
 
 
 def main(params):
@@ -29,6 +31,8 @@ def main(params):
         set_axis_range,
         add_color_bar,
         set_axis_tick_direction,
-        set_axis_tick_width
+        set_axis_tick_width,
+        set_axis_tick_length,
+        set_axis_ticks
         ])
     return aux(params)

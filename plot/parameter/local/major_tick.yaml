@@ -8,9 +8,9 @@ local:
           v: [in, out, inout]
       length:
         "x":
-          v: [5]
+          v: [8]
         "y":
-          v: [5]
+          v: [8]
       width:
         "x":
           v: [2]
@@ -41,6 +41,11 @@ local:
             v: [true]
       set:
         "x":
-          v: [null]
+          v: [~]
         "y":
-          v: [null]
+          v: [~]
+      rescale:
+        'x':
+          v: [~]
+        'y':
+          v: [~]

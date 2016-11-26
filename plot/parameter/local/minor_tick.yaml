@@ -41,6 +41,11 @@ local:
             v: [true]
       set:
         "x":
-          v: [null]
+          v: [~]
         "y":
-          v: [null]
+          v: [~]
+      rescale:
+        'x':
+          v: [~]
+        'y':
+          v: [~]

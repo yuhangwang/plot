@@ -6,7 +6,7 @@ from typing import Dict
 
 def set_axis_tick_width(params):
     # type: (Dict) -> Dict
-    """Set the axis range
+    """Set the axis width
 
     Args:
         params (dict): plotting parameter dictionary
