@@ -8,6 +8,7 @@ from .finetune_legend import finetune_legend
 from .tighten_panel_axis_range import tighten_panel_axis_range
 from .set_axis_range import set_axis_range
 from .add_color_bar import add_color_bar
+from .set_axis_tick_direction import set_axis_tick_direction
 
 
 def main(params):
@@ -25,6 +26,7 @@ def main(params):
         finetune_legend,
         tighten_panel_axis_range,
         set_axis_range,
-        add_color_bar
+        add_color_bar,
+        set_axis_tick_direction
         ])
     return aux(params)

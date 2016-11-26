@@ -19,3 +19,9 @@ local:
       length: 10
       width: 2
       color: k
+  tick:
+    major:
+      direction:
+        x: out
+        y: out
+
