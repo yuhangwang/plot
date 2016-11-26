@@ -24,4 +24,7 @@ local:
       direction:
         x: out
         y: out
+      width:
+        x: 2
+        y: 2
 

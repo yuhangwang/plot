@@ -9,6 +9,7 @@ from .tighten_panel_axis_range import tighten_panel_axis_range
 from .set_axis_range import set_axis_range
 from .add_color_bar import add_color_bar
 from .set_axis_tick_direction import set_axis_tick_direction
+from .set_axis_tick_width import set_axis_tick_width
 
 
 def main(params):
@@ -27,6 +28,7 @@ def main(params):
         tighten_panel_axis_range,
         set_axis_range,
         add_color_bar,
-        set_axis_tick_direction
+        set_axis_tick_direction,
+        set_axis_tick_width
         ])
     return aux(params)
