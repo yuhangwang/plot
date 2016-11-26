@@ -29,16 +29,16 @@ local:
       show:
         top:
           "x":
-            v: [true]
+            v: [false,true]
         bottom:
           "x":
-            v: [true]
+            v: [true,false]
         left:
           "y":
-            v: [true]
+            v: [true,false]
         right:
           "y":
-            v: [true]
+            v: [false,true]
       set:
         "x":
           v: [~]

@@ -999,22 +999,22 @@ local:
           __: bottom
           x:
             __: x
-            v: [true]
+            v: [true, false]
         left:
           __: left
           y:
             __: y
-            v: [true]
+            v: [true, false]
         right:
           __: right
           y:
             __: y
-            v: [true]
+            v: [false, true]
         top:
           __: top
           x:
             __: x
-            v: [true]
+            v: [false, true]
       width:
         __: width
         x:
@@ -1079,22 +1079,22 @@ local:
           __: bottom
           x:
             __: x
-            v: [true]
+            v: [true, false]
         left:
           __: left
           y:
             __: y
-            v: [true]
+            v: [true, false]
         right:
           __: right
           y:
             __: y
-            v: [true]
+            v: [false, true]
         top:
           __: top
           x:
             __: x
-            v: [true]
+            v: [false, true]
       width:
         __: width
         x:
