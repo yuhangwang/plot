@@ -244,6 +244,21 @@
           }
         }
       },
+      "color": {
+        "__": "color",
+        "edge": {
+          "__": "edge",
+          "v": [
+            null
+          ]
+        },
+        "face": {
+          "__": "face",
+          "v": [
+            null
+          ]
+        }
+      },
       "columns": {
         "__": "columns",
         "v": [
@@ -255,6 +270,16 @@
         "v": [
           150
         ]
+      },
+      "frame": {
+        "__": "frame",
+        "show": {
+          "__": "show",
+          "v": [
+            true,
+            false
+          ]
+        }
       },
       "height": {
         "__": "height",

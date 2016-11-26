@@ -24,4 +24,12 @@ global:
       v: [0.2]
     show axis label:
       v: [false]
+    color:
+      face:
+        v: [~]
+      edge:
+        v: [~]
+    frame:
+      show:
+        v: [true, false]
 

@@ -126,12 +126,25 @@ global:
         y:
           __: y
           v: [false, true]
+    color:
+      __: color
+      edge:
+        __: edge
+        v: [null]
+      face:
+        __: face
+        v: [null]
     columns:
       __: columns
       v: [1]
     dpi:
       __: dpi
       v: [150]
+    frame:
+      __: frame
+      show:
+        __: show
+        v: [true, false]
     height:
       __: height
       v: [8]
