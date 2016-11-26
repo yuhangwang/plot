@@ -13,6 +13,7 @@ from .set_axis_tick_width import set_axis_tick_width
 from .set_axis_tick_length import set_axis_tick_length
 from .set_axis_ticks import set_axis_ticks
 from .hide_axis_ticks import hide_axis_ticks
+from .hide_axis_tick_labels import hide_axis_tick_labels
 
 
 def main(params):
@@ -35,6 +36,7 @@ def main(params):
         set_axis_tick_width,
         set_axis_tick_length,
         set_axis_ticks,
-        hide_axis_ticks
+        hide_axis_ticks,
+        hide_axis_tick_labels
         ])
     return aux(params)

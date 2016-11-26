@@ -1,12 +1,12 @@
 """
-Hide axis ticks at top, bottom, left or right
+Hide axis tick labels at top, bottom, left or right
 """
 from typing import Dict
 
 
-def hide_axis_ticks(params):
+def hide_axis_tick_labels(params):
     # type: (Dict) -> Dict
-    """SHide axis ticks at top, bottom, left or right
+    """SHide axis tick labels at top, bottom, left or right
 
     Args:
         params (dict): plotting parameter dictionary
@@ -23,12 +23,12 @@ def hide_axis_ticks(params):
                 if k == 'x':
                     ax.set_tick_params(
                         which=m,
-                        top=p['tick'][m]['show']['top']['x'],
-                        bottom=p['tick'][m]['show']['bottom']['x'])
+                        labeltop=p['tick_label'][m]['show']['top']['x'],
+                        labelbottom=p['tick_label'][m]['show']['bottom']['x'])
                 else:
                     ax.set_tick_params(
                         which=m,
-                        left=p['tick'][m]['show']['left']['y'],
-                        right=p['tick'][m]['show']['right']['y'])
+                        labelleft=p['tick_label'][m]['show']['left']['y'],
+                        labelright=p['tick_label'][m]['show']['right']['y'])
 
     return params

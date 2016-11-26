@@ -5,3 +5,28 @@ data:
 global:
   figure:
     output: output/d1.png
+
+local:
+- tick label:
+    major:
+      show:
+        bottom:
+          x: false
+        top:
+          x: true
+        left:
+          y: false
+        right:
+          y: true
+
+  tick:
+    major:
+      show:
+        left:
+          y: false
+        right:
+          y: true
+        top:
+          x: true
+        bottom:
+          x: false
