@@ -706,17 +706,17 @@ local:
         v: [null]
   color bar:
     __: color_bar
-    box:
-      __: box
-      color:
-        __: color
-        v: [k]
     location:
       __: location
       v: [right, left, top, bottom]
     padding:
       __: padding
-      v: [5]
+      color bar and panel:
+        __: color_bar_and_panel
+        v: [0.05]
+      label and tick:
+        __: label_and_tick
+        v: [5]
     size:
       __: size
       v: [5%]
@@ -727,13 +727,13 @@ local:
         v: [k]
       length:
         __: length
-        v: [7]
+        v: [1]
       set:
         __: set
         v: [null]
       width:
         __: width
-        v: [2]
+        v: [1]
     tick label:
       __: tick_label
       color:

@@ -79,7 +79,7 @@ def add_color_bar(
     obj_color_bar.ax.yaxis.set_tick_params(length=bar_tick_length)
 
     # set box color
-    obj_color_bar.outline.set_color(box_color)
+    # obj_color_bar.outline.set_color(box_color)
 
     # set padding between ticks and tick labels
     obj_color_bar.ax.yaxis.set_tick_params(pad=padding)

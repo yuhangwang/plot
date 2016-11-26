@@ -3,6 +3,7 @@ Add color bar
 """
 from ...tk.matplotlibTK import color_bar
 from typing import Dict
+from .make_color_bar_axis import make_color_bar_axis
 
 
 def add_color_bar(params):
@@ -24,7 +25,7 @@ def add_color_bar(params):
         for handles_labels in params['internal']['panel']['color_bar'][panel_id]:
             handle, label = handles_labels
             obj_color_bar = color_bar.add_color_bar(
-                obj_axis,
+                make_color_bar_axis(obj_axis, p),
                 handle,
                 bar_label=label,
                 bar_tick_label_font_size=p['tick_label']['font']['size'],
@@ -35,7 +36,7 @@ def add_color_bar(params):
                 bar_tick_length=p['tick']['length'],
                 bar_tick_color=p['tick']['color'],
                 box_color=p['box']['color'],
-                padding=p['padding']
+                padding=p['padding']['label_and_tick']
                 )
 
     return params

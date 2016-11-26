@@ -9,3 +9,9 @@ data:
 global:
   figure:
     output: output/d2.png
+
+local:
+- color bar:
+    tick:
+      length: 0.1
+      width: 0.1

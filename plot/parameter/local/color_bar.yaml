@@ -12,16 +12,16 @@ local:
       set:
         v: [~]
       width:
-        v: [2]
+        v: [1]
       length:
-        v: [7]
+        v: [1]
       color:
         v: [k]
-    box:
-      color:
-        v: ['k']
     padding:
-      v: [5]
+      label and tick:
+        v: [5]
+      color bar and panel:
+        v: [0.05] # inches
     size:
       v: ["5%"]
     location:
