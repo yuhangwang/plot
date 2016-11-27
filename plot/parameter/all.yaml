@@ -574,7 +574,7 @@ internal:
       v: [null]
   figure dimension:
     __: figure_dimension
-    v: [4]
+    v: [5]
   panel:
     __: panel
     legend:

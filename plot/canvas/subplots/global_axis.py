@@ -3,6 +3,7 @@ Add global axes to the entire figure.
 """
 from typing import Dict
 import matplotlib.pyplot
+from ...tk.listTK import upgrade_index
 
 
 def global_axis(params):
@@ -15,6 +16,7 @@ def global_axis(params):
     Returns:
         an updated dictionary with a new field ['canvas']['global_axes']
     """
+    dim = params['internal']['figure_dimension']
     obj_axis = params['internal']['canvas']['figure'].add_subplot(
                 1, 1, 1,
             )
@@ -33,5 +35,17 @@ def global_axis(params):
         if isinstance(child, matplotlib.spines.Spine):
             child.set_color((0, 0, 0, 0))
 
-    params['internal']['canvas']['global_axis'] = obj_axis
+    # append the global axis to the first entry
+    # and append None to the others
+    axes = params['internal']['canvas']['axes']
+    print("type of axes", type(axes))
+    for i in range(params['global']['figure']['rows']):
+        for j in range(params['global']['figure']['columns']):
+            index = upgrade_index([i, j], dim)
+            ax = axes[index]
+            if i == 0 and j == 0:
+                ax.append(obj_axis)
+            else:
+                ax.append(None)
+
     return params

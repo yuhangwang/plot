@@ -3,7 +3,6 @@ Create a dictionary of parameters
 """
 from typing import Dict
 from .... import tk
-from .format_panel_index import format_panel_index
 
 
 def preprocess(user_dict, default_dict):
@@ -20,13 +19,9 @@ def preprocess(user_dict, default_dict):
     Returns:
         an internal parameter dictionary
     """
-    p = tk.dictTK.convert_to_internal(
+    return tk.dictTK.convert_to_internal(
             tk.dictTK.update(
                     tk.dictTK.wrap_value(user_dict),
                     default_dict
             )
         )
-    aux = tk.fnTK.compose([
-        format_panel_index,
-        ])
-    return aux(p)

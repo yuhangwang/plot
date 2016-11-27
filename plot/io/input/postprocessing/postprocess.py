@@ -4,6 +4,7 @@ Postprocess the internal parameter dictionary
 from typing import Dict
 from ....tk.fnTK import compose
 from .make_local_dict import make_local_dict
+from .format_panel_index import format_panel_index
 from .set_data_id import set_data_id
 from .set_line_color import set_line_color
 from .set_shape_color import set_shape_color
@@ -25,6 +26,7 @@ def postprocess(params):
         enhanced internal parameter dictionary
     """
     aux = compose([
+        format_panel_index,
         make_local_dict,
         set_data_id,
         set_line_color,
