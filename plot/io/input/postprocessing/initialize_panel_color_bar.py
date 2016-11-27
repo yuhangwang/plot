@@ -17,8 +17,8 @@ def initialize_panel_color_bar(params):
     """
     params['internal']['panel']['color_bar'] = dict()
     for p in params['data']:
-        k = p['color_bar']['which_panel']
-        if k is not None:
+        if p['color_bar']['show'] is True:
+            k = p['color_bar']['which_panel']
             params['internal']['panel']['color_bar'][k] = []
         else:
             pass

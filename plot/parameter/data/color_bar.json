@@ -9,6 +9,13 @@
           null
         ]
       },
+      "show": {
+        "__": "show",
+        "v": [
+          true,
+          false
+        ]
+      },
       "which panel": {
         "__": "which_panel",
         "v": [

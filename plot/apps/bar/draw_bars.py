@@ -35,7 +35,10 @@ def draw_bars(params):
             obj_axis = params['internal']['canvas']['axes'][panel_id]
             obj_bar, legend_label = draw_one_bar_series(
                 obj_axis, XY, x_bars, y_bars, p)
-
-            legend_panel = p['legend']['which_panel']
-            append_addon('legend', obj_bar, legend_label, legend_panel, params)
+            if p['legend']['content'] is not None:
+                legend_panel = p['legend']['which_panel']
+                append_addon(
+                    'legend', obj_bar, legend_label, legend_panel, params)
+            else:
+                pass
     return params

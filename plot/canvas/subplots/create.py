@@ -35,5 +35,8 @@ def create(params):
     params['internal']['canvas']['figure'] = fig
     params['internal']['canvas']['axes'] = upgrade_dimension(
         axes.tolist(), dim)
-    tweek = compose([subplot_spacing, global_axis, numpy.array])
-    return tweek(params)
+    tweek = compose([subplot_spacing, global_axis])
+    tweek(params)
+    params['internal']['canvas']['axes'] = numpy.array(
+        params['internal']['canvas']['axes'])
+    return params

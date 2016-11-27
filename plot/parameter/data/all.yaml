@@ -49,6 +49,9 @@ data:
     content:
       __: content
       v: [null]
+    show:
+      __: show
+      v: [true, false]
     which panel:
       __: which_panel
       v: [null]
@@ -278,4 +281,4 @@ data:
   which panel:
     __: which_panel
     v:
-    - [0, 0, 0, 0]
+    - [0, 0]

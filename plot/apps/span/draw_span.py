@@ -33,6 +33,10 @@ def draw_span(params):
                 legend_panel = p['legend']['which_panel']
         # I intentionally only want to keep the legend
         # for the last horizontal/vertical plot
-        append_addon('legend', obj_span, legend_label, legend_panel, params)
+        if p['legend']['content'] is not None:
+            append_addon(
+                'legend', obj_span, legend_label, legend_panel, params)
+        else:
+            pass
 
     return params

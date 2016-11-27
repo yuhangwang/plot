@@ -1,5 +1,7 @@
 data:
   color bar:
+    show:
+      v: [true, false]
     content:
       v: [~]
     which panel:

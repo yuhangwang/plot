@@ -4,6 +4,7 @@ Add global axes to the entire figure.
 from typing import Dict
 import matplotlib.pyplot
 from ...tk.listTK import upgrade_index
+from ...tk.listTK import append
 
 
 def global_axis(params):
@@ -38,14 +39,12 @@ def global_axis(params):
     # append the global axis to the first entry
     # and append None to the others
     axes = params['internal']['canvas']['axes']
-    print("type of axes", type(axes))
     for i in range(params['global']['figure']['rows']):
         for j in range(params['global']['figure']['columns']):
             index = upgrade_index([i, j], dim)
-            ax = axes[index]
             if i == 0 and j == 0:
-                ax.append(obj_axis)
+                axes = append(axes, index, obj_axis)
             else:
-                ax.append(None)
-
+                axes = append(axes, index, None)
+    params['internal']['canvas']['global_axis'] = obj_axis
     return params

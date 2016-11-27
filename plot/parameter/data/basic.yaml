@@ -8,7 +8,7 @@ data:
   plot type:
     v: ["line","bar","matrix"]
   which panel:
-    v: [~]
+    v: [[0,0]]
   include columns:
     v: [~]
   skip rows:

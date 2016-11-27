@@ -26,6 +26,5 @@ def append(L, index, new_item):
                 return L[0:(i-1)] + [L[i], new_item] + L[(i+1):]
         else:
             i = index[0]
-            print(L)
             L[i] = append(L[i], tail(index), new_item)
             return L
