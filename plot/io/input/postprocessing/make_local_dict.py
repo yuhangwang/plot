@@ -2,6 +2,7 @@
 Convert the "local" field to a dictionary
 """
 from typing import Dict
+from ....tk import dictTK
 
 
 def make_local_dict(params):

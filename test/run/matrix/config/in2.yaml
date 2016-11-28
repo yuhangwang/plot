@@ -13,29 +13,17 @@ data:
       max:
         x: 100
         y: 50
-
   color bar:
-    which panel: [0,0]
+    which panel: ~
 
 global:
   figure:
     output: output/d2.png
 
 local:
-- color bar:
-    tick:
-      length: 10
-      width: 2
-      color: k
-  tick:
+- tick:
     major:
       direction:
         x: out
         y: out
-      width:
-        x: 2
-        y: 2
-      length:
-        x: 8
-        y: 8
 

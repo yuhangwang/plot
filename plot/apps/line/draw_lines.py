@@ -24,7 +24,6 @@ def draw_lines(params):
     """
     accum = []
     axes = params['internal']['canvas']['axes']
-    print(axes)
     for i in params['internal']['user']['plots']['line']:
         p = params['data'][i]
         data = readFileOrList(p['file'], p['values'], p['skip_rows'])

@@ -12,9 +12,9 @@ local:
       set:
         v: [~]
       width:
-        v: [1]
+        v: [2]
       length:
-        v: [1]
+        v: [10]
       color:
         v: [k]
     padding:

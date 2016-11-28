@@ -21,11 +21,13 @@ def format_panel_index(params, dim=5):
     """
     for k in params:
         if k == "which_panel":
-            if params[k] is None:
+            if params[k] == "_":
                 # compute global axis index
                 global_axis_index = upgrade_index([0, 0], dim)
                 global_axis_index[-1] = 1
                 params[k] = tuple(global_axis_index)
+            elif params[k] is None:
+                params[k] = tuple(upgrade_index([0, 0], dim))
             else:
                 params[k] = tuple(upgrade_index(params[k], dim))
         elif isinstance(params[k], dict):
