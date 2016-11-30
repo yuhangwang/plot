@@ -1,0 +1,19 @@
+global:
+  figure:
+    output: output/d1.png
+    rows: 2
+    columns: 1
+
+local:
+- which panel: [0, 0]
+  axis:
+    label:
+      content:
+        y: "Y1"
+    
+- which panel: [1, 0]
+  axis:
+    label:
+      content:
+        x: "X"
+        y: "Y2"

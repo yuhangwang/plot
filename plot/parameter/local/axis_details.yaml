@@ -18,15 +18,15 @@ local:
           v: [~]
       padding:
         "x":
-          v: [~]
+          v: [15]
         "y":
-          v: [~]
+          v: [15]
       font:
         size:
           "x":
-            v: [~]
+            v: [35]
           "y":
-            v: [~]
+            v: [35]
     range:
       tight:
         "x":
