@@ -599,6 +599,14 @@ local:
     - [false]
     label:
       __: label
+      content:
+        __: content
+        x:
+          __: x
+          v: [null]
+        y:
+          __: y
+          v: [null]
       font:
         __: font
         size:
@@ -609,14 +617,6 @@ local:
           y:
             __: y
             v: [null]
-      name:
-        __: name
-        x:
-          __: x
-          v: [null]
-        y:
-          __: y
-          v: [null]
       padding:
         __: padding
         x:

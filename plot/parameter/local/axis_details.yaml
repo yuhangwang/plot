@@ -11,7 +11,7 @@ local:
       "y":
         v: [~]
     label:
-      name:
+      content:
         "x":
           v: [~]
         "y":
