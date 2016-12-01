@@ -9,11 +9,18 @@
           null
         ]
       },
-      "show": {
-        "__": "show",
+      "global": {
+        "__": "global",
         "v": [
           true,
           false
+        ]
+      },
+      "show": {
+        "__": "show",
+        "v": [
+          false,
+          true
         ]
       },
       "which panel": {

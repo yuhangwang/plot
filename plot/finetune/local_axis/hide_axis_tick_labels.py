@@ -23,12 +23,12 @@ def hide_axis_tick_labels(params):
                 if k == 'x':
                     ax.set_tick_params(
                         which=m,
-                        labeltop=p['tick_label'][m]['show']['top']['x'],
-                        labelbottom=p['tick_label'][m]['show']['bottom']['x'])
+                        labeltop=p['tick_label'][m]['show']['top'],
+                        labelbottom=p['tick_label'][m]['show']['bottom'])
                 else:
                     ax.set_tick_params(
                         which=m,
-                        labelleft=p['tick_label'][m]['show']['left']['y'],
-                        labelright=p['tick_label'][m]['show']['right']['y'])
+                        labelleft=p['tick_label'][m]['show']['left'],
+                        labelright=p['tick_label'][m]['show']['right'])
 
     return params

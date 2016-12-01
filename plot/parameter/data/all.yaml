@@ -49,9 +49,12 @@ data:
     content:
       __: content
       v: [null]
+    global:
+      __: global
+      v: [true, false]
     show:
       __: show
-      v: [true, false]
+      v: [false, true]
     which panel:
       __: which_panel
       v: [null]

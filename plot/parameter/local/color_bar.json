@@ -3,6 +3,66 @@
     "__": "local",
     "color bar": {
       "__": "color_bar",
+      "anchor": {
+        "__": "anchor",
+        "v": [
+          [
+            0,
+            0.5
+          ]
+        ]
+      },
+      "aspect": {
+        "__": "aspect",
+        "v": [
+          15
+        ]
+      },
+      "color": {
+        "__": "color",
+        "segment": {
+          "__": "segment",
+          "boundaries": {
+            "__": "boundaries",
+            "v": [
+              null
+            ]
+          },
+          "values": {
+            "__": "values",
+            "v": [
+              null
+            ]
+          }
+        },
+        "show edges": {
+          "__": "show_edges",
+          "v": [
+            false,
+            true
+          ]
+        },
+        "spacing": {
+          "__": "spacing",
+          "v": [
+            "uniform",
+            "proportional"
+          ]
+        }
+      },
+      "fraction": {
+        "__": "fraction",
+        "v": [
+          0.1
+        ]
+      },
+      "global": {
+        "__": "global",
+        "v": [
+          false,
+          true
+        ]
+      },
       "location": {
         "__": "location",
         "v": [
@@ -10,6 +70,13 @@
           "left",
           "top",
           "bottom"
+        ]
+      },
+      "orientation": {
+        "__": "orientation",
+        "v": [
+          "vertical",
+          "horizontal"
         ]
       },
       "padding": {
@@ -27,10 +94,19 @@
           ]
         }
       },
-      "size": {
-        "__": "size",
+      "parent_anchor": {
+        "__": "parent_anchor",
         "v": [
-          "5%"
+          [
+            1.0,
+            0.5
+          ]
+        ]
+      },
+      "shrink": {
+        "__": "shrink",
+        "v": [
+          1.0
         ]
       },
       "tick": {
@@ -68,12 +144,6 @@
             "k"
           ]
         },
-        "decimals": {
-          "__": "decimals",
-          "v": [
-            null
-          ]
-        },
         "font": {
           "__": "font",
           "size": {
@@ -82,7 +152,19 @@
               20
             ]
           }
+        },
+        "format": {
+          "__": "format",
+          "v": [
+            null
+          ]
         }
+      },
+      "width": {
+        "__": "width",
+        "v": [
+          0.15
+        ]
       }
     }
   }

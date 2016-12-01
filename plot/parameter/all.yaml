@@ -49,9 +49,12 @@ data:
     content:
       __: content
       v: [null]
+    global:
+      __: global
+      v: [true, false]
     show:
       __: show
-      v: [true, false]
+      v: [false, true]
     which panel:
       __: which_panel
       v: [null]
@@ -564,6 +567,9 @@ internal:
     axes:
       __: axes
       v: [null]
+    axes2D:
+      __: axes2D
+      v: [null]
     figure:
       __: figure
       v: [null]
@@ -699,9 +705,41 @@ local:
         v: [null]
   color bar:
     __: color_bar
+    anchor:
+      __: anchor
+      v:
+      - [0, 0.5]
+    aspect:
+      __: aspect
+      v: [15]
+    color:
+      __: color
+      segment:
+        __: segment
+        boundaries:
+          __: boundaries
+          v: [null]
+        values:
+          __: values
+          v: [null]
+      show edges:
+        __: show_edges
+        v: [false, true]
+      spacing:
+        __: spacing
+        v: [uniform, proportional]
+    fraction:
+      __: fraction
+      v: [0.1]
+    global:
+      __: global
+      v: [false, true]
     location:
       __: location
       v: [right, left, top, bottom]
+    orientation:
+      __: orientation
+      v: [vertical, horizontal]
     padding:
       __: padding
       color bar and panel:
@@ -710,9 +748,13 @@ local:
       label and tick:
         __: label_and_tick
         v: [5]
-    size:
-      __: size
-      v: [5%]
+    parent_anchor:
+      __: parent_anchor
+      v:
+      - [1.0, 0.5]
+    shrink:
+      __: shrink
+      v: [1.0]
     tick:
       __: tick
       color:
@@ -732,14 +774,17 @@ local:
       color:
         __: color
         v: [k]
-      decimals:
-        __: decimals
-        v: [null]
       font:
         __: font
         size:
           __: size
           v: [20]
+      format:
+        __: format
+        v: [null]
+    width:
+      __: width
+      v: [0.15]
   colors:
     __: colors
     v: [null]
@@ -1000,24 +1045,16 @@ local:
         __: show
         bottom:
           __: bottom
-          x:
-            __: x
-            v: [true, false]
+          v: [true, false]
         left:
           __: left
-          y:
-            __: y
-            v: [true, false]
+          v: [true, false]
         right:
           __: right
-          y:
-            __: y
-            v: [false, true]
+          v: [false, true]
         top:
           __: top
-          x:
-            __: x
-            v: [false, true]
+          v: [false, true]
       width:
         __: width
         x:
@@ -1080,24 +1117,16 @@ local:
         __: show
         bottom:
           __: bottom
-          x:
-            __: x
-            v: [true, false]
+          v: [true, false]
         left:
           __: left
-          y:
-            __: y
-            v: [true, false]
+          v: [true, false]
         right:
           __: right
-          y:
-            __: y
-            v: [false, true]
+          v: [false, true]
         top:
           __: top
-          x:
-            __: x
-            v: [false, true]
+          v: [false, true]
       width:
         __: width
         x:
@@ -1222,24 +1251,16 @@ local:
         __: show
         bottom:
           __: bottom
-          x:
-            __: x
-            v: [true, false]
+          v: [true, false]
         left:
           __: left
-          y:
-            __: y
-            v: [true, false]
+          v: [true, false]
         right:
           __: right
-          y:
-            __: y
-            v: [false, true]
+          v: [false, true]
         top:
           __: top
-          x:
-            __: x
-            v: [false, true]
+          v: [false, true]
     minor:
       __: minor
       color:
@@ -1354,24 +1375,16 @@ local:
         __: show
         bottom:
           __: bottom
-          x:
-            __: x
-            v: [true, false]
+          v: [true, false]
         left:
           __: left
-          y:
-            __: y
-            v: [true, false]
+          v: [true, false]
         right:
           __: right
-          y:
-            __: y
-            v: [false, true]
+          v: [false, true]
         top:
           __: top
-          x:
-            __: x
-            v: [false, true]
+          v: [false, true]
   which panel:
     __: which_panel
     v:

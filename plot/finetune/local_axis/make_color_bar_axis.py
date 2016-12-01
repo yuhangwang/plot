@@ -20,6 +20,6 @@ def make_color_bar_axis(obj_axis, p):
     divider = make_axes_locatable(obj_axis)
     return divider.append_axes(
         p['location'],
-        size=p['size'],
+        size=p['fraction'],
         pad=p['padding']['color_bar_and_panel']
         )

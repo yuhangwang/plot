@@ -33,6 +33,7 @@ def create(params):
                 squeeze=False
             )
     params['internal']['canvas']['figure'] = fig
+    params['internal']['canvas']['axes2D'] = axes
     params['internal']['canvas']['axes'] = upgrade_dimension(
         axes.tolist(), dim)
     tweek = compose([subplot_spacing, global_axis])

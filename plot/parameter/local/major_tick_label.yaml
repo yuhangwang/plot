@@ -39,17 +39,13 @@ local:
           v: [10]
       show:
         top:
-          "x":
-            v: [false,true]
+          v: [false,true]
         bottom:
-          "x":
-            v: [true,false]
+           v: [true,false]
         left:
-          "y":
-            v: [true,false]
+          v: [true,false]
         right:
-          "y":
-            v: [false,true]
+          v: [false,true]
       decimals:
         "x":
           v: [~]

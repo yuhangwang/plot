@@ -1,6 +1,8 @@
 data:
 - file: data/d1.dat
   plot type: matrix
+  color bar:
+    show: true
 
 global:
   figure:
@@ -30,3 +32,12 @@ local:
           x: true
         bottom:
           x: false
+  color bar:
+    color:
+      segment:
+        boundaries: [0, 0.5, 1.0]
+        values: [0, 1]
+    fraction: 0.5
+    aspect: 15
+    padding:
+      color bar and panel: 0.1

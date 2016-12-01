@@ -11,6 +11,9 @@ internal:
     axes:
       __: axes
       v: [null]
+    axes2D:
+      __: axes2D
+      v: [null]
     figure:
       __: figure
       v: [null]

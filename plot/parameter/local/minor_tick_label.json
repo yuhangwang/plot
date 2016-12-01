@@ -222,43 +222,31 @@
           "__": "show",
           "bottom": {
             "__": "bottom",
-            "x": {
-              "__": "x",
-              "v": [
-                true,
-                false
-              ]
-            }
+            "v": [
+              true,
+              false
+            ]
           },
           "left": {
             "__": "left",
-            "y": {
-              "__": "y",
-              "v": [
-                true,
-                false
-              ]
-            }
+            "v": [
+              true,
+              false
+            ]
           },
           "right": {
             "__": "right",
-            "y": {
-              "__": "y",
-              "v": [
-                false,
-                true
-              ]
-            }
+            "v": [
+              false,
+              true
+            ]
           },
           "top": {
             "__": "top",
-            "x": {
-              "__": "x",
-              "v": [
-                false,
-                true
-              ]
-            }
+            "v": [
+              false,
+              true
+            ]
           }
         }
       }

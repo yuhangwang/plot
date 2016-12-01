@@ -1,0 +1,63 @@
+data:
+- file: data/rand100x50.npy
+  which panel: [0,0]
+  plot type: matrix
+  matrix:
+    transpose: true
+    vertical:
+      min: 0
+      max: 1
+    extent:
+      min:
+        x: 0
+        y: 0
+      max:
+        x: 100
+        y: 50
+
+- file: data/rand100x50.npy
+  which panel: [1,0]
+  plot type: matrix
+  matrix:
+    transpose: true
+    vertical:
+      min: 0
+      max: 1
+    extent:
+      min:
+        x: 0
+        y: 0
+      max:
+        x: 100
+        y: 50
+  color bar:
+    show: true
+
+global:
+  figure:
+    output: output/d3.png
+    rows: 2
+    columns: 1
+    subplot:
+      spacing:
+        vertical: 0.1
+        horizontal: 0
+    axis:
+      share:
+        x: true
+
+local:
+- which panel: [0, 0]
+  tick:
+    major:
+      direction:
+        x: out
+        y: out
+  tick label:
+    major:
+      show:
+        bottom: false
+- color bar:
+    global: true
+    padding:
+      color bar and panel: 0.01

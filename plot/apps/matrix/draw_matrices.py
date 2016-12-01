@@ -32,7 +32,7 @@ def draw_matrices(params):
             panel_id = p['which_panel']
             obj_axis = axes[panel_id]
             obj_matrix = draw_matrix(obj_axis, data, p)
-            if p['color_bar']['show'] is True:
+            if p['color_bar']['show']:
                 color_bar_panel = p['color_bar']['which_panel']
                 label = p['color_bar']['content']
                 append_addon(
