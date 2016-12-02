@@ -10,7 +10,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='plot',
-    version="0.1.6",
+    version="0.1.7",
     description="A matplotlib frontend executable "
                 "using JSON file as user input",
     long_description=long_description,
