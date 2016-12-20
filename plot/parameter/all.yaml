@@ -435,9 +435,10 @@ global:
     height:
       __: height
       v: [8]
-    output:
-      __: output
-      v: [out.png]
+    outputs:
+      __: outputs
+      v:
+      - [out.png]
     padding:
       __: padding
       v: [0.2]

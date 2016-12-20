@@ -1,7 +1,7 @@
 global:
   figure:
-    output:
-      v: ["out.png"]
+    outputs:
+      v: [["out.png"]]
     width:
       v: [12]
     height:

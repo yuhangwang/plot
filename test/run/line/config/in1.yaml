@@ -11,7 +11,8 @@ data:
     opacity: 0.2
 global:
   figure:
-    output: output/d1.png
+    outputs:
+    - output/d1.png
     title: 
       content: NYC water consumption
     axis:

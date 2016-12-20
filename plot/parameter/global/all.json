@@ -287,10 +287,12 @@
           8
         ]
       },
-      "output": {
-        "__": "output",
+      "outputs": {
+        "__": "outputs",
         "v": [
-          "out.png"
+          [
+            "out.png"
+          ]
         ]
       },
       "padding": {

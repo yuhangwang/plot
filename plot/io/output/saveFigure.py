@@ -16,11 +16,12 @@ def saveFigure(params):
         same as input
     """
     obj_figure = params['internal']['canvas']['figure']
-    obj_figure.savefig(
-            params['global']['figure']['output'],
-            bbox_inches='tight',
-            dpi=params['global']['figure']['dpi'],
-            pad_inches=params['global']['figure']['padding'],
-            transparent=params['global']['figure']['transparent'],
-        )
+    for f_out in params['global']['figure']['outputs']:
+        obj_figure.savefig(
+                f_out,
+                bbox_inches='tight',
+                dpi=params['global']['figure']['dpi'],
+                pad_inches=params['global']['figure']['padding'],
+                transparent=params['global']['figure']['transparent'],
+            )
     return params
