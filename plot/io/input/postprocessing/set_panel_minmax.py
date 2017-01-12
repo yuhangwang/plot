@@ -37,9 +37,11 @@ def set_panel_minmax(params):
             data = readFileOrList(p['file'], p['values'], p['skip_rows'])
             row_count, column_count = numpy.shape(data)
 
-            if column_count == 0:
+            if row_count == 0 or column_count == 0:
                 continue
             elif column_count == 1:
+                print(p['file'])
+                print("data.shape", data.shape)
                 mm = [
                     [0, row_count - 1],
                     minmax(data[:, 0])
