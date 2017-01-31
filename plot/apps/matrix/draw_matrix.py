@@ -26,9 +26,8 @@ def draw_matrix(
         a `matplotlib.image.AxesImage` object
     """
     if p['matrix']['normalize'] == "log":
-        offset = 1  # make offset by 1 to avoid divide by zero
         obj = obj_axis.matshow(
-            data + offset,
+            data,
             interpolation=p['matrix']['interpolation'],
             origin=p['matrix']['origin'],
             cmap=pyplot.get_cmap(p['matrix']['color_map']),
