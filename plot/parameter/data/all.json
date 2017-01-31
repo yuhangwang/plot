@@ -346,6 +346,13 @@
           "lanczos"
         ]
       },
+      "normalize": {
+        "__": "normalize",
+        "v": [
+          null,
+          "log"
+        ]
+      },
       "origin": {
         "__": "origin",
         "v": [

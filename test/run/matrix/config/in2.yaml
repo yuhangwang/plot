@@ -18,7 +18,8 @@ data:
 
 global:
   figure:
-    output: output/d2.png
+    outputs:
+    - output/d2.png
 
 local:
 - tick:

@@ -24,3 +24,5 @@ data:
           v: [~]
         "y":
           v: [~]
+    normalize:
+      v: [~, log]

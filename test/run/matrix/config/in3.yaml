@@ -35,7 +35,8 @@ data:
 
 global:
   figure:
-    output: output/d3.png
+    outputs: 
+    - output/d3.png
     rows: 2
     columns: 1
     subplot:

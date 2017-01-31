@@ -1,13 +1,15 @@
 data:
-- file: data/d1.dat
+- file: data/d4.dat
   plot type: matrix
   color bar:
     show: true
+  matrix:
+    normalize: log
 
 global:
   figure:
-    outputs: 
-    - output/d1.png
+    outputs:
+    - output/d4.png
 
 local:
 - tick label:
@@ -34,11 +36,5 @@ local:
         bottom:
           x: false
   color bar:
-    color:
-      segment:
-        boundaries: [0, 0.5, 1.0]
-        values: [0, 1]
-    fraction: 0.5
-    aspect: 15
     padding:
       color bar and panel: 0.1

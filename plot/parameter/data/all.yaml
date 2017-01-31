@@ -170,6 +170,9 @@ data:
       __: interpolation
       v: [none, nearest, bilinear, bicubic, spline16, spline36, hanning, hamming,
         hermite, kaiser, quadric, catrom, gaussian, bessel, mitchell, sinc, lanczos]
+    normalize:
+      __: normalize
+      v: [null, log]
     origin:
       __: origin
       v: [lower, upper]
