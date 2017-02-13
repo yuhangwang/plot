@@ -1,4 +1,4 @@
 internal:
   available:
     plot types:
-      v: [[line, span, bar, matrix]]
+      v: [[line, span, bar, matrix, region]]

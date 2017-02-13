@@ -2,7 +2,7 @@
 Draw bars
 """
 from typing import List, Dict
-from ...io.input.extract_data_x_y import extract_data_x_y
+from ...io.input.extract_data import extract_data
 from ...io.input.extract_data_error_bar import extract_data_error_bar
 from ...io.input.readFileOrList import readFileOrList
 from .draw_one_bar_series import draw_one_bar_series
@@ -29,7 +29,7 @@ def draw_bars(params):
         if data is None:
             continue
         else:
-            XY = extract_data_x_y(data, p)
+            XY = extract_data(data, p)
             x_bars, y_bars = extract_data_error_bar(data, p)
             panel_id = p['which_panel']
             obj_axis = params['internal']['canvas']['axes'][panel_id]

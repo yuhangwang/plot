@@ -10,7 +10,8 @@
             "line",
             "span",
             "bar",
-            "matrix"
+            "matrix",
+            "region"
           ]
         ]
       }

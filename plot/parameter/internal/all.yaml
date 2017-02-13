@@ -5,7 +5,7 @@ internal:
     plot types:
       __: plot_types
       v:
-      - [line, span, bar, matrix]
+      - [line, span, bar, matrix, region]
   canvas:
     __: canvas
     axes:

@@ -16,8 +16,8 @@ def extract_data(data, params):
         params (dict): one entry of the 'data' parameter field
 
     Returns:
-        (X, Y) if params['data_column'] is ['x', 'y']
-        (X, Y1, Y2) if params['data_column'] is ['x', 'y1', 'y2']
+        [X, Y] if params['data_column'] is ['x', 'y']
+        [X, Y1, Y2] if params['data_column'] is ['x', 'y1', 'y2']
     """
     plot_type = params['plot_type']
     row_start = params[plot_type]['row_start']
@@ -35,4 +35,4 @@ def extract_data(data, params):
         for i in range(1, len(ooo)):
             ooo[i] = smooth(ooo[i], params['smooth'])
 
-    return tuple(ooo)
+    return ooo

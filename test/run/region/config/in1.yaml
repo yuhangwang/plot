@@ -1,0 +1,41 @@
+data:
+- file: data/d1.data
+  skip rows: 3
+  plot type: region
+  legend:
+    content: "region 101"
+  region:
+    data column:
+      x: 0
+      y1: 1
+      y2: 2
+    opacity:
+      positive: 0.2
+      negative: 0.1
+    color:
+      positive: 'b'
+      negative: 'b'
+    edge:
+      color: 'b'
+      width: 2
+    interpolate:
+      positive: false
+      negative: false
+global:
+  figure:
+    outputs:
+    - output/d1.png
+    title: 
+      content: NYC water consumption
+    axis:
+      label:
+        content:
+          "x": "Year"
+          "y": "Water\n(million gallons per day per person)"
+        font size:
+          "y": 35
+local:
+- which panel: [0,0]
+  legend:
+    anchor:
+      coordinate: [0.98, 0.96]
