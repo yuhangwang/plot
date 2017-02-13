@@ -1,5 +1,5 @@
 """
-Draw lines (with error bars if defined)
+Draw regions
 """
 from typing import List, Dict
 from ...io.input.extract_data import extract_data
@@ -10,11 +10,9 @@ from .._tk import append_addon
 import numpy
 
 
-def draw_lines(params):
+def draw_regions(params):
     # type: (Dict) -> Dict
-    """Draw lines
-
-    Draw lines, with error bars if defined.
+    """Draw regions
 
     Args:
         params (dict): a complete parameter dictionary
