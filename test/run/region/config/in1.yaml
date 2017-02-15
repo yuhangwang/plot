@@ -17,7 +17,7 @@ data:
       negative: 'b'
     edge:
       color: 'b'
-      width: 2
+      width: 0
     interpolate:
       positive: false
       negative: false
