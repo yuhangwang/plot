@@ -23,7 +23,7 @@ plot.main module
 plot.plot module
 ----------------
 
-.. automodule:: plot.plot
+.. automodule:: plot.run
     :members:
     :undoc-members:
     :show-inheritance:

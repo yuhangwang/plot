@@ -54,6 +54,8 @@
 <span class="kn">from</span> <span class="nn">.parser</span> <span class="k">import</span> <span class="n">parser</span>
 <span class="kn">from</span> <span class="nn">.readAll</span> <span class="k">import</span> <span class="n">readAll</span>
 <span class="kn">from</span> <span class="nn">...</span> <span class="k">import</span> <span class="n">tk</span>
+<span class="kn">from</span> <span class="nn">.preprocessing</span> <span class="k">import</span> <span class="n">preprocess</span>
+<span class="kn">from</span> <span class="nn">.postprocessing</span> <span class="k">import</span> <span class="n">postprocess</span>
 
 
 <div class="viewcode-block" id="parse"><a class="viewcode-back" href="../../../../api/plot.io.input.html#plot.io.input.parse.parse">[docs]</a><span class="k">def</span> <span class="nf">parse</span><span class="p">(</span><span class="n">user_config_file</span><span class="p">,</span> <span class="n">default_config_file</span><span class="p">):</span>
@@ -74,11 +76,25 @@
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">fn_parser1</span> <span class="o">=</span> <span class="n">parser</span><span class="p">(</span><span class="n">user_config_file</span><span class="p">)</span>
     <span class="n">fn_parser2</span> <span class="o">=</span> <span class="n">parser</span><span class="p">(</span><span class="n">default_config_file</span><span class="p">)</span>
-    <span class="n">updated_dict</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">dictTK</span><span class="o">.</span><span class="n">update</span><span class="p">(</span>
-            <span class="n">tk</span><span class="o">.</span><span class="n">dictTK</span><span class="o">.</span><span class="n">wrap_value</span><span class="p">(</span><span class="n">fn_parser1</span><span class="p">(</span><span class="n">readAll</span><span class="p">(</span><span class="n">user_config_file</span><span class="p">))),</span>
-            <span class="n">tk</span><span class="o">.</span><span class="n">dictTK</span><span class="o">.</span><span class="n">default</span><span class="p">(</span><span class="n">fn_parser2</span><span class="p">(</span><span class="n">readAll</span><span class="p">(</span><span class="n">default_config_file</span><span class="p">)))</span>
-        <span class="p">)</span>
-    <span class="k">return</span> <span class="n">tk</span><span class="o">.</span><span class="n">dictTK</span><span class="o">.</span><span class="n">convert_to_internal</span><span class="p">(</span><span class="n">updated_dict</span><span class="p">)</span></div>
+    <span class="n">user_dict</span> <span class="o">=</span> <span class="n">fn_parser1</span><span class="p">(</span><span class="n">readAll</span><span class="p">(</span><span class="n">user_config_file</span><span class="p">))</span>
+    <span class="n">default_dict</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">dictTK</span><span class="o">.</span><span class="n">default</span><span class="p">(</span><span class="n">fn_parser2</span><span class="p">(</span><span class="n">readAll</span><span class="p">(</span><span class="n">default_config_file</span><span class="p">)))</span>
+    <span class="n">ooo</span> <span class="o">=</span> <span class="p">{}</span>
+
+    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;global&#39;</span><span class="p">,</span> <span class="s1">&#39;local&#39;</span><span class="p">,</span> <span class="s1">&#39;data&#39;</span><span class="p">,</span> <span class="s1">&#39;internal&#39;</span><span class="p">]:</span>
+        <span class="k">if</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">user_dict</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">user_dict</span><span class="p">[</span><span class="n">k</span><span class="p">],</span> <span class="nb">list</span><span class="p">):</span>
+                <span class="n">ooo</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">preprocess</span><span class="p">(</span><span class="n">user_dict</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="n">i</span><span class="p">],</span> <span class="n">default_dict</span><span class="p">[</span><span class="n">k</span><span class="p">])</span>
+                          <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">user_dict</span><span class="p">[</span><span class="n">k</span><span class="p">]))]</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">ooo</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">preprocess</span><span class="p">(</span><span class="n">user_dict</span><span class="p">[</span><span class="n">k</span><span class="p">],</span> <span class="n">default_dict</span><span class="p">[</span><span class="n">k</span><span class="p">])</span>
+        <span class="k">elif</span> <span class="n">k</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">user_dict</span> <span class="ow">and</span> <span class="n">k</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">,</span> <span class="s1">&#39;local&#39;</span><span class="p">]:</span>
+            <span class="n">ooo</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">ooo</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">preprocess</span><span class="p">(</span><span class="nb">dict</span><span class="p">(),</span> <span class="n">default_dict</span><span class="p">[</span><span class="n">k</span><span class="p">])</span>
+    <span class="c1"># add internal-default-local</span>
+    <span class="n">ooo</span><span class="p">[</span><span class="s1">&#39;internal&#39;</span><span class="p">][</span><span class="s1">&#39;default&#39;</span><span class="p">][</span><span class="s1">&#39;local&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="n">preprocess</span><span class="p">(</span><span class="nb">dict</span><span class="p">(),</span> <span class="n">default_dict</span><span class="p">[</span><span class="s1">&#39;local&#39;</span><span class="p">]))</span>
+    <span class="k">return</span> <span class="n">postprocess</span><span class="p">(</span><span class="n">ooo</span><span class="p">)</span></div>
 </pre></div>
 
           </div>
