@@ -494,6 +494,90 @@
         ]
       }
     },
+    "rule": {
+      "__": "rule",
+      "color": {
+        "__": "color",
+        "v": [
+          "k"
+        ]
+      },
+      "horizontal": {
+        "__": "horizontal",
+        "at": {
+          "__": "at",
+          "v": [
+            null
+          ]
+        },
+        "max": {
+          "__": "max",
+          "v": [
+            1
+          ]
+        },
+        "min": {
+          "__": "min",
+          "v": [
+            0
+          ]
+        }
+      },
+      "line": {
+        "__": "line",
+        "style": {
+          "__": "style",
+          "v": [
+            "-",
+            "--",
+            "-.",
+            ":",
+            "None",
+            " ",
+            ""
+          ]
+        },
+        "width": {
+          "__": "width",
+          "v": [
+            3
+          ]
+        }
+      },
+      "opacity": {
+        "__": "opacity",
+        "v": [
+          1.0
+        ]
+      },
+      "vertical": {
+        "__": "vertical",
+        "at": {
+          "__": "at",
+          "v": [
+            null
+          ]
+        },
+        "max": {
+          "__": "max",
+          "v": [
+            1
+          ]
+        },
+        "min": {
+          "__": "min",
+          "v": [
+            0
+          ]
+        }
+      },
+      "which layer": {
+        "__": "which_layer",
+        "v": [
+          1
+        ]
+      }
+    },
     "skip rows": {
       "__": "skip_rows",
       "v": [

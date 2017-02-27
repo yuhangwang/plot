@@ -11,7 +11,8 @@
             "span",
             "bar",
             "matrix",
-            "region"
+            "region",
+            "rule"
           ]
         ]
       }
