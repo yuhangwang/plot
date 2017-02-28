@@ -25,7 +25,7 @@ def draw_rule(params):
         panel_id = p['which_panel']
         obj_axis = params['internal']['canvas']['axes'][panel_id]
         for k in ['horizontal', 'vertical']:
-            if (p['rule'][k]['min'] is None) or (p['rule'][k]['max'] is None):
+            if p['rule'][k]['at'] is None:
                 continue
             else:
                 obj_span = fn[k](obj_axis, p['rule'][k], p['rule'])
