@@ -843,7 +843,7 @@ local:
       __: padding
       color bar and panel:
         __: color_bar_and_panel
-        v: [0.05]
+        v: [0.01]
       label and tick:
         __: label_and_tick
         v: [5]
@@ -881,9 +881,6 @@ local:
       format:
         __: format
         v: [null]
-    width:
-      __: width
-      v: [0.15]
   colors:
     __: colors
     v: [null]
@@ -922,7 +919,7 @@ local:
       coordinate:
         __: coordinate
         v:
-        - [0.9, 0.9]
+        - [0.97, 0.96]
       corner:
         __: corner
         v: [upper right]

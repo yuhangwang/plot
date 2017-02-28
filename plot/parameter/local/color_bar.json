@@ -84,7 +84,7 @@
         "color bar and panel": {
           "__": "color_bar_and_panel",
           "v": [
-            0.05
+            0.01
           ]
         },
         "label and tick": {
@@ -159,12 +159,6 @@
             null
           ]
         }
-      },
-      "width": {
-        "__": "width",
-        "v": [
-          0.15
-        ]
       }
     }
   }
