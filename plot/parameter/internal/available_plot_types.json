@@ -12,7 +12,8 @@
             "bar",
             "matrix",
             "region",
-            "rule"
+            "rule",
+            "scatter"
           ]
         ]
       }

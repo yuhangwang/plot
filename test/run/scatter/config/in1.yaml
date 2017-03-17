@@ -1,0 +1,29 @@
+data:
+- file: data/d1.data
+  skip rows: 3
+  plot type: scatter
+  legend:
+    content: "water usage"
+  scatter:
+    data column:
+      "x": 0
+      "y": 1
+    opacity: 0.9
+global:
+  figure:
+    outputs:
+    - output/d1.png
+    title: 
+      content: NYC water consumption
+    axis:
+      label:
+        content:
+          "x": "Year"
+          "y": "Water\n(million gallons per day per person)"
+        font size:
+          "y": 35
+local:
+- which panel: [0,0]
+  legend:
+    anchor:
+      coordinate: [0.98, 0.96]
