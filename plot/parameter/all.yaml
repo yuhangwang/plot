@@ -307,7 +307,7 @@ data:
       __: marker
       color:
         __: color
-        v: [k]
+        v: [null]
       size:
         __: size
         v: [50.0]

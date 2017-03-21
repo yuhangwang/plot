@@ -30,7 +30,7 @@ data:
         - "D"
         - "d"
       color:
-        v: ['k']
+        v: [~]
     edge:
       width:
         v: [~]
