@@ -94,10 +94,10 @@ global:
           __: padding
           x:
             __: x
-            v: [50]
+            v: [40]
           y:
             __: y
-            v: [90]
+            v: [40]
       limits:
         __: limits
         set:
