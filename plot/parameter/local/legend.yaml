@@ -28,7 +28,7 @@ local:
       number of points:
         v: [~]
     handle length:
-      v: [2]
+      v: [1]
     border padding:
       v: [0.5]
     vertical spacing:
