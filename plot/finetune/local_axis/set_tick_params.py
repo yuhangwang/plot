@@ -15,7 +15,6 @@ def set_tick_params(params):
         same as input
     """
     for panel_id, p in params['local'].items():
-        print(p.keys())
         obj_axis = params['internal']['canvas']['axes'][panel_id]
         for k in ['x', 'y']:
             for m in ['major', 'minor']:

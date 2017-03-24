@@ -578,7 +578,7 @@ global:
       - [out.png]
     padding:
       __: padding
-      v: [0.2]
+      v: [0]
     rows:
       __: rows
       v: [1]

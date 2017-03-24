@@ -21,7 +21,7 @@ global:
     transparent:
       v: [no]
     padding:
-      v: [0.2]
+      v: [0]
     show axis label:
       v: [false]
     color:
