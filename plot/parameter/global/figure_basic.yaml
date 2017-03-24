@@ -3,9 +3,9 @@ global:
     outputs:
       v: [["out.png"]]
     width:
-      v: [12]
+      v: [3.5]
     height:
-      v: [8]
+      v: [2]
     rows:
       v: [1]
     columns:

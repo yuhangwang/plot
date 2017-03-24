@@ -134,7 +134,7 @@ data:
       v: ['-']
     width:
       __: width
-      v: [2.0]
+      v: [1.0]
   marker:
     __: marker
     size:

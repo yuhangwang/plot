@@ -4,9 +4,9 @@ local:
       font:
         size:
           "x":
-            v: [30]
+            v: [7]
           "y":
-            v: [30]
+            v: [7]
         weight:
           "x":
             v: [0]

@@ -134,7 +134,7 @@ data:
       v: ['-']
     width:
       __: width
-      v: [2.0]
+      v: [1.0]
   marker:
     __: marker
     size:
@@ -571,7 +571,7 @@ global:
         v: [true, false]
     height:
       __: height
-      v: [8]
+      v: [2]
     outputs:
       __: outputs
       v:
@@ -691,7 +691,7 @@ global:
       v: [false]
     width:
       __: width
-      v: [12]
+      v: [3.5]
 internal:
   __: internal
   available:
@@ -1156,10 +1156,10 @@ local:
         __: length
         x:
           __: x
-          v: [8]
+          v: [4]
         y:
           __: y
-          v: [8]
+          v: [4]
       rescale:
         __: rescale
         x:
@@ -1194,10 +1194,10 @@ local:
         __: width
         x:
           __: x
-          v: [2]
+          v: [1]
         y:
           __: y
-          v: [2]
+          v: [1]
     minor:
       __: minor
       color:
@@ -1228,10 +1228,10 @@ local:
         __: length
         x:
           __: x
-          v: [5]
+          v: [1]
         y:
           __: y
-          v: [5]
+          v: [1]
       rescale:
         __: rescale
         x:
@@ -1266,10 +1266,10 @@ local:
         __: width
         x:
           __: x
-          v: [2]
+          v: [1]
         y:
           __: y
-          v: [2]
+          v: [1]
   tick label:
     __: tick_label
     major:
@@ -1304,10 +1304,10 @@ local:
           __: size
           x:
             __: x
-            v: [30]
+            v: [7]
           y:
             __: y
-            v: [30]
+            v: [7]
         stretch:
           __: stretch
           x:
