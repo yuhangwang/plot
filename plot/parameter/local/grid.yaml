@@ -12,7 +12,7 @@ local:
       opacity:
         v: [0.2]
       width:
-        v: [1]
+        v: [0.5]
       style:
         v: ["--", "-", ":", "None", " ", ""]
     which layer:
