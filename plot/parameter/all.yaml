@@ -510,18 +510,18 @@ global:
           __: font_size
           x:
             __: x
-            v: [40]
+            v: [7]
           y:
             __: y
-            v: [40]
+            v: [7]
         padding:
           __: padding
           x:
             __: x
-            v: [40]
+            v: [7]
           y:
             __: y
-            v: [40]
+            v: [7]
       limits:
         __: limits
         set:
@@ -563,7 +563,7 @@ global:
       v: [1]
     dpi:
       __: dpi
-      v: [150]
+      v: [300]
     frame:
       __: frame
       show:

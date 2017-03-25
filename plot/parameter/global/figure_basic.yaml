@@ -17,7 +17,7 @@ global:
         horizontal:
           v: [~]
     dpi:
-      v: [150]
+      v: [300]
     transparent:
       v: [no]
     padding:
