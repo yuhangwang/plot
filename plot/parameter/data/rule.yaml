@@ -26,7 +26,7 @@ data:
       style:
         v: ['-', '--', '-.', ':', 'None', ' ', '']
       width:
-        v: [3]
+        v: [0.5]
 
     which layer:
       v: [1]
