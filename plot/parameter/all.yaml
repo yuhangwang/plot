@@ -938,7 +938,7 @@ local:
         v: [--, '-', ':', None, ' ', '']
       width:
         __: width
-        v: [0.5]
+        v: [0.2]
     show:
       __: show
       v: [false, true]
