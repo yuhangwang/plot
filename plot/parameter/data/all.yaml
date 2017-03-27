@@ -350,7 +350,7 @@ data:
         v: ['-']
       width:
         __: width
-        v: [0.7]
+        v: [1.0]
     mode:
       __: mode
       v: [nearest, reflect, constant, mirror, wrap]
