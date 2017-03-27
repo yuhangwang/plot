@@ -9,7 +9,7 @@ data:
         v: [~]
     line:
       width:
-        v: [1.0]
+        v: [0.5]
       style:
         v: ['-']
       opacity:
