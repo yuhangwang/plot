@@ -198,7 +198,7 @@ local:
         v: [0.2]
       style:
         __: style
-        v: [--, '-', ':', None, ' ', '']
+        v: [':', --, '-', None, ' ', '']
       width:
         __: width
         v: [0.2]
