@@ -21,7 +21,7 @@ local:
         v: [500]
     line:
       width:
-        v: [2]
+        v: [4]
     marker:
       scale:
         v: [1]
