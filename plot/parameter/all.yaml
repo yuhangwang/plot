@@ -993,7 +993,7 @@ local:
       __: font
       size:
         __: size
-        v: [26]
+        v: [7]
       weight:
         __: weight
         v: [500]
@@ -1012,7 +1012,7 @@ local:
       __: line
       width:
         __: width
-        v: [14]
+        v: [2]
     marker:
       __: marker
       number of points:

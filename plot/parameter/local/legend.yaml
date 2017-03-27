@@ -16,12 +16,12 @@ local:
         v: [0.5]
     font:
       size:
-        v: [26]
+        v: [7]
       weight:
         v: [500]
     line:
       width:
-        v: [14]
+        v: [2]
     marker:
       scale:
         v: [1]
