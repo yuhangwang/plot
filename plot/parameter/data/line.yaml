@@ -1,7 +1,7 @@
 data:
   line:
     width:
-      v: [0.2]
+      v: [0.25]
     color:
       v: [~]
     style:

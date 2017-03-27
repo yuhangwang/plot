@@ -134,7 +134,7 @@ data:
       v: ['-']
     width:
       __: width
-      v: [0.2]
+      v: [0.25]
   marker:
     __: marker
     size:
@@ -350,7 +350,7 @@ data:
         v: ['-']
       width:
         __: width
-        v: [0.5]
+        v: [0.7]
     mode:
       __: mode
       v: [nearest, reflect, constant, mirror, wrap]
