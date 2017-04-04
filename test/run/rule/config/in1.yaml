@@ -3,6 +3,7 @@ data:
   legend:
     content: "rule line"
   rule:
+    color: 3
     horizontal:
       at: 0.4
     vertical:
