@@ -571,7 +571,7 @@ global:
         v: [true, false]
     height:
       __: height
-      v: [2]
+      v: [2.0]
     outputs:
       __: outputs
       v:
@@ -691,7 +691,7 @@ global:
       v: [false]
     width:
       __: width
-      v: [3.5]
+      v: [4.0]
 internal:
   __: internal
   available:
