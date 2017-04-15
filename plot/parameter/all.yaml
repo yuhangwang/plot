@@ -248,7 +248,7 @@ data:
     __: rule
     color:
       __: color
-      v: [k]
+      v: [null]
     horizontal:
       __: horizontal
       at:

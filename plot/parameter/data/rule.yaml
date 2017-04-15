@@ -17,7 +17,7 @@ data:
         v: [1]
 
     color:
-        v: [k]
+        v: [~]
 
     opacity:
       v: [1.0]
