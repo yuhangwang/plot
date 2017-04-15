@@ -6,6 +6,7 @@ from .draw_horizontal_rule import draw_horizontal_rule
 from .draw_vertical_rule import draw_vertical_rule
 from .._tk import append_addon
 from ...tk.matplotlibTK.legend import format_legend_label
+import numpy
 
 
 def draw_rule(params):
@@ -28,6 +29,8 @@ def draw_rule(params):
             if p['rule'][k]['at'] is None:
                 continue
             else:
+                if isinstance(p['rule'][k]['at'], str):
+                    p['rule'][k]['at'] = numpy.loadtxt(p['rule'][k]['at'])
                 obj_span = fn[k](obj_axis, p['rule'][k], p['rule'])
                 legend_label = format_legend_label(p['legend']['content'])
                 legend_panel = p['legend']['which_panel']

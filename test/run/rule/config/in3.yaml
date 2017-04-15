@@ -1,0 +1,35 @@
+data:
+- plot type: rule
+  legend:
+    content: "rule line"
+  rule:
+    horizontal:
+      at: data/d1.dat
+    line:
+      width: 3
+    opacity: 0.2
+
+global:
+  figure:
+    output: output/d3.png
+    title: 
+      content: Test rule
+    axis:
+      label:
+        content:
+          "x": "index"
+          "y": "Y"
+        font size:
+          "y": 35
+
+local:
+- which panel: [0,0]
+  legend:
+    anchor:
+      coordinate: [0.98, 0.96]
+  axis:
+    range:
+      min:
+        x: 0
+      max:
+        x: 1
