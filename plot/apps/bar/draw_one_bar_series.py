@@ -28,7 +28,7 @@ def draw_one_bar_series(
         p_data (dict): data parameters
 
     Returns:
-        a matplotlib.container.BarContainer object
+        ("legend", bar_object, legend_name)
     """
     p_bars = p_data['bar']
     p_errors = p_data['error_bar']
@@ -39,4 +39,4 @@ def draw_one_bar_series(
         bar = draw_horizontal_bars(
             obj_axis, *xy, y_error_bars, p_bars, p_errors)
 
-    return (bar, format_legend_label(p_data['legend']['content']))
+    return ("legend", bar, format_legend_label(p_data['legend']['content']))

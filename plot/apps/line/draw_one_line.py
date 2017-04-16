@@ -43,4 +43,4 @@ def draw_one_line(
             markersize=p['marker']['size']
      )
 
-    return (line, format_legend_label(p['legend']['content']))
+    return ("legend", line, format_legend_label(p['legend']['content']))

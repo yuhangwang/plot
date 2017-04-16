@@ -28,13 +28,13 @@ def draw(params):
     for i in range(len(params['data'])):
         p = params['data'][i]
         fn_plot = modules[p['plot_type']].main
-        obj, legend_label = fn_plot(
+        entry_name, obj, legend_label = fn_plot(
             axes[p['which_panel']],
             p)
         if legend_label is not None:
             legend_panel = p['legend']['which_panel']
             append_addon(
-                'legend',
+                entry_name,
                 obj, legend_label, legend_panel, params)
         else:
             pass

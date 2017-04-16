@@ -21,7 +21,7 @@ def main(obj_axis, p):
         p (dict): parameters for one bar series
 
     Returns:
-        (obj, legend_label)
+        ("legend", obj, legend_label)
     """
     data = readFileOrList(p['file'], p['values'], p['skip_rows'])
     if data is None:
