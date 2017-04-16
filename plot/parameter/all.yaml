@@ -772,10 +772,10 @@ local:
           __: size
           x:
             __: x
-            v: [35]
+            v: [7]
           y:
             __: y
-            v: [35]
+            v: [7]
       padding:
         __: padding
         x:

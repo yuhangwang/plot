@@ -24,9 +24,9 @@ local:
       font:
         size:
           "x":
-            v: [35]
+            v: [7]
           "y":
-            v: [35]
+            v: [7]
     range:
       tight:
         "x":
