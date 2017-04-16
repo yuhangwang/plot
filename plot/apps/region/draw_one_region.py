@@ -20,7 +20,7 @@ def draw_one_region(
         p (dict): data parameters
 
     Returns:
-        a matplotlib.lines.line2D object
+        ("legend", object, legend_label)
     """
     x, y1, y2 = xy1y2
 
@@ -49,4 +49,4 @@ def draw_one_region(
         interpolate=p['region']['interpolate']['negative']
         )
 
-    return (obj_edges[0], format_legend_label(p['legend']['content']))
+    return ("legend", obj_edges[0], format_legend_label(p['legend']['content']))

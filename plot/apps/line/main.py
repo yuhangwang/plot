@@ -21,7 +21,7 @@ def main(obj_axis, p):
         p (dict): parameters for one line
 
     Returns:
-        (line_object, legend_label)
+        ("legend", line_object, legend_label)
     """
     data = readFileOrList(p['file'], p['values'], p['skip_rows'])
     if data is None:
