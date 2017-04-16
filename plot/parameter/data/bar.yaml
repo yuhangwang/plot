@@ -9,6 +9,8 @@ data:
         v: [~]
       edge:
         v: [~]
+    opacity:
+      v: [1.0]
     line:
       width:
         v: [~]

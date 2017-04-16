@@ -54,4 +54,5 @@ def bar_generator(
             linewidth=p_bars['line']['width'],
             orientation=p_bars['orientation'],
             align=p_bars['align'],
+            alpha=p_bars['opacity'],
             error_kw=error_bar_properties)

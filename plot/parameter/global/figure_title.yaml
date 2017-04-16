@@ -7,7 +7,7 @@ global:
         v: [~]
       font:
         size:
-          v: [40]
+          v: [7]
         weight:
           v: [~]
         color:

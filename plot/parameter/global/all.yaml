@@ -46,7 +46,7 @@ figure:
       __: font
       size:
         __: size
-        v: [40]
+        v: [7]
       weight:
         __: weight
         v: [500]
@@ -243,7 +243,7 @@ global:
           v: [1.0]
         size:
           __: size
-          v: [40]
+          v: [7]
         style:
           __: style
           v: [normal, italic, oblique]

@@ -4,7 +4,7 @@ figure:
       v: [~]
     font:
       size:
-        v: [40]
+        v: [7]
       weight:
         v: [500]
     alignment:

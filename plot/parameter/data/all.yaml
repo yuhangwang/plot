@@ -32,6 +32,9 @@ data:
     location offset:
       __: location_offset
       v: [0]
+    opacity:
+      __: opacity
+      v: [1.0]
     orientation:
       __: orientation
       v: [vertical, horizontal]

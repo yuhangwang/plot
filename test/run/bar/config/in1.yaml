@@ -18,8 +18,6 @@ global:
         content:
           "x": "Index"
           "y": "Frequency"
-        font size:
-          "y": 35
 local:
 - which panel: [0,0]
   legend:
