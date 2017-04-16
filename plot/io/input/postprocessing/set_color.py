@@ -41,12 +41,18 @@ def set_color(params):
 
     def aux(d: dict, local_id: int, which_panel: list):
         for k in d.keys():
-            if isinstance(d[k], dict):
-                d[k] = aux(d[k], local_id, which_panel)
-            elif k == "color":
-                d["color"] = set_color(d["color"], local_id, which_panel)
+            if k == "color":
+                if isinstance(d["color"], dict):
+                    for item in d["color"].keys():
+                        d["color"][item] = set_color(
+                            d["color"][item], local_id, which_panel)
+                else:
+                    d["color"] = set_color(d["color"], local_id, which_panel)
             else:
-                continue
+                if isinstance(d[k], dict):
+                    d[k] = aux(d[k], local_id, which_panel)
+                else:
+                    continue
         return d
 
     for p in params['data']:

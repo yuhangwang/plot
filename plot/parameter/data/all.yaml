@@ -366,10 +366,10 @@ data:
       __: color
       edge:
         __: edge
-        v: [k]
+        v: [null]
       face:
         __: face
-        v: [k]
+        v: [null]
     filled:
       __: filled
       v: [true, false]
@@ -400,7 +400,7 @@ data:
         v: ['-', --, -., ':', None, ' ', '']
       width:
         __: width
-        v: [3]
+        v: [0]
     opacity:
       __: opacity
       v: [1.0]

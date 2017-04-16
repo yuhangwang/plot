@@ -6,6 +6,9 @@ data:
     horizontal:
       center: data/center.dat
       radius: data/radius.dat
+    color:
+      face: 1
+      
   line:
     width: 1
   opacity: 1.0

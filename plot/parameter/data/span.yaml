@@ -30,16 +30,16 @@ data:
 
     color:
       face:
-        v: [k]
+        v: [~]
       edge:
-        v: [k]
+        v: [~]
     opacity:
       v: [1.0]
     line:
       style:
         v: ['-', '--', '-.', ':', 'None', ' ', '']
       width:
-        v: [3]
+        v: [0]
     filled:
       v: [true,false]
     which layer:
