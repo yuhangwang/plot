@@ -34,7 +34,7 @@ data:
       v: [0]
     opacity:
       __: opacity
-      v: [1.0]
+      v: [null]
     orientation:
       __: orientation
       v: [vertical, horizontal]

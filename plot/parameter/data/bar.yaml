@@ -10,7 +10,7 @@ data:
       edge:
         v: [~]
     opacity:
-      v: [1.0]
+      v: [~]
     line:
       width:
         v: [~]

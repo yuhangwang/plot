@@ -7,12 +7,25 @@ data:
     data column:
       "x": 0
       "y": 1
+    width: 0.5
     color:
       face: [1, 0, 0, 0]
-    opacity: 1
+- file: data/d2.data
+  plot type: bar
+  legend:
+    content: "series 2"
+  bar:
+    data column:
+      "x": 0
+      "y": 1
+    color:
+      face: [1, 0, 0, 0]
+
+
 global:
   figure:
-    output: output/d1.png
+    outputs:
+    - output/d1.png
     title: 
       content: Bar Chart
     axis:
@@ -29,3 +42,5 @@ local:
     range:
       max:
         "y": 0.5
+  grid:
+    show: true
