@@ -9,6 +9,10 @@ data:
         v: [1]
       bottom:
         v: [0]
+      center:
+        v: [~]
+      radius:
+        v: [~]
 
     horizontal:
       min:
@@ -19,6 +23,10 @@ data:
         v: [0]
       right:
         v: [1]
+      center:
+        v: [~]
+      radius:
+        v: [~]
 
     color:
       face:

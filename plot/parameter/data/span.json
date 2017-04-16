@@ -27,6 +27,12 @@
       },
       "horizontal": {
         "__": "horizontal",
+        "center": {
+          "__": "center",
+          "v": [
+            null
+          ]
+        },
         "left": {
           "__": "left",
           "v": [
@@ -41,6 +47,12 @@
         },
         "min": {
           "__": "min",
+          "v": [
+            null
+          ]
+        },
+        "radius": {
+          "__": "radius",
           "v": [
             null
           ]
@@ -87,6 +99,12 @@
             0
           ]
         },
+        "center": {
+          "__": "center",
+          "v": [
+            null
+          ]
+        },
         "max": {
           "__": "max",
           "v": [
@@ -95,6 +113,12 @@
         },
         "min": {
           "__": "min",
+          "v": [
+            null
+          ]
+        },
+        "radius": {
+          "__": "radius",
           "v": [
             null
           ]
