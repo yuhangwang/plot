@@ -26,26 +26,29 @@ def set_data_columns(params):
     Returns:
         updated params
     """
-    for k in ['line', 'bar']:
-        for i in params['internal']['user']['plots'][k]:
-            p = params['data'][i]
-            data = readFileOrList(p['file'], p['values'], p['skip_rows'])
-            column_count = numpy.shape(data)[1]
+    for p in params['data']:
+        if "data_column" not in p.keys():
+            continue
+        else:
+            pass
 
-            if p[k]['data_column']['x'] is None:
-                if column_count > 1:
-                    p[k]['data_column']['x'] = 0
-                else:
-                    p[k]['data_column']['x'] = None
-            else:
-                pass
+        data = readFileOrList(p['file'], p['values'], p['skip_rows'])
+        column_count = numpy.shape(data)[1]
 
-            if p[k]['data_column']['y'] is None:
-                if column_count == 1:
-                    p[k]['data_column']['y'] = 0
-                else:
-                    p[k]['data_column']['x'] = 1
+        if p['data_column']['x'] is None:
+            if column_count > 1:
+                p['data_column']['x'] = 0
             else:
-                pass
+                p['data_column']['x'] = None
+        else:
+            pass
+
+        if p['data_column']['y'] is None:
+            if column_count == 1:
+                p['data_column']['y'] = 0
+            else:
+                p['data_column']['x'] = 1
+        else:
+            pass
 
     return params

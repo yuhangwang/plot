@@ -7,7 +7,6 @@ from .make_local_dict import make_local_dict
 from .format_panel_index import format_panel_index
 from .set_data_id import set_data_id
 from .set_color import set_color
-from .assort_plots_by_type import assort_plots_by_type
 from .set_data_columns import set_data_columns
 from .set_panel_minmax import set_panel_minmax
 from .initialize_panel_legend import initialize_panel_legend
@@ -29,7 +28,6 @@ def postprocess(params):
         make_local_dict,
         set_data_id,
         set_color,
-        assort_plots_by_type,
         set_data_columns,
         set_panel_minmax,
         initialize_panel_legend,
