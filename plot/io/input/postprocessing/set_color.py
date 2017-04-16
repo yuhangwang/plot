@@ -36,6 +36,8 @@ def set_color(params):
             return get_color(local_id, which_panel)
         elif isinstance(val, int):
             return get_color(val, which_panel)
+        elif isinstance(val, list):
+            return tuple(val)
         else:
             return val
 
