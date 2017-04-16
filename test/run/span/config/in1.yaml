@@ -38,8 +38,6 @@ global:
         content:
           "x": "index"
           "y": "Y"
-        font size:
-          "y": 35
 
 local:
 - which panel: [0,0]
