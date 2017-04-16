@@ -20,8 +20,6 @@ global:
         content:
           "x": "Year"
           "y": "Water\n(million gallons per day per person)"
-        font size:
-          "y": 35
 local:
 - which panel: [0,0]
   legend:

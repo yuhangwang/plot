@@ -15,8 +15,7 @@ def main(obj_axis, p):
 
     Args:
         obj_axis(object): object for plotting
-        p (dict): a complete parameter dictionary
-
+        p (dict): parameters
     Returns:
         ("legend", object, legend_label)
     """

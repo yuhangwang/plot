@@ -20,7 +20,7 @@ def draw_one(
         p (dict): data parameters
 
     Returns:
-        a matplotlib.collections.PathCollection object
+        ("legend", object, legend_label)
     """
     obj = obj_axis.scatter(
             *xy,
@@ -33,4 +33,4 @@ def draw_one(
             alpha=p['scatter']['opacity'],
      )
 
-    return (obj, format_legend_label(p['legend']['content']))
+    return ("legend", obj, format_legend_label(p['legend']['content']))
