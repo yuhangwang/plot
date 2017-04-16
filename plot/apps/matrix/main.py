@@ -19,27 +19,17 @@ def main(obj_axis, p):
         p (dict): parameters
 
     Returns:
-        (obj, legend_label)
+        ("color_bar", obj, legend_label)
     """
-    axes = params['internal']['canvas']['axes']
-    for i in params['internal']['user']['plots']['matrix']:
-        p = params['data'][i]
-        data = readFileOrList(
-            p['file'], p['values'], p['skip_rows'],
-            transpose=p['matrix']['transpose'])
-        if data is None:
-            continue
+    data = readFileOrList(
+        p['file'], p['values'], p['skip_rows'],
+        transpose=p['matrix']['transpose'])
+    if data is None:
+        return (None, None, None)
+    else:
+        obj_matrix = draw_matrix(obj_axis, data, p)
+        if p['color_bar']['show']:
+            label = p['color_bar']['content']
+            return ("color_bar", obj_matrix, label)
         else:
-            panel_id = p['which_panel']
-            obj_axis = axes[panel_id]
-            obj_matrix = draw_matrix(obj_axis, data, p)
-            if p['color_bar']['show']:
-                color_bar_panel = p['color_bar']['which_panel']
-                label = p['color_bar']['content']
-                append_addon(
-                    'color_bar',
-                    obj_matrix, label, color_bar_panel, params)
-            else:
-                pass
-
-    return params
+            return (None, None, None)

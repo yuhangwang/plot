@@ -9,7 +9,7 @@ local:
         v: ['k']
       font:
         size:
-          v: [20]
+          v: [7]
       format:
         v: [~]
     tick:

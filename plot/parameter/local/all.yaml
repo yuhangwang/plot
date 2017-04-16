@@ -179,7 +179,7 @@ local:
         __: font
         size:
           __: size
-          v: [20]
+          v: [7]
       format:
         __: format
         v: [null]
