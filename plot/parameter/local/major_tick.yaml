@@ -8,14 +8,14 @@ local:
           v: [in, out, inout]
       length:
         "x":
-          v: [4]
+          v: [3]
         "y":
-          v: [4]
+          v: [3]
       width:
         "x":
-          v: [1]
+          v: [0.75]
         "y":
-          v: [1]
+          v: [0.75]
       color:
         "x":
           v: [k]

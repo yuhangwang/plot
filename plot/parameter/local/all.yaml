@@ -419,10 +419,10 @@ local:
         __: length
         x:
           __: x
-          v: [4]
+          v: [3]
         y:
           __: y
-          v: [4]
+          v: [3]
       rescale:
         __: rescale
         x:
@@ -457,10 +457,10 @@ local:
         __: width
         x:
           __: x
-          v: [1]
+          v: [0.75]
         y:
           __: y
-          v: [1]
+          v: [0.75]
     minor:
       __: minor
       color:
@@ -491,10 +491,10 @@ local:
         __: length
         x:
           __: x
-          v: [1]
+          v: [2]
         y:
           __: y
-          v: [1]
+          v: [2]
       rescale:
         __: rescale
         x:
@@ -529,10 +529,10 @@ local:
         __: width
         x:
           __: x
-          v: [1]
+          v: [0.75]
         y:
           __: y
-          v: [1]
+          v: [0.75]
   tick label:
     __: tick_label
     major:
