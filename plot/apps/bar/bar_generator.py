@@ -41,7 +41,6 @@ def bar_generator(
         'ecolor': p_errors['color']['edge'],
         'errorevery': p_errors['resample_window_size']
     }
-    print(p_bars['color']['face'])
     return obj_axis.bar(
             left=left,
             width=width,

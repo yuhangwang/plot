@@ -20,10 +20,6 @@ def draw(params):
     """
     here = os.path.dirname(os.path.realpath(__file__))
     modules = subimportDict(here, "plot.apps")
-    # apps = [m.main for m in modules]
-    # aux = compose(apps)
-    # return aux(params)
-    print(modules.keys())
     axes = params['internal']['canvas']['axes']
     for i in range(len(params['data'])):
         p = params['data'][i]
