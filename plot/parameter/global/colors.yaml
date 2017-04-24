@@ -4,8 +4,8 @@ global:
     -   - "#000000"  # black
         - "#33B2FF"  # blue
         - "#FF4D33"  # red
-        - "#FFC433"  # orange
         - "#189674"  # green
+        - "#FFC433"  # orange
         - "#871896"  # purple
         - "#961852"  # magenta
         - "#965A18"  # brown
