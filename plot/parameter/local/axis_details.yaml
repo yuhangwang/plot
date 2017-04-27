@@ -18,9 +18,9 @@ local:
           v: [~]
       padding:
         "x":
-          v: [15]
+          v: [5]
         "y":
-          v: [15]
+          v: [5]
       font:
         size:
           "x":

@@ -780,10 +780,10 @@ local:
         __: padding
         x:
           __: x
-          v: [15]
+          v: [5]
         y:
           __: y
-          v: [15]
+          v: [5]
     range:
       __: range
       inverted:
