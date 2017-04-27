@@ -1124,20 +1124,34 @@ local:
       vertical:
         __: vertical
         v: [center]
+    background:
+      __: background
+      color:
+        __: color
+        v: [w]
     content:
       __: content
       v: [null]
     font:
       __: font
+      color:
+        __: color
+        v: [k]
       size:
         __: size
         v: [7]
-      weight:
-        __: weight
-        v: [500]
+    opacity:
+      __: opacity
+      v: [1.0]
     rotation:
       __: rotation
       v: [0]
+    x:
+      __: x
+      v: [0.7]
+    y:
+      __: y
+      v: [0.8]
   tick:
     __: tick
     major:

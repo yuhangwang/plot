@@ -1,0 +1,21 @@
+global:
+  figure:
+    outputs:
+    - output/d1.png
+    title: 
+      content: Bar Chart
+    axis:
+      label:
+        content:
+          "x": "Index"
+          "y": "Frequency"
+
+local:
+- which panel: [0,0]
+  text:
+  - content: text 101
+    font:
+      size: 10
+      color: r
+    
+

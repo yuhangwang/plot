@@ -25,7 +25,6 @@ def default(d):
     """
     ooo = copy.deepcopy(d)
     for k in d.keys():
-        print("key", k)
         if k == "v":
             ooo["v"] = d[k][0]
         elif isinstance(d[k], dict):

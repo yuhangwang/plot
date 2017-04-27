@@ -53,6 +53,8 @@ def set_color(params):
             else:
                 if isinstance(d[k], dict):
                     d[k] = aux(d[k], local_id, which_panel)
+                elif isinstance(d[k], list) and isinstance(d[k][0], dict):
+                    d[k] = [aux(x, local_id, which_panel) for x in d[k]]
                 else:
                     continue
         return d
