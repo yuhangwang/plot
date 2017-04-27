@@ -25,6 +25,12 @@
             "v": [
               "w"
             ]
+          },
+          "opacity": {
+            "__": "opacity",
+            "v": [
+              0
+            ]
           }
         },
         "content": {
@@ -41,18 +47,18 @@
               "k"
             ]
           },
+          "opacity": {
+            "__": "opacity",
+            "v": [
+              1.0
+            ]
+          },
           "size": {
             "__": "size",
             "v": [
               7
             ]
           }
-        },
-        "opacity": {
-          "__": "opacity",
-          "v": [
-            1.0
-          ]
         },
         "rotation": {
           "__": "rotation",

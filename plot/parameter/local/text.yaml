@@ -6,16 +6,18 @@ local:
       v: [0.7]
     "y":
       v: [0.8]
-    opacity:
-      v: [1.0]
     font:
       size:
         v: [7]
       color:
         v: [k]
+      opacity:
+        v: [1.0]
     background:
       color:
         v: [w]
+      opacity:
+        v: [0]
     alignment:
       horizontal:
         v: [left]

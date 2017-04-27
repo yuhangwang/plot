@@ -15,7 +15,9 @@ local:
   text:
   - content: text 101
     font:
+      opacity: 0.5
       size: 10
       color: r
+    "y": 0.87
     
 

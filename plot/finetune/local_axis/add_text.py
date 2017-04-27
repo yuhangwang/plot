@@ -14,11 +14,13 @@ def add_text(params: dict) -> dict:
                     t["y"],
                     t["content"],
                     axes=obj_axis,
-                    alpha=t["opacity"],
+                    alpha=t['font']["opacity"],
                     fontsize=t["font"]["size"],
                     color=t["font"]["color"],
                     rotation=t["rotation"],
-                    backgroundcolor=t["background"]["color"],
+                    bbox=dict(
+                        facecolor=t['background']['color'],
+                        alpha=t['background']['opacity']),
                     horizontalalignment=t["alignment"]["horizontal"],
                     verticalalignment=t["alignment"]["vertical"],
                     )
