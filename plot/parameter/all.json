@@ -2227,51 +2227,6 @@
           ]
         }
       },
-      "label": {
-        "__": "label",
-        "alignment": {
-          "__": "alignment",
-          "horizontal": {
-            "__": "horizontal",
-            "v": [
-              "left"
-            ]
-          },
-          "vertical": {
-            "__": "vertical",
-            "v": [
-              "center"
-            ]
-          }
-        },
-        "content": {
-          "__": "content",
-          "v": [
-            null
-          ]
-        },
-        "font": {
-          "__": "font",
-          "size": {
-            "__": "size",
-            "v": [
-              25
-            ]
-          },
-          "weight": {
-            "__": "weight",
-            "v": [
-              500
-            ]
-          }
-        },
-        "rotation": {
-          "__": "rotation",
-          "v": [
-            0
-          ]
-        }
-      },
       "subdivision": {
         "__": "subdivision",
         "new panel indexes": {
@@ -2306,6 +2261,52 @@
         }
       }
     },
+    "text": [
+      {
+        "alignment": {
+          "__": "alignment",
+          "horizontal": {
+            "__": "horizontal",
+            "v": [
+              "left"
+            ]
+          },
+          "vertical": {
+            "__": "vertical",
+            "v": [
+              "center"
+            ]
+          }
+        },
+        "content": {
+          "__": "content",
+          "v": [
+            null
+          ]
+        },
+        "font": {
+          "__": "font",
+          "size": {
+            "__": "size",
+            "v": [
+              7
+            ]
+          },
+          "weight": {
+            "__": "weight",
+            "v": [
+              500
+            ]
+          }
+        },
+        "rotation": {
+          "__": "rotation",
+          "v": [
+            0
+          ]
+        }
+      }
+    ],
     "tick": {
       "__": "tick",
       "major": {

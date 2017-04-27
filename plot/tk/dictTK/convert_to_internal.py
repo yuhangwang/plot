@@ -6,26 +6,31 @@ from typing import Dict
 import copy
 
 
-def convert_to_internal(user_dict):
+def convert_to_internal(params):
     # type: (Dict) -> Dict
     """Convert to "plot" internal dictionary.
 
-    use the internal key defined by user_dict["__"]
+    use the internal key defined by params["__"]
     as the new key.
 
     Args:
-        user_dict (dict): user configuration dictionary
+        params (dict | list): user configuration dictionary/list
 
     Returns:
         A new dictionary with new keys.
     """
-    ooo = dict()
-    for k in user_dict:
-        if isinstance(user_dict[k], dict):
-            new_key = user_dict[k]["__"]
-            ooo[new_key] = convert_to_internal(user_dict[k])
-        elif k == "v":
-            return user_dict["v"]
-        else:
-            continue
-    return ooo
+    if isinstance(params, list):
+        return [convert_to_internal(x) for x in params]
+    else:
+        ooo = dict()
+        for k in params.keys():
+            if k == "v":
+                return params["v"]
+            elif isinstance(params[k], dict):
+                new_key = params[k]["__"]
+                ooo[new_key] = convert_to_internal(params[k])
+            elif isinstance(params[k], list):
+                ooo[k] = convert_to_internal(params[k])
+            else:
+                continue
+        return ooo

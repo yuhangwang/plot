@@ -24,11 +24,15 @@ def default(d):
         a new dictionary with default values.
     """
     ooo = copy.deepcopy(d)
-    for k in d:
-        if isinstance(d[k], dict):
-            ooo[k] = default(d[k])
-        elif k == "v":
+    for k in d.keys():
+        print("key", k)
+        if k == "v":
             ooo["v"] = d[k][0]
+        elif isinstance(d[k], dict):
+            ooo[k] = default(d[k])
+        elif (isinstance(d[k], list) and
+                isinstance(d[k][0], dict)):
+            ooo[k] = [default(x) for x in d[k]]
         else:
             continue
     return ooo

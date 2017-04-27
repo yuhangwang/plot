@@ -1,20 +1,5 @@
 local:
   panel:
-    label:
-      content:
-        v: [null]
-      font:
-        size:
-          v: [25]
-        weight:
-          v: [500]
-      alignment:
-        horizontal:
-          v: [left]
-        vertical:
-          v: [center]
-      rotation:
-        v: [0]
     box:
       face color:
         v: [w]

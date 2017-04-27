@@ -22,9 +22,12 @@ def wrap_value(d):
         inside "v" fields
     """
     ooo = copy.deepcopy(d)
-    for k in d:
+    for k in d.keys():
         if isinstance(d[k], dict):
             ooo[k] = wrap_value(d[k])
+        elif (isinstance(d[k], list) and
+            isinstance(d[k][0], dict)):
+            ooo[k] = [wrap_value(x) for x in d[k]]
         else:
             ooo[k] = {"v": d[k]}
     return ooo

@@ -16,6 +16,7 @@ from .hide_axis_ticks import hide_axis_ticks
 from .hide_axis_tick_labels import hide_axis_tick_labels
 from .add_local_axis_labels import add_local_axis_labels
 from .set_tick_params import set_tick_params
+from .add_text import add_text
 
 
 def main(params):
@@ -41,6 +42,7 @@ def main(params):
         hide_axis_ticks,
         hide_axis_tick_labels,
         add_local_axis_labels,
-        set_tick_params
+        set_tick_params,
+        add_text
         ])
     return aux(params)

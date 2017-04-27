@@ -37,16 +37,20 @@ def save_yaml(output, d):
 
 def add_internal_key(d, key=None):
     """Add internal keyword field "__" """
-    ooo = copy.deepcopy(d)
-    if key is not None and "__" not in d:
-        ooo["__"] = "_".join(key.split())
-
-    for k in d:
-        if isinstance(d[k], dict):
-            ooo[k] = add_internal_key(d[k], k)
-        else:
-            continue
-    return ooo
+    if isinstance(d, list):
+        return [add_internal_key(x) for x in d]
+    else:
+        ooo = copy.deepcopy(d)
+        if key is not None and "__" not in d:
+            ooo["__"] = "_".join(key.split())
+        for k in d.keys():
+            if isinstance(d[k], dict):
+                ooo[k] = add_internal_key(d[k], k)
+            elif isinstance(d[k], list) and isinstance(d[k][0], dict):
+                ooo[k] = add_internal_key(d[k])
+            else:
+                continue
+        return ooo
 
 
 def convert(file):

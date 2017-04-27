@@ -32,6 +32,7 @@ def parse(user_config_file, default_config_file):
     fn_parser2 = parser(default_config_file)
     user_dict = fn_parser1(readAll(user_config_file))
     default_dict = tk.dictTK.default(fn_parser2(readAll(default_config_file)))
+    print("default dict", default_dict["local"])
     ooo = {}
 
     for k in ['global', 'local', 'data', 'internal']:
