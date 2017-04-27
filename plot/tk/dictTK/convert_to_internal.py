@@ -22,8 +22,6 @@ def convert_to_internal(params):
     if isinstance(params, list):
         return [convert_to_internal(x) for x in params]
     else:
-        if not isinstance(params, dict):
-            print("==", type(params))
         ooo = dict()
         for k in params.keys():
             if k == "v":
@@ -31,8 +29,8 @@ def convert_to_internal(params):
             elif isinstance(params[k], dict):
                 new_key = params[k]["__"]
                 ooo[new_key] = convert_to_internal(params[k])
-            elif (isinstance(params[k], list) and 
-                isinstance(params[k][0], dict)):
+            elif (isinstance(params[k], list) and
+                    isinstance(params[k][0], dict)):
                 ooo[k] = convert_to_internal(params[k])
             else:
                 continue

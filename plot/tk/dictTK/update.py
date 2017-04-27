@@ -24,7 +24,7 @@ def update(src, target):
         a new dictionary with updated entries.
     """
     if (isinstance(target, list) and
-        isinstance(src, list)):
+            isinstance(src, list)):
         if len(target) == len(src):
             return [update(src[i], target[i])
                     for i in range(len(src))]

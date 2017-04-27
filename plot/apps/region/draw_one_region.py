@@ -49,4 +49,6 @@ def draw_one_region(
         interpolate=p['region']['interpolate']['negative']
         )
 
-    return ("legend", obj_edges[0], format_legend_label(p['legend']['content']))
+    return ("legend",
+            obj_edges[0],
+            format_legend_label(p['legend']['content']))
