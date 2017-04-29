@@ -9,9 +9,6 @@ global:
         content:
           "x": "Index"
           "y": "Frequency"
-
-local:
-- which panel: [0,0]
   text:
   - content: text 101
     font:
@@ -19,3 +16,6 @@ local:
       size: 10
       color: r
     "y": 0.87
+
+local:
+- which panel: [0,0]

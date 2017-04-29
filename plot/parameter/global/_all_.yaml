@@ -2,5 +2,6 @@
 - figure_title
 - figure_axis
 - figure_label
+- text
 - deps
 - colors
