@@ -9,6 +9,20 @@ data:
     opacity: 0.2
     color: 0
 
+
+- file: data/d1.data
+  skip rows: 3
+  plot type: line
+  line:
+    data column:
+      "x": 0
+      "y": 1
+    width: 4
+    opacity: 0.8
+    color: 1
+    which layer: 2
+  which panel: [0, 1]
+
 - file: data/d1.data
   skip rows: 3
   plot type: line
@@ -20,8 +34,10 @@ data:
       "x": 0
       "y": 1
     color: 0
+    width: 2
   smooth:
     window size: 10
+  which panel: [0, 1]
 
 global:
   figure:
@@ -37,6 +53,16 @@ global:
           "y": "Water\n(million gallons per day per person)"
 local:
 - which panel: [0,0]
+  legend:
+    anchor:
+      coordinate: [0.98, 0.96]
+  axis:
+    range:
+      tight:
+        x: True
+        y: True
+
+- which panel: [0, 1]
   legend:
     anchor:
       coordinate: [0.98, 0.96]

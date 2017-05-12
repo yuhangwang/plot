@@ -40,7 +40,8 @@ def draw_one_line(
             capthick=p['error_bar']['cap']['thickness'],
             errorevery=p['error_bar']['resample_window_size'],
             marker=p['marker']['style'],
-            markersize=p['marker']['size']
+            markersize=p['marker']['size'],
+            zorder=p['line']['which_layer'],
      )
 
     return ("legend", line, format_legend_label(p['legend']['content']))
