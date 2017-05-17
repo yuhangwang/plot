@@ -1,7 +1,7 @@
 global:
   colors:
     v:
-    -   - "#000000"  # black
+    -   - "#808080"  # black
         - "#33B2FF"  # blue
         - "#FF4D33"  # red
         - "#189674"  # green
