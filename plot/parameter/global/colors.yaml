@@ -5,11 +5,11 @@ global:
         - "#33B2FF"  # blue
         - "#FF4D33"  # red
         - "#189674"  # green
-        - "#FFC433"  # yellow
-        - "#5E10E5"  # purple
+        - "#FFB600"  # orange-yellow
+        - "#F06DFF"  # pink
         - "#1077E5"  # calm blue
         - "#965A18"  # brown
         - "#96186C"  # mauve
         - "#094970"  # navy
-        - "#EF793E"  # orange
         - "#07F9F5"  # cyan
+        - "#002CF2"  # normal blue
