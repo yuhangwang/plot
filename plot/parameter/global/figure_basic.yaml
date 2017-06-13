@@ -16,14 +16,6 @@ global:
           v: [~]
         horizontal:
           v: [~]
-    dpi:
-      v: [300]
-    transparent:
-      v: [no]
-    padding:
-      v: [0]
-    show axis label:
-      v: [false]
     color:
       face:
         v: [~]
@@ -32,4 +24,24 @@ global:
     frame:
       show:
         v: [true, false]
-
+    layout:
+      tight:
+        v: [true, false]
+      padding:
+        figure: # between figure edge and subplot edges
+          v: [0] 
+        horizontal: # between adjacent subplots
+          v: [~] 
+        vertical:
+          v: [~]
+        rectangle: # (left, bottom, right, top) in normalized figure coordinate
+          v: [[0, 0, 1, 1]]
+    save:
+      dpi:
+        v: [300]
+      transparent:
+        v: [no]
+      padding:
+        v: [0]
+      bounding box:
+        v: [~, tight]

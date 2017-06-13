@@ -40,4 +40,14 @@ def create(params):
     tweek(params)
     params['internal']['canvas']['axes'] = numpy.array(
         params['internal']['canvas']['axes'])
+
+    layout = params['global']['figure']['layout']
+    if layout['tight'] is True:
+        fig.tight_layout(
+            pad=layout['padding']['figure'],
+            h_pad=layout['padding']['vertical'],
+            w_pad=layout['padding']['horizontal'],
+            rect=layout['padding']['rectangle'],
+        )
+
     return params

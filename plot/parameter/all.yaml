@@ -579,9 +579,6 @@ global:
     columns:
       __: columns
       v: [1]
-    dpi:
-      __: dpi
-      v: [300]
     frame:
       __: frame
       show:
@@ -590,19 +587,47 @@ global:
     height:
       __: height
       v: [2.0]
+    layout:
+      __: layout
+      padding:
+        __: padding
+        figure:
+          __: figure
+          v: [0]
+        horizontal:
+          __: horizontal
+          v: [null]
+        rectangle:
+          __: rectangle
+          v:
+          - [0, 0, 1, 1]
+        vertical:
+          __: vertical
+          v: [null]
+      tight:
+        __: tight
+        v: [true, false]
     outputs:
       __: outputs
       v:
       - [out.png]
-    padding:
-      __: padding
-      v: [0]
     rows:
       __: rows
       v: [1]
-    show axis label:
-      __: show_axis_label
-      v: [false]
+    save:
+      __: save
+      bounding box:
+        __: bounding_box
+        v: [null, tight]
+      dpi:
+        __: dpi
+        v: [300]
+      padding:
+        __: padding
+        v: [0]
+      transparent:
+        __: transparent
+        v: [false]
     subplot:
       __: subplot
       spacing:
@@ -704,9 +729,6 @@ global:
       which_layer:
         __: which_layer
         v: [0]
-    transparent:
-      __: transparent
-      v: [false]
     width:
       __: width
       v: [4.0]
