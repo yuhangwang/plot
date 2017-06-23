@@ -36,8 +36,6 @@ def create(params):
     params['internal']['canvas']['axes2D'] = axes
     params['internal']['canvas']['axes'] = upgrade_dimension(
         axes.tolist(), dim)
-    tweek = compose([subplot_spacing, global_axis])
-    tweek(params)
     params['internal']['canvas']['axes'] = numpy.array(
         params['internal']['canvas']['axes'])
 
@@ -49,5 +47,8 @@ def create(params):
             w_pad=layout['padding']['horizontal'],
             rect=layout['padding']['rectangle'],
         )
+
+    tweek = compose([subplot_spacing, global_axis])
+    tweek(params)
 
     return params

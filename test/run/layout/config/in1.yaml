@@ -21,14 +21,44 @@ data:
     interpolate:
       positive: false
       negative: false
+
+- file: data/d1.data
+  skip rows: 3
+  plot type: region
+  legend:
+    content: "region 101"
+    which panel: [1, 0]
+  region:
+    data column:
+      x: 0
+      y1: 1
+      y2: 2
+    opacity:
+      positive: 0.2
+      negative: 0.1
+    color:
+      positive: 'b'
+      negative: 'b'
+    edge:
+      color: 'b'
+      width: 0
+    interpolate:
+      positive: false
+      negative: false
+  which panel: [1, 0]
+
 global:
   figure:
+    rows: 2
     width: 4
     height: 4
     layout:
       tight: true
       padding:
-        rectangle: [-0.1, 0, 1.01, 1]
+        rectangle: [0.0, 0, 1.05, 1]
+    subplot:
+      spacing:
+        vertical: 0
     outputs:
     - output/d1.png
     # title: 
@@ -42,6 +72,13 @@ global:
           "y": "Water\n(million gallons per day per person)"
 local:
 - which panel: [0,0]
+  legend:
+    frame:
+      show: false
+    anchor:
+      coordinate: [0.98, 0.96]
+
+- which panel: [1,0]
   legend:
     frame:
       show: false
