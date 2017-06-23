@@ -1087,7 +1087,7 @@ local:
         v: [true]
     handle length:
       __: handle_length
-      v: [1]
+      v: [0.7]
     line:
       __: line
       width:
