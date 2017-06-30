@@ -533,7 +533,7 @@
         "show": {
           "__": "show",
           "v": [
-            true
+            false
           ]
         }
       },

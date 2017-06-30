@@ -267,7 +267,7 @@ local:
         v: [0.5]
       show:
         __: show
-        v: [true]
+        v: [false]
     handle length:
       __: handle_length
       v: [0.7]

@@ -11,7 +11,7 @@ local:
       v: [1]
     frame:
       show:
-        v: [true]
+        v: [false]
       opacity:
         v: [0.5]
     font:
