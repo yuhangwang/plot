@@ -27,7 +27,7 @@ def draw(params):
         entry_name, obj, legend_label = fn_plot(
             axes[p['which_panel']],
             p)
-        if legend_label is not None:
+        if entry_name is "color_bar" or legend_label is not None:
             legend_panel = p['legend']['which_panel']
             append_addon(
                 entry_name,

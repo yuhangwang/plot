@@ -16,9 +16,9 @@ local:
       set:
         v: [~]
       width:
-        v: [2]
+        v: [0.5]
       length:
-        v: [10]
+        v: [2]
       color:
         v: [k]
     padding:

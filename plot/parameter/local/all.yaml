@@ -163,13 +163,13 @@ local:
         v: [k]
       length:
         __: length
-        v: [10]
+        v: [2]
       set:
         __: set
         v: [null]
       width:
         __: width
-        v: [2]
+        v: [0.5]
     tick label:
       __: tick_label
       color:
