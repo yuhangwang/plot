@@ -30,7 +30,7 @@ def create(params):
                          params['global']['figure']['height']),
                 sharex=params['global']['figure']['axis']['share']['x'],
                 sharey=params['global']['figure']['axis']['share']['y'],
-                squeeze=False
+                squeeze=False,
             )
     params['internal']['canvas']['figure'] = fig
     params['internal']['canvas']['axes2D'] = axes
