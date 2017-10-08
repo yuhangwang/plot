@@ -500,7 +500,7 @@ global:
   colors:
     __: colors
     v:
-    - ['#43474C', '#33B2FF', '#FF4D33', '#189674', '#FFB600', '#F06DFF', '#1077E5',
+    - ['#43474C', '#33B2FF', '#FF4D33', '#189674', '#FFB600', '#7600ED', '#1077E5',
       '#965A18', '#96186C', '#094970', '#07F9F5', '#002CF2']
   deps:
     __: deps
@@ -1092,7 +1092,7 @@ local:
       __: line
       width:
         __: width
-        v: [4]
+        v: [8]
     marker:
       __: marker
       number of points:

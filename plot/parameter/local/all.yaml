@@ -275,7 +275,7 @@ local:
       __: line
       width:
         __: width
-        v: [4]
+        v: [8]
     marker:
       __: marker
       number of points:
