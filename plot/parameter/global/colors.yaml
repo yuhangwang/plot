@@ -1,7 +1,7 @@
 global:
   colors:
     v:
-    -   - "#282727"  # black (40,39,39)
+    -   - "#43474C"  # black (67,71,76)
         - "#33B2FF"  # blue
         - "#FF4D33"  # red
         - "#189674"  # green
@@ -13,3 +13,4 @@ global:
         - "#094970"  # navy
         - "#07F9F5"  # cyan
         - "#002CF2"  # normal blue
+# "#282727"  # black (40,39,39)

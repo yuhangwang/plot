@@ -140,7 +140,7 @@ data:
       v: [1]
     width:
       __: width
-      v: [1]
+      v: [1.5]
   marker:
     __: marker
     size:
@@ -273,7 +273,7 @@ data:
         v: ['-', --, -., ':', None, ' ', '']
       width:
         __: width
-        v: [1]
+        v: [1.5]
     opacity:
       __: opacity
       v: [1.0]
@@ -500,7 +500,7 @@ global:
   colors:
     __: colors
     v:
-    - ['#282727', '#33B2FF', '#FF4D33', '#189674', '#FFB600', '#F06DFF', '#1077E5',
+    - ['#43474C', '#33B2FF', '#FF4D33', '#189674', '#FFB600', '#F06DFF', '#1077E5',
       '#965A18', '#96186C', '#094970', '#07F9F5', '#002CF2']
   deps:
     __: deps
@@ -536,10 +536,10 @@ global:
           __: padding
           x:
             __: x
-            v: [15]
+            v: [20]
           y:
             __: y
-            v: [20]
+            v: [25]
       limits:
         __: limits
         set:
