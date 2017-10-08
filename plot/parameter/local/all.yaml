@@ -256,7 +256,7 @@ local:
       __: font
       size:
         __: size
-        v: [7]
+        v: [12]
       weight:
         __: weight
         v: [500]
@@ -543,10 +543,10 @@ local:
           __: size
           x:
             __: x
-            v: [7]
+            v: [12]
           y:
             __: y
-            v: [7]
+            v: [12]
         stretch:
           __: stretch
           x:

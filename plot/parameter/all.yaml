@@ -140,7 +140,7 @@ data:
       v: [1]
     width:
       __: width
-      v: [0.5]
+      v: [1]
   marker:
     __: marker
     size:
@@ -273,7 +273,7 @@ data:
         v: ['-', --, -., ':', None, ' ', '']
       width:
         __: width
-        v: [0.5]
+        v: [1]
     opacity:
       __: opacity
       v: [1.0]
@@ -488,7 +488,7 @@ figure:
       __: font
       size:
         __: size
-        v: [7]
+        v: [12]
       weight:
         __: weight
         v: [500]
@@ -528,10 +528,10 @@ global:
           __: font_size
           x:
             __: x
-            v: [7]
+            v: [12]
           y:
             __: y
-            v: [7]
+            v: [12]
         padding:
           __: padding
           x:
@@ -762,7 +762,7 @@ global:
         v: [1.0]
       size:
         __: size
-        v: [7]
+        v: [12]
     rotation:
       __: rotation
       v: [0]
@@ -1073,7 +1073,7 @@ local:
       __: font
       size:
         __: size
-        v: [7]
+        v: [12]
       weight:
         __: weight
         v: [500]
@@ -1360,10 +1360,10 @@ local:
           __: size
           x:
             __: x
-            v: [7]
+            v: [12]
           y:
             __: y
-            v: [7]
+            v: [12]
         stretch:
           __: stretch
           x:

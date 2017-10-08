@@ -140,7 +140,7 @@ data:
       v: [1]
     width:
       __: width
-      v: [0.5]
+      v: [1]
   marker:
     __: marker
     size:
@@ -273,7 +273,7 @@ data:
         v: ['-', --, -., ':', None, ' ', '']
       width:
         __: width
-        v: [0.5]
+        v: [1]
     opacity:
       __: opacity
       v: [1.0]

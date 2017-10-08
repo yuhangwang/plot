@@ -26,9 +26,9 @@ global:
             v: ['']
         font size:
             "x":
-              v: [7]
+              v: [12]
             "y":
-              v: [7]
+              v: [12]
         padding:
           "x":
             v: [15]

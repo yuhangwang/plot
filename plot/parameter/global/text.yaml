@@ -8,7 +8,7 @@ global:
       v: [0.8]
     font:
       size:
-        v: [7]
+        v: [12]
       color:
         v: [k]
       opacity:

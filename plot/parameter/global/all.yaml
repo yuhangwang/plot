@@ -46,7 +46,7 @@ figure:
       __: font
       size:
         __: size
-        v: [7]
+        v: [12]
       weight:
         __: weight
         v: [500]
@@ -86,10 +86,10 @@ global:
           __: font_size
           x:
             __: x
-            v: [7]
+            v: [12]
           y:
             __: y
-            v: [7]
+            v: [12]
         padding:
           __: padding
           x:
@@ -320,7 +320,7 @@ global:
         v: [1.0]
       size:
         __: size
-        v: [7]
+        v: [12]
     rotation:
       __: rotation
       v: [0]
