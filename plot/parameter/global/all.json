@@ -366,6 +366,18 @@
           ]
         }
       },
+      "spine": {
+        "__": "spine",
+        "line": {
+          "__": "line",
+          "width": {
+            "__": "width",
+            "v": [
+              1.5
+            ]
+          }
+        }
+      },
       "subplot": {
         "__": "subplot",
         "spacing": {

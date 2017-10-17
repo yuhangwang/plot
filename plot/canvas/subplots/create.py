@@ -10,7 +10,6 @@ from ...tk.fnTK import compose
 from ...tk.listTK import upgrade_dimension
 import numpy
 
-
 def create(params):
     # type: (Dict) -> Dict
     """Create a new figure object
@@ -51,4 +50,11 @@ def create(params):
     tweek = compose([subplot_spacing, global_axis])
     tweek(params)
 
+    # change axis spine line width
+    # [x.set_linewidth(0) for a in axes for x in a.intervalues() ]
+    for i in range(params['global']['figure']['rows']):
+        for j in range(params['global']['figure']['columns']):
+            for k in ['left', 'right', 'top', 'bottom']:
+                axes[i,j].spines[k].set_linewidth(
+                    params['global']['figure']['spine']['line']['width'])
     return params
