@@ -627,7 +627,7 @@ global:
         v: [0]
       transparent:
         __: transparent
-        v: [false]
+        v: [false, true]
     spine:
       __: spine
       line:

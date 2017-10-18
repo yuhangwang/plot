@@ -40,7 +40,7 @@ global:
       dpi:
         v: [300]
       transparent:
-        v: [no]
+        v: [false,true]
       padding:
         v: [0]
       bounding box:

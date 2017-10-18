@@ -362,7 +362,8 @@
         "transparent": {
           "__": "transparent",
           "v": [
-            false
+            false,
+            true
           ]
         }
       },
