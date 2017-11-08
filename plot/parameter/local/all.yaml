@@ -201,7 +201,7 @@ local:
         v: [':', --, '-', None, ' ', '']
       width:
         __: width
-        v: [0.2]
+        v: [1]
     show:
       __: show
       v: [false, true]

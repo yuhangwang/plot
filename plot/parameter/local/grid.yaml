@@ -10,9 +10,9 @@ local:
       color:
         v: [k]
       opacity:
-        v: [0.2]
+        v: [0.4]
       width:
-        v: [0.2]
+        v: [1]
       style:
         v: [":", "--", "-", "None", " ", ""]
     which layer:
