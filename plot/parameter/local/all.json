@@ -385,7 +385,7 @@
         "opacity": {
           "__": "opacity",
           "v": [
-            0.2
+            0.4
           ]
         },
         "style": {
@@ -838,8 +838,8 @@
           "right": {
             "__": "right",
             "v": [
-              false,
-              true
+              true,
+              false
             ]
           },
           "top": {

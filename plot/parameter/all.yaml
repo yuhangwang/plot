@@ -1019,7 +1019,7 @@ local:
         v: [k]
       opacity:
         __: opacity
-        v: [0.2]
+        v: [0.4]
       style:
         __: style
         v: [':', --, '-', None, ' ', '']
@@ -1249,7 +1249,7 @@ local:
           v: [true, false]
         right:
           __: right
-          v: [false, true]
+          v: [true, false]
         top:
           __: top
           v: [false, true]

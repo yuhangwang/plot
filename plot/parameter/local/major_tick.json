@@ -118,8 +118,8 @@
           "right": {
             "__": "right",
             "v": [
-              false,
-              true
+              true,
+              false
             ]
           },
           "top": {

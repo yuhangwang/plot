@@ -34,7 +34,7 @@ local:
         left:
           v: [true,false]
         right:
-          v: [false,true]
+          v: [true,false]
       set:
         "x":
           v: [~]
