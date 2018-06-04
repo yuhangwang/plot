@@ -571,6 +571,24 @@ local:
           y:
             __: y
             v: [0]
+      format:
+        __: format
+        sci_font_size:
+          __: sci_font_size
+          x:
+            __: x
+            v: [10]
+          y:
+            __: y
+            v: [10]
+        style:
+          __: style
+          x:
+            __: x
+            v: [plain, sci]
+          y:
+            __: y
+            v: [plain, sci]
       hide:
         __: hide
         first:

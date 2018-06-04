@@ -77,3 +77,15 @@ local:
           v: [~]
         "y":
           v: [~]
+      format:
+        style:
+          "x":
+            v: [plain, sci]
+          "y":
+            v: [plain, sci]
+        sci_font_size:
+          "x":
+            v: [10]
+          "y":
+            v: [10]
+
