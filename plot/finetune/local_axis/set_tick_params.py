@@ -24,7 +24,6 @@ def set_tick_params(params):
                         style=p['tick_label'][m]['format']['style'][k],
                         scilimits=(0,0),
                         useMathText=True)
-                    print(panel_id, m, k, p['tick_label'][m]['format']['style'][k])
                     getattr(obj_axis, "{}axis".format(k)).offsetText.set_fontsize(
                         p['tick_label'][m]['format']['sci_font_size'][k])
                 obj_axis.tick_params(
