@@ -20,6 +20,9 @@ def tighten_panel_axis_range(params):
         for k in ['x', 'y']:
             if p['axis']['range']['tight'][k] is True:
                 prop = "set_{}lim".format(k)
-                values = params['internal']['panel']['minmax'][panel_id][k]
-                getattr(obj_axis, prop)(*values)
+                if panel_id in params['internal']['panel']['minmax']:
+                    values = params['internal']['panel']['minmax'][panel_id][k]
+                    getattr(obj_axis, prop)(*values)
+                else:
+                    pass
     return params
