@@ -16,6 +16,13 @@ such as `bar.yaml`, `line.yaml`, etc.
 A documentation will be available soon.
 
 
+Support for MacOS
+==================
+To avoid TK crashing problem on MacOS, do the followings
+(see https://github.com/MTG/sms-tools/issues/36#issuecomment-296493101)::
+	mkdir -p ~/.matplotlib
+	$ echo "backend: TkAgg" > ~/.matplotlib/matplotlibrc
+
 License
 ==========
 MIT/X11 (c) Yuhang(Steven) Wang, 2016

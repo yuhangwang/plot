@@ -27,6 +27,11 @@ setup(
             "matplotlib",
             "typing",
             "numpy",
+<<<<<<< HEAD
             "pyyaml"
+=======
+            "scipy",
+            "pyyaml",
+>>>>>>> ab237ed09bf018185297bd75788f2e6feb789d27
         ],
     )
