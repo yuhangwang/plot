@@ -1,10 +1,8 @@
-plot
-========
+# plot
 This is a command line package for using matplotlib
 to make plots based on input JSON or YAML file.
 
-Examples
-=========
+## Examples
 This package is still in active development.  
 For examples, you can take a look at the [test/run](https://github.com/yuhangwang/plot/tree/master/test/run) folder.
 Currently `plot` supports plotting `line`, `bar`, `matrix` and `span` plots.
@@ -16,13 +14,13 @@ such as `bar.yaml`, `line.yaml`, etc.
 A documentation will be available soon.
 
 
-Support for MacOS
-==================
+## Support for MacOS
 To avoid TK crashing problem on MacOS, do the followings
-(see https://github.com/MTG/sms-tools/issues/36#issuecomment-296493101)::
-	mkdir -p ~/.matplotlib
-	$ echo "backend: TkAgg" > ~/.matplotlib/matplotlibrc
+(see https://github.com/MTG/sms-tools/issues/36#issuecomment-296493101)
+```bash
+mkdir -p ~/.matplotlib`
+echo "backend: TkAgg" > ~/.matplotlib/matplotlibrc`
+```
 
-License
-==========
+## License
 MIT/X11 (c) Yuhang(Steven) Wang, 2016
