@@ -1,0 +1,7 @@
+include plot/parameter/*.json
+include plot/parameter/*.yaml
+include plot/parameter/*/*.json
+include plot/parameter/*/*.yaml
+include plot/parameter/*.bat
+include plot/parameter/*.sh
+include plot/parameter/update.py

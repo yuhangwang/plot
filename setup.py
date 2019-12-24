@@ -10,7 +10,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='plot',
-    version="0.6.3",
+    version="0.6.4",
     description="A matplotlib frontend executable "
                 "using JSON file as user input",
     long_description=long_description,
@@ -18,6 +18,7 @@ setup(
     author="Yuhang(Steven) Wang",
     license="MIT/X11",
     packages=find_packages(),
+    include_package_data=True,
     entry_points={
             'console_scripts': [
                     'plot = plot.main:main'
