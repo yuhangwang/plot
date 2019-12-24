@@ -25,6 +25,6 @@ def parser(file_name):
         return json.loads
     elif re.match(".*\.yaml", file_name):
         import yaml
-        return yaml.load
+        return lambda x: yaml.load(x, Loader=yaml.FullLoader)
     else:
         return lambda x: dict()
